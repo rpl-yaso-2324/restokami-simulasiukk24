@@ -3,25 +3,25 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="main.css" />
-		<link rel="stylesheet" href="index.css" />
+		
 		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 		<title>Simulasi UKK</title>
 	</head>
 	<body>
-		<div class="container">
+		<center>
+		<div class="container mt-24">
 			<header>
-				<img src="assets/img/store.png" alt="resto-kami" />
-				<h1>SELAMAT DATANG DI RESTORAN KAMI</h1>
+				<img src="assets/img/store.png" class="w-28" alt="resto-kami" />
+				<h1 class="text-center mt-2 mb-2 text-2xl w-3/5 font-bold">SELAMAT DATANG DI RESTORAN KAMI</h1>
 			</header>
-			<main>
+			<main class="mb-10 mt-8">
 				<section class="login-section">
-					<form id="loginForm">
-						<label for="username">Username:</label>
-						<input type="text" id="username" name="username" required />
-						<label for="password">Password:</label>
-						<input type="password" id="password" name="password" required />
-						<button type="submit">Login</button>
+					<form id="loginForm" class="flex flex-col">
+						<label for="username">Username</label>
+						<input type="text" id="username" name="username" class="p-3 w-3/5 mx-auto mb-2 mt-2 border-solid border-2 black"  required />
+						<label for="password">Password</label>
+						<input type="password" id="password" name="password" class="p-3 w-3/5 mx-auto mb-2 mt-2 border-solid border-2 black" required />
+						<button type="submit" class="p-4 w-4/5 mx-auto rounded-lg mt-3 text-xl text-white" style="background-color: rgba(255, 145, 145, 1);">Login</button>
 					</form>
 				</section>
 			</main>
@@ -33,5 +33,6 @@
 				</p>
 			</footer>
 		</div>
+	</center>
 	</body>
 </html>
