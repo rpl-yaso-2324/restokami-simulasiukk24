@@ -1,36 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="main.css" />
-		<link rel="stylesheet" href="index.css" />
-		<title>Simulasi UKK</title>
-	</head>
-	<body>
-		<div class="container">
-			<header>
-				<img src="assets/img/store.png" alt="resto-kami" />
-				<h1>SELAMAT DATANG DI RESTORAN KAMI</h1>
-			</header>
-			<main>
-				<section class="login-section">
-					<form id="loginForm">
-						<label for="username">Username:</label>
-						<input type="text" id="username" name="username" required />
-						<label for="password">Password:</label>
-						<input type="password" id="password" name="password" required />
-						<button type="submit">Login</button>
-					</form>
-				</section>
-			</main>
-
-			<footer>
-				<p>
-					&copy; 2023 Restoran Kami. <br />
-					All rights reserved.
-				</p>
-			</footer>
-		</div>
-	</body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <center>
+      <img src="/assets/img/warung.png" class="w-60" alt="" />
+      <h1 class="text-3xl font-mono mb-5">Selamat Datang</h1>
+      <div class="mb-10">
+        <input
+          class="bg-slate-300 mb-5 h-10 w-50 text-center rounded"
+          type="text"
+          placeholder="Masukan Nama"
+        />
+        <br />
+        <input
+          class="bg-slate-300 h-10 w-50 text-center rounded"
+          type="number"
+          placeholder="Masukan Nomor telphon aktif"
+        />
+      </div>
+      <button class="bg-slate-300 h-10 w-60 text-center rounded">
+        Lihat Menu
+      </button>
+    </center>
+  </body>
 </html>
