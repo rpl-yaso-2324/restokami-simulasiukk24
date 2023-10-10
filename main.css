@@ -17,4 +17,22 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	border: 1px black solid;
+}
+
+#loginForm{
+	display: flex;
+	flex-direction: column;
+}
+
+#loginForm button{
+	margin-top: 10px;
+}
+
+#loginForm input{
+	border: none;
+	background-color: rgb(187, 181, 181);
+	height: 30px;
+	width: 200%;
+	border-radius: 4px;
 }
