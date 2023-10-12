@@ -1,36 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="main.css" />
-		<link rel="stylesheet" href="index.css" />
-		<title>Simulasi UKK</title>
-	</head>
-	<body>
-		<div class="container">
-			<header>
-				<img src="assets/img/store.png" alt="resto-kami" />
-				<h1>SELAMAT DATANG DI RESTORAN KAMIi</h1>
-			</header>
-			<main>
-				<section class="login-section">
-					<form id="loginForm">
-						<label for="username">Username:</label>
-						<input type="text" id="username" name="username" required />
-						<label for="password">Password:</label>
-						<input type="password" id="password" name="password" required />
-						<button type="submit">Login</button>
-					</form>
-				</section>
-			</main>
 
-			<footer>
-				<p>
-					&copy; 2023 Restoran Kami. <br />
-					All rights reserved.
-				</p>
-			</footer>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Restoran Kita</title>
+	<link rel="stylesheet" href="index.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+	<header class="flex justify-center items-center gap-5 py-4 border-b-2 border-[#FF9191]">
+		<img src="assets/img/store.png" alt="" width="40px">
+		<h1 class="text-[22px] font-semibold">Menu</h1>
+	</header>
+	<main>
+		<div class="h-[600px] px-5 overflow-y-scroll mb-7">
+			<section>
+				<div class="mt-7  border-b-2 border-[#FF9D21] pb-3">
+					<span class="border-2 rounded-full w-auto px-[15px] py-[2px] border-black">Paket</span>
+				</div>
+				<div class="mt-5 grid grid-cols-2">
+					<div>
+						<img src="assets/img/paket1.jpeg" alt="" width="140px" class="border-2 rounded-md">
+					</div>
+					<div>
+						<h2 class="text-[20px] font-semibold">Paket Hemat 1</h2>
+						<p class="text-[10px] opacity-50 my-2">Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal
+							+ Teh</p>
+						<span class="text-[17px]">Rp 36.000</span>
+						<div class="flex justify-between mt-3">
+							<span class="text-[15px]">Jumlah : </span>
+							<div class="flex gap-2">
+								<button
+									class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold">+</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mt-5 grid grid-cols-2">
+					<div>
+						<img src="assets/img/paket1.jpeg" alt="" width="140px" class="border-2 rounded-md">
+					</div>
+					<div>
+						<h2 class="text-[20px] font-semibold">Paket Hemat 2</h2>
+						<p class="text-[10px] opacity-50 my-2">Nasi Timbel + Ayam (bakar/goreng) + Teh</p>
+						<span class="text-[17px]">Rp 36.000</span>
+						<div class="flex justify-between mt-3">
+							<span class="text-[15px]">Jumlah : </span>
+							<div class="flex gap-2">
+								<button
+									class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold">+</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="mt-7  border-b-2 border-[#FF9D21] pb-3">
+					<span class="border-2 rounded-full w-auto px-[15px] py-[2px] border-black">Makanan</span>
+				</div>
+				<div class="mt-5 grid grid-cols-2">
+					<div>
+						<img src="assets/img/spaghetti-b.png" alt="" width="140px" class="border-2 rounded-md">
+					</div>
+					<div>
+						<h2 class="text-[20px] font-semibold">Spaghetti bolognese</h2>
+						<p class="text-[10px] opacity-50 my-2">Dengan saus import asli</p>
+						<span class="text-[17px]">Rp 36.000</span>
+						<div class="flex justify-between mt-3">
+							<span class="text-[15px]">Jumlah : </span>
+							<div class="flex gap-2">
+								<button
+									class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold">+</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="mt-7  border-b-2 border-[#FF9D21] pb-3">
+					<span class="border-2 rounded-full w-auto px-[15px] py-[2px] border-black">Minuman</span>
+				</div>
+				<div class="mt-5 grid grid-cols-2">
+					<div>
+						<img src="assets/img/strawberry-drink.jpg" alt="" width="140px" class="border-2 rounded-md">
+					</div>
+					<div>
+						<h2 class="text-[20px] font-semibold">Strawberry Drink</h2>
+						<p class="text-[10px] opacity-50 my-2">Strawberry olahan terbaik</p>
+						<span class="text-[17px]">Rp 36.000</span>
+						<div class="flex justify-between mt-3">
+							<span class="text-[15px]">Jumlah : </span>
+							<div class="flex gap-2">
+								<button
+									class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold">+</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
-	</body>
+		<div class="text-center mt-[40px] mb-[20px]">
+			<button class="border-2 px-9 py-2 w-[250px] rounded-lg font-semibold bg-[#FF9191] text-white">Pesan</button>
+		</div>
+	</main>
+
+	<footer class="text-center right-0 left-0 p-5">
+		<p class="text-[13px]">&copy 2024 Restoran Kita</p>
+		<p class="text-[13px]">All rights reserved.</p>
+	</footer>
+</body>
+
 </html>
