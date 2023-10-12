@@ -1,0 +1,99 @@
+@font-face {
+	font-family: "Quicksand";
+	src: url("/assets/font/Quicksand-VariableFont_wght.ttf") format("truetype");
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+	font-family: "Quicksand";
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.container .headerMenu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.container .headerMenu img{
+    width: 15%;
+}
+
+.container .headerMenu label{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.container hr {
+    padding: 3px;
+    background-color: rgba(255, 145, 145, 1); 
+    border: none;
+}
+
+
+.container .mainMenu{
+    padding: 20px;
+}
+.container .mainMenu .mainContent h1{
+    background-color: #ADADAD;
+    color: white;
+    width: 6rem;
+    border-radius: 20px;
+    font-size: 15px;    
+    padding: 5px;
+}
+
+.container .mainMenu hr{
+    margin-top: 10px;
+}
+
+.container .flex {
+    display: flex;
+}
+.container .flex img {
+    margin-top: 10px;
+    width: 100px;
+    height: 99.01px;
+    border-radius: 10px;
+}
+
+.container .flex .list {
+    text-align: start;
+    padding: 5px;
+    margin-left: 20px;
+    font-size: 10px;
+}
+.container .flex .list h3 {
+    margin-top: 10px;
+}
+.container .flex .list .jumlah {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container .flex .list .jumlah button{
+    width: 60px;
+    background-color: #96C8EB;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.container .button {
+    width: 300px;
+    height: 35px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: #FF9191;
+    margin-top: 20px;
+}
