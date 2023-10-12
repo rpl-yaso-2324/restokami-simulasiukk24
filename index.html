@@ -8,27 +8,27 @@
 		 <script src="https://cdn.tailwindcss.com"></script>
 		<title>Simulasi UKK</title>
 	</head>
-	<body class="max-w-[100%]">
-		<div class="container">
-			<header class="w-[300px] flex flex-col items-center mb-[50px]">
+	<body class="max-w-[100%] flex justify-center items-center">
+		<div class="container w-[30%] max-w-[768px] m-auto flex flex-col items-center border-none border-black">
+			<header class="w-[300px] flex flex-col items-center mb-[100px]">
 				<img src="assets/img/store.png" alt="resto-kami" class="w-[100px]"/>
 				<h1 class="text-[20px] font-semibold text-center">SELAMAT DATANG DI RESTORAN KAMI</h1>
 			</header>
 			<main>
 				<section class="login-section">
-					<form id="loginForm">
-						<label for="username">Username:</label>
-						<input type="text" id="username" name="username" required />
-						<label for="password">Password:</label>
-						<input type="password" id="password" name="password" required />
-						<button type="submit">Login</button>
+					<form id="loginForm" class=" flex flex-col">
+						<label for="username">Nama pelanggan</label>
+						<input type="text" class="bg-slate-300 h-[40px] rounded" id="username" name="username" required />
+						<label for="nomor">Nomor telepon</label>
+						<input type="number" class="bg-slate-300 h-[40px] w-[300px] mb-3 rounded" id="nomor" name="nomor" required />
+						<button type="submit" class="mt-[10px] h-[40px] w-[300px] bg-yellow-400 rounded-lg text-xl mb-52">Lihat menu</button>
 					</form>
 				</section>
 			</main>
 
 			<footer>
 				<p>
-					&copy; 2023 Restoran Kami. <br />
+					&copy; 2023 Restoran Kami.<br />
 					All rights reserved.
 				</p>
 			</footer>
