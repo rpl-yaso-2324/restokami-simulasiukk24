@@ -5,30 +5,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="main.css" />
 		<link rel="stylesheet" href="index.css" />
-
 		<script src="https://cdn.tailwindcss.com"></script>
+
 		<title>Simulasi UKK</title>
 	</head>
 	<body>
-		<div class="container my-[50%]">
-			<header class="">
+		<div class="my-[50%]">
+			<header class="absolute inset-x-0 top-0 mx-auto my-10">
 				<img src="assets/img/store.png" alt="resto-kami" />
 				<h1 class="my-2">SELAMAT DATANG DI RESTORAN KAMI</h1>
 			</header>
-			<main class="my-2">
-				<section class="login-section text-center">
+
+			<main class="">
+				<div class="my-[100%] max-w-[85%] mx-auto">
 					<form id="loginForm" class="flex flex-col mx-auto">
-						<label for="username">Username:</label>
+						<label for="username">Nama Pelanggan</label>
 						<input type="text" id="username" name="username" class="border-2 rounded outline-none bg-[#ECECEC] border-none p-2" required /> 
-						<label for="password">Password:</label>
+						<label for="password">Password</label>
 						<input type="password" id="password" name="password" class="border-2 rounded outline-none bg-[#ECECEC] border-none p-2" required />
 						<button type="submit" class="bg-[#FF9191] text-[#ffff] p-2 rounded my-4">Login</button>
 					</form>
-				</section>
+				</div>
 			</main>
 
 			<footer>
-				<p class="text-center text-sm">
+				<p class="text-center text-sm absolute inset-x-0 bottom-0 my-10">
 					&copy; 2023 Restoran Kami. All rights reserved.
 				</p>
 			</footer>
