@@ -16,29 +16,30 @@
     </header>
     <hr class="w-[90%] mx-auto mb-[40px]">
     <main>
-        <form action="">
-            <div class="md:mx-[80px] mx-[20px]">
-                <div class="flex flex-col mb-4">
-                    <label for="name" class=" mb-2">Nama Pelanggan</label>
-                    <input type="text" name="name" id="name" class="border-2 py-2 rounded-md ps-3"
-                        placeholder="cth : iqbal">
-                </div>
-                <div class="flex flex-col">
-                    <label for="telp" class="">Nomor Telepon</label>
-                    <input type="tel" name="telp" id="telp" class="border-2 py-2 rounded-md ps-3" placeholder="08...">
-                </div>
-                <div class="text-center">
-                    <button
-                        class="px-[50px] py-[8px] w-full border-2 mt-5 font-semibold rounded-lg bg-[#FF9191] text-white">Lihat
-                        Menu</button>
-                </div>
+        <div class="md:mx-[80px] mx-[20px]">
+            <div class="flex flex-col mb-4">
+                <label for="name" class="mb-2">Nama Pelanggan</label>
+                <input type="text" name="name" id="nameUser" class="border-2 py-2 rounded-md ps-3"
+                    placeholder="cth : iqbal">
             </div>
-        </form>
+            <div class="flex flex-col">
+                <label for="telp">Nomor Telepon</label>
+                <input type="tel" name="telp" id="telp" class="border-2 py-2 rounded-md ps-3" placeholder="08...">
+            </div>
+
+            <div class="text-center">
+                <button class="px-[50px] py-[8px] w-full border-2 mt-5 font-semibold rounded-lg bg-[#FF9191] text-white"
+                    onclick="login()">Lihat
+                    Menu</button>
+            </div>
+        </div>
     </main>
     <footer class="text-center fixed bottom-0 right-0 left-0 p-5">
         <p class="text-[13px]">&copy 2024 Restoran Kita</p>
         <p class="text-[13px]">All rights reserved.</p>
     </footer>
+
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>

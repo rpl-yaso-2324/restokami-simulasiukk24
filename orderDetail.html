@@ -11,7 +11,9 @@
 
 <body>
     <header class="flex justify-center items-center gap-5 py-4 border-b-2 border-[#96C8EB]">
-        <img src="assets/img/store.png" alt="" width="40px">
+        <a href="index.html">
+            <img src="assets/img/store.png" alt="" width="40px">
+        </a>
         <h1 class="text-[22px] font-semibold">Pesanan Anda</h1>
     </header>
     <main>
@@ -88,7 +90,8 @@
             </section>
             <section>
                 <div class="bg-[#F5F5F5] mt-6 py-2 px-2">
-                    <input type="text" name="" id="" class="border-2 w-full ps-3 py-1 rounded-md" placeholder="Catatan....">
+                    <input type="text" name="" id="" class="border-2 w-full ps-3 py-1 rounded-md"
+                        placeholder="Catatan....">
                 </div>
             </section>
             <section>
@@ -97,9 +100,11 @@
                         class="border-2 rounded-full w-auto px-[15px] py-[5px] bg-[#ADADAD] text-white font-semibold">Metode
                         Pembayaran</span>
                 </div>
-                <div class="bg-[#F5F5F5] mt-6 py-2 px-2 flex items-center gap-2">
-                    <input type="radio" name="" id="" class="" value="Resto Pay">
-                    <label for="">Resto Pay</label>
+                <div class="flex items-center mb-4 bg-[#F5F5F5] py-2 px-2 mt-5">
+                    <input id="default-radio-1" type="radio" value="Resto Pay" name="default-radio"
+                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Resto
+                        Pay</label>
                 </div>
             </section>
             <section class="text-center my-10">
