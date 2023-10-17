@@ -1,0 +1,302 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+     color: black;
+     margin-right: 150px;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 80px;
+    border-bottom: 2px solid  #ff0000;
+}
+
+.logo {
+    flex: 1;
+    text-align: center;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    margin-left: 100px;
+}
+
+.menu {
+    flex: 2;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(41, 40, 40, 0.1);
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(180, 174, 174);
+}
+
+.text{
+    width: 160px;
+    height: 150px;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+p{
+    margin-top: -10px;
+}
+
+.tambah-barang-button {
+    background-color: #00a2ff;
+    border-radius: 15px;
+    width: 70px;
+    height: 25px;
+    
+}
+
+.tambah-barang-button:hover {
+    background-color: #ffee00; /* Warna latar belakang saat diarahkan */
+}
+
+.button-tambah {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-tambah h3{
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+hr{
+    background-color: #ff8400;
+    height: 2px;
+    width: 350px;
+    border-radius: 3px;
+    margin-top: 20px;
+
+}
+
+.persegi-panjang {
+    background-color: rgb(178, 175, 175);
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    align-items: middle;
+    align-content: middle;
+    line-height: 29px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+     border-radius: 20px;
+     margin-top: 20px;
+     margin-left: 20px;
+ }
+
+ .container2 {
+    display: flex;
+    align-items: center;
+}
+
+.box2 {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(41, 40, 40, 0.1);
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(180, 174, 174);
+}
+
+.text2 {
+    width: 160px;
+    height: 150px;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+p{
+    margin-top: -10px;
+}
+
+.tambah-barang-button2 {
+    background-color: #00a2ff;
+    border-radius: 15px;
+    width: 70px;
+    height: 25px;
+    
+}
+
+.tambah-barang-button2:hover {
+    background-color: #ffee00; /* Warna latar belakang saat diarahkan */
+}
+
+.button-tambah2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-tambah2 h3{
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+hr{
+    background-color: #ff8400;
+    height: 2px;
+    width: 350px;
+    border-radius: 3px;
+    margin-top: 20px;
+
+}
+
+.persegi-panjang2 {
+    background-color: rgb(178, 175, 175);
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    align-items: middle;
+    align-content: middle;
+    line-height: 29px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+     border-radius: 20px;
+     margin-top: 20px;
+     margin-left: 20px;
+ }
+
+ .container3 {
+    display: flex;
+    align-items: center;
+}
+
+.box3 {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(41, 40, 40, 0.1);
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(180, 174, 174);
+}
+
+.text3 {
+    width: 160px;
+    height: 150px;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+p{
+    margin-top: -10px;
+}
+
+.tambah-barang-button3 {
+    background-color: #00a2ff;
+    border-radius: 15px;
+    width: 70px;
+    height: 25px;
+    
+}
+
+.tambah-barang-button3:hover {
+    background-color: #ffee00; /* Warna latar belakang saat diarahkan */
+}
+
+.button-tambah3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-tambah3 h3{
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+hr{
+    background-color: #ff8400;
+    height: 2px;
+    width: 350px;
+    border-radius: 3px;
+    margin-top: 20px;
+
+}
+
+.persegi-panjang3 {
+    background-color: rgb(178, 175, 175);
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    align-items: middle;
+    align-content: middle;
+    line-height: 29px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+     border-radius: 20px;
+     margin-top: 20px;
+     margin-left: 20px;
+ }
+
+ .pesan{
+    background-color: #ff3300;
+    color: white;
+    padding:10px 20px;
+    border-radius: 20px;
+    height: 50px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 43px;
+ }
+
+.foot{
+margin-top:35px;
+margin-left: 120px;
+}
