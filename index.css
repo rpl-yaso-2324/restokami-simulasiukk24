@@ -3,19 +3,99 @@
 	src: url("/assets/font/Quicksand-VariableFont_wght.ttf") format("truetype");
 }
 
+body{
+	font-family: Quicksand;
+}
 header {
 	width: 300px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 1rem;
 }
 
 header img {
 	width: 100px;
 }
 header h1 {
-	font-family: Quicksand;
+	
 	font-size: 20px;
 	font-weight: 600;
 	text-align: center;
 }
+.login-section{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5rem;
+}
+
+.login-section input{
+	border: none;
+	background-color: pink;
+	width: 250px;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.login-section button{
+	border: none;
+	background-color: orange;
+	width: 270px;
+	border-radius: 5px;
+	padding: 8px;
+	color: white;
+	font-family: Quicksand;
+	font-weight: 600;
+	font-size: 17px;
+	margin: 5px;
+
+}
+
+footer{
+	margin-top: 7rem;
+}
+
+/* menu Pages */
+
+.container .menupage{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	margin-top: 1 rem;
+
+} 
+
+.menupage h2{
+	font-size: 25px;
+	margin-left: 20px;
+}
+
+.menupage img{
+	width: 50px;
+}
+
+ hr{
+	border: none;
+	height: 4px;
+	width: 100%;
+	background-color:pink ;
+	margin-top: 10px;
+
+}
+
+.menulist h3{
+	margin: 0;
+	padding: 10px;
+	width: 90px;
+	background-color: grey;
+	border-radius: 40px;
+	text-align: center;
+	margin: 10px;
+}
+
+
+
