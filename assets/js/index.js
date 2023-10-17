@@ -1,7 +1,7 @@
 let nameUser = document.getElementById("nameUser");
 let telp = document.getElementById("telp");
 
-function accessToken() {
+function generayeAccessToken() {
   let dt = new Date().getTime();
   const uuid = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
     /[xy]/g,
@@ -13,7 +13,7 @@ function accessToken() {
   );
   return uuid;
 }
-const accessToken = accessToken();
+const accessToken = generayeAccessToken();
 
 const login = () => {
   if (nameUser.value === "iqbal") {
@@ -66,19 +66,36 @@ let qty4 = 0;
 const beli = (menuKey) => {
   const pilihan = menus[menuKey];
 
-  if (menuKey === "paket1") {
-    qty1++;
-    document.getElementById(menuKey).innerHTML = `Jumlah : ${qty1}`;
-  } else if (menuKey === "paket2") {
-    qty2++;
-    document.getElementById(menuKey).innerHTML = `Jumlah : ${qty2}`;
-  } else if (menuKey === "food1") {
-    qty3++;
-    document.getElementById(menuKey).innerHTML = `Jumlah : ${qty3}`;
-  } else if (menuKey === "drink1") {
-    qty4++;
-    document.getElementById(menuKey).innerHTML = `Jumlah : ${qty4}`;
+  const menuObj = JSON.parse(localStorage.getItem("menu")) || {};
+
+  if (!menuObj[menuKey]) {
+    menuObj[menuKey] = { name: pilihan.name, quantity: 0, totalHarga: 0 };
   }
+
+  menuObj[menuKey].quantity++;
+
+  const hargaSatuan = parseFloat(pilihan.price);
+  const qty = menuObj[menuKey].quantity;
+  menuObj[menuKey].totalHarga = hargaSatuan * qty;
+
+  let totalPembayaran = 0;
+  for (const key in menuObj) {
+    totalPembayaran += parseFloat(menuObj[key].totalHarga);
+  }
+  localStorage.setItem("totalPembayaran", totalPembayaran);
+
+  localStorage.setItem("menu", JSON.stringify(menuObj));
+
+  const jumlah = menuObj[menuKey].quantity;
+
+  document.getElementById(menuKey).innerHTML = `Jumlah: ${jumlah}`;
+
   console.log({ menuKey });
-  console.log({ qty1, qty2, qty3, qty4 });
+  console.log(menuObj);
 };
+
+for (const menuKey in menus) {
+  const menuObj = JSON.parse(localStorage.getItem("menu")) || {};
+  const jumlah = menuObj[menuKey] ? menuObj[menuKey].quantity : 0;
+  document.getElementById(menuKey).innerHTML = `Jumlah: ${jumlah}`;
+}
