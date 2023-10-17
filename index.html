@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="main.css" />
-		<link rel="stylesheet" href="index.css" />
-		<title>Simulasi UKK</title>
-	</head>
-	<body>
-		<div class="container">
-			<header class="header-login">
-				<img src="assets/img/store.png" alt="resto-kami" />
-				<h1>SELAMAT DATANG DI RESTORAN KAMI</h1>
-			</header>
-			<main>
-				<section class="login-section">
-					<form id="loginForm">
-						<label for="username">Nama Pelanggan:</label>
-						<input type="text" id="username" name="username" required />
-						<label for="password">Nomor Pelanggan:</label>
-						<input type="password"  id="password" name="password" required />
-						<button type="submit">Lihat Menu</button>
-					</form>
-				</section>
-			</main>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Simulasi UKK</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header-login">
+            <img src="assets/img/store.png" alt="resto-kami" />
+            <h1>SELAMAT DATANG DI RESTORAN KAMI</h1>
+        </header>
+        <main>
+            <section class="login-section">
+                <form id="loginForm" onsubmit="return verif();">
+                    <label for="username">Nama Pelanggan:</label>
+                    <input type="text" id="username" name="username" />
+                    <label for="password">Nomor Pelanggan:</label>
+                    <input type="password" id="password" name="password" />
+                    <button type="submit">Lihat Menu</button>
+                </form>
+            </section>
+        </main>
 
-			<footer>
-				<p>
-					&copy; 2023 Restoran Kami. <br />
-					All rights reserved.
-				</p>
-			</footer>
-		</div>
-	</body>
+        <footer>
+            <p>
+                &copy; 2023 Restoran Kami. <br />
+                All rights reserved.
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
