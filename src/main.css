@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-	width: 360px; /* Width 100% untuk mengisi lebar viewport pada kontainer utama */
+	width: 100%; /* Width 100% untuk mengisi lebar viewport pada kontainer utama */
 	max-width: 768px; /* Batasan lebar maksimum untuk ukuran mobile */
 	margin: 0 auto; /* Pusatkan kontainer pada layar */
 	display: flex;
