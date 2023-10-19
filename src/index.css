@@ -1,0 +1,82 @@
+@font-face {
+	font-family: "Quicksand";
+	src: url("/assets/font/Quicksand-VariableFont_wght.ttf") format("truetype");
+}
+
+header {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header img {
+	width: 1000px;
+}
+header h1 {
+	font-family: Quicksand;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: bisque;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(163, 71, 10, 0.1);
+    text-align: center;
+
+}
+img {
+    width: 170px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    margin-bottom: 15px;
+    margin-right: 22px;
+}
+
+label {
+    display: block;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: palevioletred;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff0000;
+}

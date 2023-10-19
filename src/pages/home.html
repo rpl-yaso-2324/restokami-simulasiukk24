@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi-ukk</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+    }
+    .container {
+        width: 440px;
+        background-color: bisque;
+        margin-bottom: 50px;
+    }
+    .menu {
+        display: inline-flex;
+    }
+    hr {
+        border: 2px solid#ff0095;
+    }
+    .hr1 {
+        border: 2px solid rgb(213, 128, 23);
+        max-width: 380px;
+    }
+    .paket {
+        border: 2px solid gray;
+        width: 85px;
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(147, 145, 145);
+        margin-right: 298px;
+        margin-bottom: -3px;
+    }
+    .bt {
+        background-color: rgb(0, 170, 255);
+        width: 80px;
+        height: 30px;
+        margin-top: 15px;
+        margin-left: 50px;
+        border-radius: 20px;
+        border: none;
+    }
+    .paket1{
+        display: flex;
+    }
+    .prg {
+        text-align: left;
+        margin-left: 20px;
+    }
+    .makanan {
+        border: 2px solid gray;
+        width: 115px;
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(147, 145, 145);
+        margin-right: 265px;
+        margin-bottom: -3px;
+    }
+    .minuman {
+        border: 2px solid gray;
+        width: 115px;
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(147, 145, 145);
+        margin-right: 265px;
+        margin-bottom: -3px;
+    }
+    .pesan {
+        color: palevioletred;
+        width: 400px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+    }
+</style>
+<body>
+    <center>
+        <div class="container">
+            <div class="menu">
+            <img src="/assets/img/store.png" alt="" width="55px" height="60px" style="margin-right: 10px;">
+            <h2 class="menu">Menu</h1>
+        </div>
+            <hr>
+            
+            <!-- Paket 1 -->
+            <h2 class="paket">Paket</h2>
+            <hr class="hr1">
+            <div class="paket1">
+                <img src="/assets/img/paket1.jpg" alt="" style="width: 235px; height: 135px; border-radius: 33px; margin-right: 15pxpx; margin-top: 13px; margin-left: 28px;">
+                <div class="prg">
+                    <h3>Paket Hemat 1</h3>
+                    <p>Nasi timbel + ayam (bakar/goreng) + tahu & tempe + sambal + teh</p>
+                    <h3>Rp. 36.000</h3>
+                    <div style="display: flex;">
+                        <h4>Jumlah: 2</h4> 
+                        <button class="bt" type="submit">+</button>
+                    </div>
+                </div>
+            </div>
+            <h2 class="makanan">Makanan</h2>
+            <hr class="hr1">
+            <div class="paket1">
+                <img src="/assets/img/paket1.jpg" alt="" style="width: 235px; height: 135px; border-radius: 33px; margin-right: 15pxpx; margin-top: 13px; margin-left: 28px;">
+                <div class="prg">
+                    <h3>Nasi Goreng</h3>
+                    <p>Nasi yang digoreng bareng bumbu dan topping pada umumnya</p>
+                    <h3>Rp. 15.000</h3>
+                    <div style="display: flex;">
+                        <h4>Jumlah: 2</h4> 
+                        <button class="bt" type="submit">+</button>
+                    </div>
+                </div>
+            </div>
+            <h2 class="minuman">Minuman</h2>
+            <hr class="hr1">
+            <div class="paket1">
+                <img src="/assets/img/paket1.jpg" alt="" style="width: 140px; height: 135px; border-radius: 33px; margin-right: 15pxpx; margin-top: 13px; margin-left: 28px;">
+                <div class="prg">
+                    <h3>Lemon Tea</h3>
+                    <p>Teh Manis + Perasan Lemon</p>
+                    <h3>Rp. 7.000</h3>
+                    <div style="display: flex;">
+                        <h4>Jumlah: 2</h4> 
+                        <button class="bt" type="submit">+</button>
+                    </div>
+                </div>
+            </div>
+
+                <button class="pesan" type="submit">Pesan</button> <br>
+				<p>&copy: 2023 Restoran Kita</p>
+				<p>ALL rights reserved</p><br>
+        </div>
+    </center>
+</body>
+</html>
