@@ -1,0 +1,348 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+     color: black;
+     margin-right: 150px;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2px;
+    color: #fff;
+    height: 80px;
+    border-bottom: 2px solid  rgb(238, 206, 206);
+}
+
+.logo {
+    flex: 1;
+    text-align: center;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    margin-left: 100px;
+}
+
+.menu {
+    flex: 2;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.persegi-panjang {
+   background-color: rgb(178, 175, 175);
+   width: 90px;
+   height: 30px;
+   text-align: center;
+   align-items: middle;
+   align-content: middle;
+   line-height: 29px;
+   font-size: 20px;
+   font-weight: bold;
+   color: white;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+
+
+
+hr{
+    background-color: rgb(233, 134, 134);
+    height: 2px;
+    width: 350px;
+    border-radius: 3px;
+    margin-top: 10px;
+
+}
+
+
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-top: -150px;
+}
+
+.box {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(41, 40, 40, 0.1);
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+    margin-top:160px;
+    border-radius: 10px;
+    background-color: rgb(180, 174, 174);
+}
+
+.text{
+    width: 160px;
+    height: 150px;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 140px;
+}
+
+h3{
+    margin-top: -6px;
+}
+p{
+    margin-top: -10px;
+}
+
+.bt{
+    display: flex;
+    justify-content:center ;
+
+}
+
+.tambah-barang-button {
+    background-color: rgb(233, 134, 134);
+    border-radius: 15px;
+    width: 40px;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: -17px;
+
+}
+
+.tambah-barang-button:hover {
+    background-color: #45a049; /* Warna latar belakang saat diarahkan */
+}
+
+
+
+
+
+
+
+
+
+.persegi-panjang2 {
+   background-color: rgb(178, 175, 175);
+   width: 120px;
+   height: 30px;
+   text-align: center;
+   align-items: middle;
+   align-content: middle;
+   line-height: 29px;
+   font-size: 20px;
+   font-weight: bold;
+   color: white;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+
+
+
+hr{
+    background-color: rgb(233, 134, 134);
+    height: 2px;
+    width: 350px;
+    border-radius: 3px;
+    margin-top: 10px;
+
+}
+
+
+
+
+
+
+.container2 {
+    display: flex;
+    align-items: center;
+    margin-top: -150px;
+}
+
+.box {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(41, 40, 40, 0.1);
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+    margin-top:160px;
+    border-radius: 10px;
+    background-color: rgb(180, 174, 174);
+}
+
+.text{
+    width: 160px;
+    height: 150px;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 140px;
+}
+
+h3{
+    margin-top: -6px;
+}
+p{
+    margin-top: -10px;
+}
+
+.bt{
+    display: flex;
+    justify-content:center ;
+
+}
+
+.tambah-barang-button {
+    background-color: rgb(233, 134, 134);
+    border-radius: 15px;
+    width: 40px;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: -17px;
+
+}
+
+.tambah-barang-button:hover {
+    background-color: rgb(238, 206, 206); /* Warna latar belakang saat diarahkan */
+}
+
+
+
+
+
+
+
+.persegi-panjang3 {
+    background-color: rgb(178, 175, 175);
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    align-items: middle;
+    align-content: middle;
+    line-height: 29px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+     border-radius: 20px;
+     margin-top: 30px;
+     margin-left: 20px;
+ }
+
+
+
+ hr{
+     background-color: rgb(233, 134, 134);
+     height: 2px;
+     width: 350px;
+     border-radius: 3px;
+     margin-top: 10px;
+
+ }
+
+
+
+
+
+
+ .container3 {
+     display: flex;
+     align-items: center;
+     margin-top: -150px;
+ }
+
+ .box {
+     background-color: #fff;
+     padding: 20px;
+     border: 1px solid #ccc;
+     box-shadow: 0 0 10px rgba(41, 40, 40, 0.1);
+     height: 100px;
+     width: 100px;
+     margin-left: 20px;
+     margin-top:160px;
+     border-radius: 10px;
+     background-color: rgb(180, 174, 174);
+ }
+
+ .text{
+     width: 160px;
+     height: 150px;
+     font-size: 12px;
+     margin-left: 20px;
+     margin-top: 140px;
+ }
+
+ h3{
+     margin-top: -6px;
+ }
+ p{
+     margin-top: -10px;
+ }
+
+ .bt{
+     display: flex;
+     justify-content:center ;
+
+ }
+
+ .tambah-barang-button {
+     background-color: rgb(233, 134, 134);
+     border-radius: 15px;
+     width: 40px;
+     height: 30px;
+     font-size: 20px;
+     margin-left: 50px;
+     margin-top: -17px;
+
+ }
+
+ .tambah-barang-button:hover {
+     background-color: rgb(238, 206, 206) /* Warna latar belakang saat diarahkan */
+ }
+
+
+ .pesan{
+    background-color: rgb(233, 134, 134);
+    color: white;
+    padding:10px 20px;
+    border-radius: 20px;
+    height: 50px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 43px;
+ }
+ 
