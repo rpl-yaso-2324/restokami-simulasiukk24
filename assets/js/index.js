@@ -1,7 +1,7 @@
 let nameUser = document.getElementById("nameUser");
 let telp = document.getElementById("telp");
 
-function generayeAccessToken() {
+function generateAccessToken() {
   let dt = new Date().getTime();
   const uuid = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
     /[xy]/g,
@@ -13,7 +13,7 @@ function generayeAccessToken() {
   );
   return uuid;
 }
-const accessToken = generayeAccessToken();
+const accessToken = generateAccessToken();
 
 const login = () => {
   if (nameUser.value === "iqbal") {

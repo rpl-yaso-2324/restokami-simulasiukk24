@@ -22,13 +22,12 @@
                 <div class="mt-7 border-b-2 border-[#FF9D21] pb-3">
                     <span class="border-2 rounded-full w-auto px-[15px] py-[2px] border-black">Pesanan</span>
                 </div>
-                <table class="text-center mt-5 border-separate border-spacing-2">
+                <table class="text-center mt-5 border-separate border-spacing-2 w-full">
                     <tr>
                         <th class="bg-[#D9D9D9] text-[14px]">Menu</th>
                         <th class="bg-[#D9D9D9] text-[14px] px-2">Qty</th>
                         <th class="bg-[#D9D9D9] text-[14px]">Total Harga</th>
                     </tr>
-                    <!-- Data pesanan akan diisi di sini -->
                 </table>
             </section>
             <section class="text-center mt-10">
@@ -48,16 +47,16 @@
                         Pembayaran</span>
                 </div>
                 <div class="flex items-center mb-4 bg-[#F5F5F5] py-2 px-2 mt-5">
-                    <input id="default-radio-1" type="radio" value="Resto Pay" name="default-radio"
+                    <input type="radio" value="Resto Pay" name="default-radio"
                         class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                         id="restoPay" onchange="setPembayaran()">
-                    <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Resto
+                    <label for="restoPay" class="ml-2 text-sm font-medium text-gray-900">Resto
                         Pay</label>
                 </div>
             </section>
             <section class="text-center my-10">
-                <button
-                    class="px-[50px] py-[8px] w-full border-2 mt-5 font-semibold rounded-lg bg-[#FF9191] text-white">Bayar
+                <button class="px-[50px] py-[8px] w-full border-2 mt-5 font-semibold rounded-lg bg-[#FF9191] text-white"
+                    onclick="bayarPesanan()">Bayar
                     Pesanan</button>
             </section>
         </div>

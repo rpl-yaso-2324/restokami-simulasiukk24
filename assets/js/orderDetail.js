@@ -1,3 +1,12 @@
+if (
+  !localStorage.getItem("accessToken") &&
+  !localStorage.getItem("alreadyRedirected")
+) {
+  window.open("login.html", "_self");
+
+  localStorage.setItem("alreadyRedirected", "true");
+}
+
 const convertToCurrency = (money) => {
   return money.toLocaleString("id-ID", {
     style: "currency",
@@ -21,7 +30,7 @@ if (menuData) {
       const kuantitasCell = newRow.insertCell(1);
       const totalHargaCell = newRow.insertCell(2);
 
-      menuCell.textContent = menuKey;
+      menuCell.textContent = menu.name;
       kuantitasCell.textContent = menu.quantity;
       totalHargaCell.textContent = `${convertToCurrency(menu.totalHarga)}`;
     }
@@ -29,7 +38,7 @@ if (menuData) {
 
   const totalPembayaranElement = document.getElementById("totalPembayaran");
 
-  const totalPembayaran = localStorage.getItem("totalPembayaran");
+  const totalPembayaran = parseFloat(localStorage.getItem("totalPembayaran"));
 
   totalPembayaranElement.textContent = `${convertToCurrency(totalPembayaran)}`;
 }
@@ -39,8 +48,23 @@ const setCatatan = () => {
 };
 
 const setPembayaran = () => {
-  localStorage.setItem(
-    "Metode Pembayaran",
-    document.getElementById("restoPay").value
+  localStorage.setItem("MethodPay", document.getElementById("restoPay").value);
+};
+
+// Masih progress
+const bayarPesanan = () => {
+  const menuData = JSON.parse(localStorage.getItem("menu"));
+  const methodPay = localStorage.getItem("MethodPay");
+  const catatan = localStorage.getItem("catatan");
+  const totalHarga = localStorage.getItem("totalPembayaran");
+  for (const menuKey in menuData) {
+    var menu = menuData[menuKey];
+  }
+  alert(
+    `Anda telah memesan ${menu.name} dengan jumlah ${
+      menu.quantity
+    } dengan catatan : "${catatan}" dan anda menggunakan metode pembayaran ${methodPay}. Total pembayaran anda ${convertToCurrency(
+      parseFloat(totalHarga)
+    )}`
   );
 };
