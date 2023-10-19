@@ -8,7 +8,156 @@ h1{
 
   .container-main{
     background-color: grey;
-    width: 5%;
-    border-radius: 15%;
-    height: 3;
+    width: 8%;
+    border-radius: 30px;
+    height: 35px;
+    margin-left: 5%;
+    text-align: center;
+    font-size: 25px;
+  }
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 300px;
+    background-color: #fff;
+    margin: 10px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+.text1{
+  margin-left: 30%;
+  margin-top: -19%;
+}
+
+  .card h3 {
+    font-size: 20px;
+    margin: 0;
+    margin-left: 20%;
+  }
+  
+  .card p {
+    margin: 10px 0;
+  }
+  .tombol1 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 17%;
+    margin-top: -25px;
+  }
+  .container-main2{
+    background-color: grey;
+    width: 11%;
+    border-radius: 30px;
+    height: 35px;
+    margin-left: 5%;
+    text-align: center;
+    font-size: 25px;
+  }
+  .text-uppercase2 {
+    text-transform: uppercase;
+  }
+  .text2{
+    margin-left: 30%;
+    margin-top: -20%;
+  }
+  .card2 h3 {
+    font-size: 20px;
+    margin: 0;
+    margin-left: 20%;
+  }
+  .card2 p {
+    margin: 10px 0;
+  }
+  .card2 img {
+    width: 100%;
+    height: auto;
+  }
+  .card2 {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 300px;
+    background-color: #fff;
+    margin: 10px;
+  }
+  .card-body2 {
+    padding: 10px;
+  }
+  .tombol2 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 17%;
+    margin-top: -25px;
+  }
+  .container-main3{
+    background-color: grey;
+    width: 12%;
+    border-radius: 30px;
+    height: 35px;
+    margin-left: 5%;
+    text-align: center;
+    font-size: 25px;
+  }
+  .text-uppercase3 {
+    text-transform: uppercase;
+  }
+  .text3{
+    margin-left: 30%;
+    margin-top: -25%;
+  }
+  .card3 h3 {
+    font-size: 20px;
+    margin: 0;
+    margin-left: 20%;
+  }
+  .card3 p {
+    margin: 10px 0;
+  }
+  .card3 img {
+    width: 100%;
+    height: auto;
+  }
+  .card3 {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 300px;
+    background-color: #fff;
+    margin: 10px;
+  }
+  .card-body3 {
+    padding: 10px;
+  }
+  .tombol3 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 17%;
+    margin-top: -25px;
   }
