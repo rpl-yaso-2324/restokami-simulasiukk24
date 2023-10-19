@@ -51,9 +51,6 @@ h1{
     text-decoration: underline;
 }
 
-
-
-
 .container {
     display: flex;
     align-items: center;
@@ -299,4 +296,22 @@ hr{
 .foot{
 margin-top:35px;
 margin-left: 120px;
+}
+
+.image_menu {
+    max-width: 180px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.image_menu1{
+    max-width: 180px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.image_menu2{
+    max-width: 180px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
