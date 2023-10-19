@@ -10,6 +10,10 @@
 </head>
 
 <body>
+    <div class="bg-white text-center absolute left-16 right-16 top-8 p-5 rounded-lg shadow-lg" id="popup">
+        <h2 class="text-[#96C8EB] font-semibold">Saldo Anda Kurang!</h2>
+    </div>
+
     <header class="flex justify-center items-center gap-5 py-4 border-b-2 border-[#96C8EB]">
         <a href="index.html">
             <img src="../../assets/img/store.png" alt="" width="40px">
@@ -46,12 +50,31 @@
                         class="border-2 rounded-full w-auto px-[15px] py-[5px] bg-[#ADADAD] text-white font-semibold">Metode
                         Pembayaran</span>
                 </div>
-                <div class="flex items-center mb-4 bg-[#F5F5F5] py-2 px-2 mt-5">
-                    <input type="radio" value="Resto Pay" name="default-radio"
-                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                        id="restoPay" onchange="setPembayaran()">
-                    <label for="restoPay" class="ml-2 text-sm font-medium text-gray-900">Resto
-                        Pay</label>
+                <div class="flex  flex-col mb-4 bg-[#F5F5F5] py-2 px-2 mt-5">
+                    <div class="flex justify-between w-full items-center">
+                        <div class="flex items-center">
+                            <input type="radio" value="Resto Pay" name="default-radio"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                                id="restoPay" onchange="setPembayaran('Resto Pay')">
+                            <label for="restoPay" class="ml-2 text-sm font-medium text-gray-900">Resto
+                                Pay</label>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-[10px]">Saldo Resto Pay</span>
+                            <span class="text-[#FF9D21] text-[10px]">Rp. 50.000</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between w-full items-center">
+                        <div class="flex items-center">
+                            <input type="radio" value="Resto Pay" name="default-radio"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                                id="cash" onchange="setPembayaran('Cash')">
+                            <label for="cash" class="ml-2 text-sm font-medium text-gray-900">Cash</label>
+                        </div>
+                        <div>
+                            <span class="text-[10px]">Siapkan uang cash!</span>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="text-center my-10">

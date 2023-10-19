@@ -69,7 +69,12 @@ const beli = (menuKey) => {
   const menuObj = JSON.parse(localStorage.getItem("menu")) || {};
 
   if (!menuObj[menuKey]) {
-    menuObj[menuKey] = { name: pilihan.name, quantity: 0, totalHarga: 0 };
+    menuObj[menuKey] = {
+      name: pilihan.name,
+      quantity: 0,
+      hargaMenu: 0,
+      totalHarga: 0,
+    };
   }
 
   menuObj[menuKey].quantity++;
@@ -77,6 +82,7 @@ const beli = (menuKey) => {
   const hargaSatuan = parseFloat(pilihan.price);
   const qty = menuObj[menuKey].quantity;
   menuObj[menuKey].totalHarga = hargaSatuan * qty;
+  menuObj[menuKey].hargaMenu = hargaSatuan;
 
   let totalPembayaran = 0;
   for (const key in menuObj) {

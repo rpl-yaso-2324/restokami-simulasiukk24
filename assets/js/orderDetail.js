@@ -30,7 +30,9 @@ if (menuData) {
       const kuantitasCell = newRow.insertCell(1);
       const totalHargaCell = newRow.insertCell(2);
 
-      menuCell.textContent = menu.name;
+      menuCell.textContent = `${menu.name} \n ${convertToCurrency(
+        menu.hargaMenu
+      )}`;
       kuantitasCell.textContent = menu.quantity;
       totalHargaCell.textContent = `${convertToCurrency(menu.totalHarga)}`;
     }
@@ -47,8 +49,8 @@ const setCatatan = () => {
   localStorage.setItem("catatan", document.getElementById("catatan").value);
 };
 
-const setPembayaran = () => {
-  localStorage.setItem("MethodPay", document.getElementById("restoPay").value);
+const setPembayaran = (methodPay) => {
+  localStorage.setItem("MethodPay", methodPay);
 };
 
 // Masih progress
