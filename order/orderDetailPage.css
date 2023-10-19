@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("/assets/font/Quicksand-VariableFont_wght.ttf") format("truetype");
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Quicksand";
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.container .headerMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.container .headerMenu img {
+  width: 15%;
+}
+
+.container .headerMenu label {
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.container hr {
+  font-weight: bold;
+  padding: 1.5px;
+  background-color: rgba(150, 200, 235, 1);
+  border: none;
+}
+
+.container .mainMenu {
+  padding: 20px;
+}
+.container .mainMenu .mainContent h1 {
+  background-color: #adadad;
+  color: white;
+  width: 5rem;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 7px;
+}
+
+.menu-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 2px;
+  font-weight: bold;
+}
+
+.table-header {
+  background-color: #d9d9d9;
+  font-size: 14px;
+  border-radius: 4px;
+  height: 30px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.menu-item-image {
+  width: 40px;
+}
+
+.menu-item-title {
+  font-size: 15px;
+}
+
+.menu-item-price {
+  font-size: 13px;
+}
+
+.menu-quantity,
+.menu-price {
+  text-align: center;
+}
+
+.container .mainMenu .totalPembayaran {
+  font-size: 10px;
+  margin-top: 20%;
+}
+.container .mainMenu .totalPembayaran .harga {
+  color: rgba(255, 157, 33, 1);
+}
+
+.container .mainMenu .catatan {
+  background-color: rgba(245, 245, 245, 1);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.container .mainMenu .catatan input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  text-indent: 10px;
+}
+
+.container .mainMenu .metodePembayaran h1 {
+  background-color: #adadad;
+  color: white;
+  width: 10rem;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 7px;
+  margin-top: 20px;
+}
+.container .mainMenu .metodePembayaran hr {
+  margin-top: 4px;
+  background-color: rgba(255, 157, 33, 1);
+}
+
+.container .mainMenu .metodePembayaran .radio {
+  background-color: rgba(245, 245, 245, 1);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  align-items: center;
+  text-align: start;
+}
+
+.container .bayar {
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255, 145, 145, 1);
+  color: white;
+  font-size: 15px;
+}
+
+.container .footer {
+  margin-top: 30px;
+}

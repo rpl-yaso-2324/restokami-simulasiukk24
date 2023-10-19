@@ -51,6 +51,7 @@
 }
 
 .container .main .login input{
+  margin-top: 3px;
     border: none;
     border-radius: 5px;
     height: 6vh;
