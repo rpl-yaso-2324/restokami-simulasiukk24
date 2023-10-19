@@ -2,20 +2,170 @@
 	font-family: "Quicksand";
 	src: url("/assets/font/Quicksand-VariableFont_wght.ttf") format("truetype");
 }
-
-header {
+body{
+	font-family: Quicksand;
+}
+.header-login {
+	
 	width: 300px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-bottom: 3rem;
+	margin: 20px;
 }
 
-header img {
+.header-login img {
 	width: 100px;
 }
-header h1 {
-	font-family: Quicksand;
+.header-login h1 {
 	font-size: 20px;
 	font-weight: 600;
 	text-align: center;
+}
+.login-section {
+	padding: 1rem 0 0 1rem;
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.login-section form{
+	display: flex;
+	flex-direction: column;
+}
+.login-section input{
+	margin-top: 0.5rem;
+	background: rgb(238, 206, 206);
+	width: 300px;
+	padding: 0.75rem;
+	border: none;
+	border-radius: 0.375rem;
+	margin-bottom: 1rem;
+	font-family: Quicksand;
+	font-size: 15px;
+	color: black;
+	font-weight: 700;
+}
+
+.login-section button{
+	
+	font-family: Quicksand;
+	background: rgb(233, 134, 134);
+	padding: 0.75rem;
+	margin-top: 1rem;
+	width: 100%;
+	border: none;
+	border-radius: 0.375rem;
+	font-size: 17px;
+	font-weight: 500;
+	color: white;
+}
+
+footer p{
+	margin: 4rem 0;
+	text-align: center;
+}
+
+/* Menu Page */
+.header-menu{
+	width: 200px;
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.header-menu img{
+	width: 50px;
+}
+.container hr{
+	height: 4px;
+	border: none;
+	background: rgb(233, 134, 134);
+	width: 100%;
+	margin: 1rem 0 1rem 0;
+	
+}
+
+.section-page {
+	padding: 1.5rem;
+	
+}
+.menu-section{
+	margin: 1rem 0;
+}
+.menu-section h3 {
+	margin: 0;
+	padding: 10px;
+	width: 90px;
+	background: rgb(190, 185, 185);
+	border-radius: 100px;
+	text-align: center;
+	color: white;
+}
+.menu-section hr{
+	height: 3px;
+	border: none;
+	background: rgb(241, 200, 66);
+	width: 100%;
+}
+.menu-option{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	
+}
+.menu-option  .img-menu{
+	/* width: 100px;
+	height: 150px; */
+	background: rgb(214, 135, 135);
+	width: 50%;
+	margin: 10px ;
+	overflow: hidden;
+	border-radius: 0.5rem;
+}
+.img-menu img{
+	border-radius: 0.5rem;
+	width: 100%;
+	height: 100%;
+}
+
+.menu-option .text-menu{
+	width: 50%;
+	margin: 5px ;
+	font-size: 15px;
+	
+}
+.text-menu p{
+	font-size: 13px;
+	margin: 10px 0;
+}
+.menu-option .btn-menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 1rem;
+}
+.btn-menu button{
+	
+	border-radius: 10px;
+	padding: 3px 1rem ;
+	border: none;
+	background: rgb(233, 134, 134);
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+}
+.section-page .btn-pesan{
+	font-family: Quicksand;
+	background: rgb(233, 134, 134);
+	padding: 0.75rem;
+	margin-top: 1rem;
+	width: 100%;
+	border: none;
+	border-radius: 0.375rem;
+	font-size: 17px;
+	font-weight: 500;
+	color: white;
 }

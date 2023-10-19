@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="index.css" />
+		<title>Simulasi UKK</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header-login">
+				<img src="assets/img/store.png" alt="resto-kami" />
+				<h1>SELAMAT DATANG DI RESTORAN KAMI</h1>
+			</header>
+			<main>
+				<section class="login-section">
+					<form id="loginForm">
+						<label for="username">Nama Pelanggan:</label>
+						<input type="text" id="username" name="username"/>
+						<label for="password">Nomor Pelanggan:</label>
+						<input type="password"  id="password" name="password"/>
+						<button type="submit"><a href="/pages/menuPage.html" style="text-decoration: none; color: aliceblue;">Lihat Menu</a></button>
+					</form>
+				</section>
+			</main>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-</head>
-<body>
-<header class="flex justify-center items-center">
-    <img src="assets/img/store.png" alt="" class="w-8">
-    <p class="capitalize text-xl font-medium">MENU</p>
-</header>
-<hr class="h-1 border-none bg-red-500 w-full my-1">
-<main>
-    <section class="section-page p-1.5">
-        <div class="menu-section m-1">
-            <h3 class="m-0 p-3 w-[90px] bg-orange-600 rounded-sm text-center">Paket</h3>
-            <hr class="h-1 border-none bg-orange-600 w-full">
-            <div class="menu-option flex flex-row justify between items-start">
-                <div class="img-menu bg-sky-300 w-[50px] m-[10px] overflow-hidden rounded-s-lg"><img src="/assets/img/store.png" alt="" class="rounded-s-lg w-full h-full"></div>
-                <div class="text-menu w-[50px] m-[5px] text-lg">
-                    <h4>Paket Hemat 1</h4>
-                    <p class="text-lg m-[10px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, quidem?</p>
-                    <h5>Rp. 20.000</h5>
-                    <span class="btn-menu rounded-sm p-3 border-none bg-red-400 font-bold text-sm"><h5>jumlah : 1</h5>
-                    <button class="plus">+</button>
-                </span>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-
-<footer>
-    <p class="text-center bg-cyan-300">& copy: 2023 Restoran Kita</p>
-    <p class="text-center bg-cyan-300 ">All rights Reserved.</p>
-</footer>
-
-</body>
-
+			<footer>
+				<p>
+					&copy; 2023 Restoran Kami. <br />
+					All rights reserved.
+				</p>
+			</footer>
+		</div>
+	</body>
 </html>
