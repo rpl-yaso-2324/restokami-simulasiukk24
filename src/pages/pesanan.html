@@ -11,99 +11,102 @@
       <h1 class="mt-5 text-2xl">Pesanan Anda</h1>
     </div>
     <div class="bg-blue-300 w-full h-1"></div>
-    <div class="mx-5 w-[40rem] mb-10">
-      <h2
-        class="bg-yellow-200 w-28 h-10 mt-5 mb-1 rounded-xl text-center text-2xl"
-      >
+    <div class="mx-5 mb-10">
+      <h2 class="bg-yellow-200 h-10 mt-5 mb-1 rounded-xl text-center text-2xl">
         Pesanan
       </h2>
       <hr class="mb-5 border-black" />
       <div class="flex justify-left">
-        <div class="w-[20rem]">
-          <table class="">
+        <div class="">
+          <table>
             <tr>
-              <th><h1
-                class="bg-yellow-200 w-full h-10 mr-5 rounded-t-lg text-center text-xl"
-              >
-                Menu
-              </h1></th>
-              <th><h1
-                class="bg-yellow-200 w-28 h-10 mx-5 rounded-t-lg text-center text-xl"
-              >
-                Qty
-              </h1></th>
-              <th><h1
-                class="bg-yellow-200 w-full h-12 mr-5 rounded-t-lg text-center text-xl"
-              >
-                Total Harga
-              </h1></th>
+              <th>
+                <h1
+                  class="bg-yellow-200 w-[50%] mr-5 h-10 rounded-t-lg text-center text-xl"
+                >
+                  Menu
+                </h1>
+              </th>
+              <th>
+                <h1
+                  class="bg-yellow-200 w-[15%] mr-5 h-10 rounded-t-lg text-center text-xl"
+                >
+                  Qty
+                </h1>
+              </th>
+              <th>
+                <h1
+                  class="bg-yellow-200 w-[35%] h-10 rounded-t-lg text-center text-xl"
+                >
+                  Total Harga
+                </h1>
+              </th>
             </tr>
             <tr>
-              <td >
-                <img src="/src/assets/img/paket1.jpg" alt="">
-                <p>Paket hemat 1</p>
-                <p>Rp. 36.000</p>
+              <td class="flex">
+                
+                <div class="text-center">
+                  <p>Paket hemat 1</p>
+                  <p>Rp. 36.000</p>
+                </div>
               </td>
-              <td>Paket hemat 2</td>
-              <td>Paket hemat 3</td>
+              <td class="text-center">2</td>
+              <td class="text-center">Rp.72.000</td>
+            </tr>
+            <tr>
+              <td class="flex">
+                <div class="text-start mt-16">
+                  <p>Paket hemat 1</p>
+                  <p>Rp. 36.000</p>
+                </div>
+              </td>
+              <td class="text-center">2</td>
+              <td class="text-center">Rp.72.000</td>
+            </tr>
+            <tr>
+              <td class="flex">
+                <div class="text-start mt-16">
+                  <p>Paket hemat 1</p>
+                  <p>Rp. 36.000</p>
+                </div>
+              </td>
+              <td class="text-center">2</td>
+              <td class="text-center">Rp.72.000</td>
             </tr>
           </table>
-          <!-- <tr>
-            <td>
-              <h1
-              class="bg-yellow-200 w-full h-10 mr-5 rounded-t-lg text-center text-xl"
-            >
-              Menu
-            </h1>
-            </td>
-            <tr>
-            <td>
-              <h1
-              class="bg-yellow-200 w-28 h-10 mx-5 rounded-t-lg text-center text-xl"
-            >
-              Qty
-            </h1>
-            
-            </td>
-            </tr>
-            <td>
-              <h1
-              class="bg-yellow-200 w-full h-10 mr-5 rounded-t-lg text-center text-xl"
-            >
-              Total Harga
-            </h1>
-            </td>
-          </tr> -->
-          
-          
-          <!-- <div class="flex justify-center">
-            <img src="/src/assets/img/paket1.jpg" class="w-28" alt="">
-            <h1 class="underline underline-offset-1 text-xl">
-                <b>Paket Hemat 1</b>
-              </h1>
-          </div>
-          <div class="flex justify-center">
-            <img src="/src/assets/img/paket1.jpg" class="w-28" alt="">
-            <h1 class="underline underline-offset-1 text-xl">
-                <b>Paket Hemat 1</b>
-              </h1>
-          </div>
-          <div class="flex justify-center">
-            <img src="/src/assets/img/paket1.jpg" class="w-28" alt="">
-            <h1 class="underline underline-offset-1 text-xl">
-                <b>Paket Hemat 1</b>
-              </h1>
-          </div> -->
-          
         </div>
-        <div>
-          
-        </div>
-        <div class="w-[10rem]">
-          
+      </div>
+      <div class="text-center">
+        <h2 class="text-2xl">
+          Total pembayaran sebesar <br />
+          Rp 101.000.
+        </h2>
+        <input
+          type="text"
+          class="bg-red-400 my-5 h-10 w-80 text-center rounded"
+          placeholder="Catatan"
+        />
+      </div>
+
+      <div>
+        <h2
+          class="bg-yellow-200 h-10 mt-5 mb-1 rounded-xl text-center text-2xl"
+        >
+          Metode pembayaran
+        </h2>
+        <hr class="mb-5 border-black" />
+        <div class="">
+          <div class="flex">
+            <label for=""> <input type="radio" /> Cash</label>
+            <p>Sisihkan uang sesuai nominal pembayaran</p>
+          </div>
+          <div class="flex">
+            <label for=""> <input type="radio" /> Cash</label>
+            <p>Sisihkan uang sesuai nominal pembayaran</p>
+          </div>
+          <button class="bg-red-300 h-10 w-60 text-center rounded">Bayar Pesanan</button>
         </div>
       </div>
     </div>
-
   </body>
 </html>
