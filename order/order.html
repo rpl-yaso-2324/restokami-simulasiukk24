@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Order detail</title>
+</head>
+
+<body>
+    <div class="flex justify-center my-2">
+        <img src="/assets/img/store.png" alt="resto-kami" class="w-[15%]" />
+        <h1 class="text-xl font-bold my-4 mx-2 ">Pesanan Anda</h1>
+    </div>
+
+    <hr class="border-2 border-[#FF9191] rounded">
+
+    <main>
+
+        <div>
+            <h1
+                class="border border-[#adadad] rounded-full bg-[#adadad] text-[#fff] w-[20%] text-center mt-[5%] mb-[1%] mx-[5%]">
+                Pesanan</h1>
+            <hr class="border border-[#FF9D21] w-[90%] mx-auto rounded">
+        </div>
+
+        <table class="text-center mt-5 border-separate border-spacing-2 mx-auto">
+            <tr>
+                <th class="bg-[#D9D9D9] text-[14px]">Menu</th>
+                <th class="bg-[#D9D9D9] text-[14px] px-2">Qty</th>
+                <th class="bg-[#D9D9D9] text-[14px]">Total Harga</th>
+            </tr>
+            <tr>
+                <td class="flex gap-2 items-center">
+                    <div>
+                        <img src="https://placehold.co/400" alt="" width="40px"
+                            class="border-2 rounded-2">
+                    </div>
+                    <div class="text-left">
+                        <h3 class="text-[15px]">Strawberry Drink</h3>
+                        <p class="text-[13px]">Rp 5.000</p>
+                    </div>
+                </td>
+                <td>
+                    2
+                </td>
+                <td>
+                    Rp 10.000
+                </td>
+            </tr>
+            <tr>
+                <td class="flex gap-2 items-center">
+                    <div>
+                        <img src="https://placehold.co/400" alt="" width="40px"
+                            class="border-2 rounded-2">
+                    </div>
+                    <div class="text-left">
+                        <h3 class="text-[15px]">Strawberry Drink</h3>
+                        <p class="text-[13px]">Rp 5.000</p>
+                    </div>
+                </td>
+                <td>
+                    2
+                </td>
+                <td>
+                    Rp 10.000
+                </td>
+            </tr>
+            <tr>
+                <td class="flex gap-2 items-center">
+                    <div>
+                        <img src="https://placehold.co/400" alt="" width="40px"
+                            class="border-2 rounded-2">
+                    </div>
+                    <div class="text-left">
+                        <h3 class="text-[15px]">Strawberry Drink</h3>
+                        <p class="text-[13px]">Rp 5.000</p>
+                    </div>
+                </td>
+                <td>
+                    2
+                </td>
+                <td>
+                    Rp 10.000
+                </td>
+            </tr>
+        </table>
+
+        <div class="text-center my-5 font-semibold">
+            <p>Total Pembayaran Sebesar</p>
+            <p class="text-[#FF9D21] text-[30px]">Rp. 120000</p>
+        </div>
+
+        <div class="p-2 mx-auto text-center">
+            <input type="text" class="border-[15px] rounded w-[90%] p-1" placeholder="Catatan :">
+        </div>
+
+        <div>
+            <h1
+                class="border border-[#adadad] rounded-full bg-[#adadad] text-[#fff] w-[50%] text-center mt-[5%] mb-[1%] mx-[5%]">
+                Metode Pembayaran</h1>
+            <hr class="border border-[#FF9D21] w-[90%] mx-auto rounded">
+        </div>
+
+        <div class="flex justify-between text-[20px]"> 
+            <div class="flex">
+                <input type="radio" name="radio" id="radio">
+                <p class="mx-5 align-middle">Resto Pay</p>
+            </div>
+            <div class="">
+                <p class="text-[10px]">Saldo Resto Pay</p>
+                <p class="text-[15px]">Rp. 500000</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
