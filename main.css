@@ -91,3 +91,8 @@ body {
 	}
   }
   
+/* Menghapus ketebalan teks pada label */
+label {
+	font-weight: normal;
+  }
+  

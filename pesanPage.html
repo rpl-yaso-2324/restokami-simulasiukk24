@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Simulasi UKK</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header-menu">
+				<img src="/assets/img/store.png" alt="resto-kami" />
+				<h1>Pesanan Anda</h1>
+			</header>
+            <hr >
+			<main>
+                <section class="section-page">
+
+                    <div class="pesan-section">
+                        <h3 >Pesanan</h3>
+                    <hr>
+                        <table>
+                            <tr>
+                                <th>Menu</th>
+                                <th>Qty</th>
+                                <th>Total Harga</th>
+                            </tr>
+                            <tr>
+                                <td class="col">
+                                    <span class="col-img">
+                                        <img src="/assets/img/logo.PNG" alt="" > 
+                                    </span>
+                                    <span class="col-txt">
+                                        <h4>Paket Hemat 1<h4>
+                                        <h4>Rp. 36.000</h4>
+                                    </span>
+                                </td>
+                                <td class="col-1"><h4>2</h4></td>
+                                <td class="col-1"><h4>Rp. 72.000</h4></td>
+                            </tr>
+                            <tr>
+                                <td class="col">
+                                    <span class="col-img">
+                                        <img src="/assets/img/product3.jpeg" alt="" > 
+                                    </span>
+                                    <span class="col-txt">
+                                        <h4>Ramen kumplit<h4>
+                                        <h4>Rp. 15.000</h4>
+                                    </span>
+                                </td>
+                                <td class="col-1"><h4>2</h4></td>
+                                <td class="col-1"><h4>Rp. 30.000</h4></td>
+                            </tr>
+                            <tr>
+                                <td class="col">
+                                    <span class="col-img">
+                                        <img src="/assets/img/Picsart_23-07-17_21-31-34-940-removebg-preview.png" alt="" > 
+                                    </span>
+                                    <span class="col-txt">
+                                        <h4>Coffe<h4>
+                                        <h4>Rp. 7.000</h4>
+                                    </span>
+                                </td>
+                                <td class="col-1"><h4>2</h4></td>
+                                <td class="col-1"><h4>Rp. 14.000</h4></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="card">
+                        <h1>Total Pembayaran Sebesar</h1>
+                        <h2>Rp. 101.000</h2>
+                    </div>
+                    <div class="input-cttn">
+                        <span class="inputC">
+                        Catatan:
+                        <input type="text">
+                    </span>
+                    </div>
+                 <div class="input-checkbox">
+                    <h3 >Metode Pembayaran</h3>
+                    <hr>
+                    <span class="input-check">
+                        <label for="radio1"> 
+                            <input type="radio" name="payment" id="radio1"><span class="mt-byr">
+                                <p>Resto Pay</p>
+                                <span class="dc">
+                                    <p>Saldo Resto Pay</p>
+                                    <p id="saldo"></p>
+                                </span>
+                            </span> 
+                        </label>
+                        <label for="radio2"> 
+                            <input type="radio" name="payment" id="radio2"> 
+                            <span class="mt-byr">
+                                <p>Cash </p>
+
+                                <h5>Siapkan uang sesuai nominal pembayaran !</h5>
+                            </span>
+                        </label>
+                        
+                    </span>
+                 </div>
+                <button type="button" class="btn-pesan" onclick="bayar()">Bayar Pesanan</button>
+            </section>
+                
+			</main>
+
+			<footer>
+				<p>
+					&copy; 2023 Restoran Kami. <br />
+					All rights reserved.
+				</p>
+			</footer>
+		</div>
+	</body>
+    <script src="/script.js"></script>
+</html>

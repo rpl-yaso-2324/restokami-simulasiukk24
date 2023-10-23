@@ -1,0 +1,130 @@
+.header-image {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex; /* Menggunakan flexbox untuk mengatur tata letak */
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+}
+
+.header-image img{
+    max-width: 100px;
+}
+
+hr {
+    border-bottom: 2px solid  #FF7676;
+}
+.header-text-box {
+    background-color: #f8f8f8; /* Warna latar belakang kotak */
+    padding: 10px 20px; /* Padding untuk kotak */
+    border-radius: 5px; /* Membuat sudut kotak sedikit melengkung */
+}
+
+/* Reset beberapa gaya default */
+body, h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container styling */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  /* Header styling */
+  .header-menu {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .header-menu img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Main section styling */
+  .section-page {
+    padding: 20px;
+  }
+  
+  /* Menu section styling */
+  .pesan-section {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  .pesan-section h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Card styling */
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .card h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card h2 {
+    font-size: 2rem;
+  }
+  
+  /* Input and checkbox section styling */
+  .input-cttn, .input-checkbox {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+  }
+  
+  .input-checkbox h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Button styling */
+  .btn-pesan {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  /* Add some space around the radio buttons */
+  .input-check label {
+    display: block;
+    margin: 10px 0;
+  }
+  
