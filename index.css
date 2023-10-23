@@ -19,3 +19,86 @@ header h1 {
 	font-weight: 600;
 	text-align: center;
 }
+
+/* CSS styling */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+  }
+  
+  header {
+	text-align: center;
+	padding: 20px 0;
+  }
+  
+  img {
+	max-width: 100%;
+	height: auto;
+  }
+  
+  h1 {
+	font-size: 24px;
+	color: #333;
+	margin-top: 10px;
+  }
+  
+  
+  form {
+	max-width: 350px;
+	margin: 0 auto;
+  }
+  
+  label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+  }
+  
+  input {
+	width: 300px;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #D8D9DA
+  }
+  
+  button {
+	display: block;
+	width: 100%;
+	background-color: #FF7676;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+    font-family: Quicksand;
+  }
+  
+
+  footer {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 14px;
+	color: #666;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 600px) {
+	.container {
+	  padding: 10px;
+	}
+	h1 {
+	  font-size: 20px;
+	}
+  }
+
+  /* Menghapus ketebalan teks pada label */
+label {
+    font-weight: normal;
+    font-family: Quicksand;
+  }
+  
