@@ -14,7 +14,7 @@
     .container {
         width: 390px;
         margin-bottom: 50px;
-        background-color: bisque;
+        background-color: whitesmoke;
     }
 
     .menu {
@@ -58,18 +58,29 @@
         margin-left: 20px;
     }
 
-    .tbl {
-        width: 50px;
-        height: 35px;
+    .tbl1 {
+        width: 45px;
+        height: 38px;
         border-radius: 10px;
         background-color: aqua;
         border: none;
         margin-top: 15px;
-        margin-left: 50px;
+        margin-right: 10px;
         padding: 10px;
     }
 
-    button {
+    .tbl2 {
+        width: 45px;
+        height: 38px;
+        border-radius: 10px;
+        background-color: red;
+        border: none;
+        margin-top: 15px;
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+    .btn {
 	background-color: red;
 	color: white;
 	padding: 10px;
@@ -99,8 +110,9 @@
                     <p>Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal + Teh</p>
                     <h3>Rp. 36.000</h3>
                     <div style="display: flex;">
+                        <button type="submit" class="tbl1">+</button>
                         <h4>Jumlah: 2</h4>
-                        <button type="submit" class="tbl">+</button>
+                        <button type="submit" class="tbl2">-</button>
                     </div>
                 </div>
             </div>
@@ -109,14 +121,15 @@
             <h2 class="paket2">Makanan</h2>
             <hr class="garis">
             <div class="bungkus">
-                <img src="/assets/img/paket1.jpg" alt="" style="width: 235px; height: 135px; border-radius: 25px; margin-top: 10px; margin-left: 18px;">
+                <img src="/assets/img/nasi goreng.jpg" alt="" style="width: 235px; height: 135px; border-radius: 25px; margin-top: 10px; margin-left: 18px;">
                 <div class="keterangan1">
                     <h3>Nasi Goreng</h3>
                     <p>Nasi yang digoreng bareng bumbu dan toping pada umumnya</p>
                     <h3>Rp. 15.000</h3>
                     <div style="display: flex;">
+                        <button type="submit" class="tbl1">+</button>
                         <h4>Jumlah: 1</h4>
-                        <button type="submit" class="tbl">+</button>
+                        <button type="submit" class="tbl2">-</button>
                     </div>
                 </div>
             </div>
@@ -125,17 +138,18 @@
             <h2 class="paket2">Minuman</h2>
             <hr class="garis">
             <div class="bungkus">
-                <img src="/assets/img/paket1.jpg" alt="" style="width: 145px; height: 135px; border-radius: 25px; margin-top: 10px; margin-left: 18px;">
+                <img src="/assets/img/lemon tea.jpg" alt="" style="width: 145px; height: 135px; border-radius: 25px; margin-top: 10px; margin-left: 18px;">
                 <div class="keterangan1">
                     <h3>Lemon Tea</h3>
                     <p>Teh manis + perasan lemon</p>
                     <h3>Rp. 7.000</h3>
                     <div style="display: flex;">
+                        <button type="submit" class="tbl1">+</button>
                         <h4>Jumlah: 2</h4>
-                        <button type="submit" class="tbl">+</button>
+                        <button type="submit" class="tbl2">-</button>
                     </div>
                 </div>
-            </div><br>
+            </div><br><br>
 
                 <button type="submit" class="btn">Pesan</button>
             <br><br>

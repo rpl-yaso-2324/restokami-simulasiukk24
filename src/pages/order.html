@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+	    background-color: white;
+    }
+
+    .container {
+        width: 390px;
+        margin-bottom: 50px;
+        background-color: whitesmoke;
+    }
+
+    .pesanan {
+    display: inline-flex;
+    }
+
+    .garis1 {
+        border: 2px solid;
+        color: aqua;
+    }
+
+    .garis {
+        border: 1.5px solid;
+        color: yellow;
+        width: 345px;
+    }
+
+    .paket{
+        background-color: gray;
+        width: 248px;
+        border-radius: 10px;
+        color: white;
+        margin-left: -100px;
+        margin-bottom: -3px;
+    }
+
+    .wadah1 {
+        display: flex;
+        align-items: center;
+        background-color: wheat;
+        width: 350px;
+        height: 85px;
+    }
+
+    .wadah2 {
+        display: flex;
+        align-items: center;
+        background-color: wheat;
+        width: 350px;
+        height: 85px;
+    }
+        
+    .btn {
+	background-color: red;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 300px;
+}
+        
+</style>
+<body>
+    <center>
+        <div class="container">
+            <div class="pesanan">
+                <img src="/assets/img/store.png" alt="" width="50px" height="55px" style="margin-top: 5px;">
+                <h2 style="margin-left: 10px;">Pesanan Anda</h2>
+            </div>
+            <hr class="garis1"><br><br>
+            <p style="font-size: 20px;">Total Pembayaran Sebesar</p>
+            <h1 style="font-size: 25px; color: green;">Rp: 101.000</h1>
+
+            <div class="Catatan">`
+                <textarea placeholder="Catatan:" style="resize: none; width: 300px;"></textarea>
+            </div>
+
+            <h2 class="paket">Metode Pembayaran</h2>
+            <hr class="garis">
+
+            <div class="bungkusanForm">
+                <div class="wadah1">
+                    <input type="radio" name="transaksi" value="Resto Pay" id="restopay">
+                    <label for="restopay" class="custom-radio"></label>
+                    <label for="restopay"><h3>Resto Pay</h3></label>
+                    <div style="margin-left: 105px;">
+                        <p>Saldo Resto Pay</p>
+                        <p style="color: green;">Rp. 500.000</p>
+                    </div>
+                </div>
+                <br>
+                <div class="wadah2">
+                    <input type="radio" name="transaksi" value="Cash" id="cash">
+                    <label for="cash" class="custom-radio"></label>
+                    <label for="cash"><h3>Cash</h3></label>  
+                        <p>Siapkan uang sesuai nominal pembayaran!</p>
+                </div>
+            </div><br><br><br><br><br><br><br>
+
+            <button type="submit" class="btn">Pesan</button>
+            <br><br>
+            
+            <p>&Copy: 2023 Restoran Kita</p>
+            <p>All rights reserved</p>
+
+            <br>
+        </div>
+    </center>
+</body>
+</html>
