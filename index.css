@@ -1,130 +1,121 @@
-@font-face {
-	font-family: "Quicksand";
-	src: url("/assets/font/Quicksand-VariableFont_wght.ttf") format("truetype");
-}
+/* main.css */
 
-body{
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  .container {
+	max-width: 800px;
+	margin: 0 auto;
+  }
+  
+  header {
+	color: #000000;
+	text-align: center;
+	padding: 20px;
+  }
+
+  header h1{
 	font-family: Quicksand;
-}
-header {
-	width: 300px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 1rem;
-}
-
-header img {
-	width: 100px;
-}
-header h1 {
-	
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: 600;
 	text-align: center;
-}
-.login-section{
-	width: 100%;
+  }
+  
+  header img {
+	max-width: 20%;
+	height: auto;
+  }
+  
+  main {
+	padding: 20px;
+  }
+  
+  .login-section {
+	max-width: 400px;
+	margin: 0 auto;
+  }
+  
+  form {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	margin-top: 5rem;
-}
-
-.login-section input{
-	border: none;
-	background-color: pink;
-	width: 250px;
-	padding: 10px;
-	border-radius: 5px;
-	margin: 5px;
-}
-
-.login-section button{
-	border: none;
-	background-color: orange;
-	width: 270px;
-	border-radius: 5px;
+  }
+  
+  label {
+	margin-bottom: 8px;
+  }
+  
+  input {
 	padding: 8px;
-	color: white;
-	font-family: Quicksand;
-	font-weight: 600;
-	font-size: 17px;
-	margin: 5px;
+	margin-bottom: 16px;
+  }
+  
+  button {
+	background-color: #3498db;
+	color: #fff;
+	padding: 10px;
+	cursor: pointer;
+  }
+  
+  button:hover {
+	background-color: #0099ff;
+  }
+  
+  footer {
+	background-color: #34495e;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	bottom: 0;
+	width: 100%;
+  }
 
-}
+  /*menu*/
 
-footer{
-	margin-top: 7rem;
-}
-
-/* menu Pages */
- 
-.container .menupage{
+  .header-menu{
+	width: 100%;
+	margin-top: 1rem;
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	justify-content: center;
-	width: 100%;
-	margin-top: 1 rem;
-
-} 
-
-.menupage h2{
-	font-size: 25px;
-	margin-left: 20px;
-}
-
-.menupage img{
+  }
+  .header-menu img{
 	width: 50px;
-}
-
-.line hr{
-	border: none;
+	margin: 10px;
+  }
+  container hr{
 	height: 4px;
-	width: 100%;
-	background-color:pink ;
-	margin-top: 10px;
-
-}
-
-.menulist .text-listmenu1{
-	margin: 0;
-	padding: 10px;
-	width: 60px;
-	background-color: orange;
-	border-radius: 40px;
-	text-align: center;
-	margin: 10px;
-	color: white;
-	margin-top: 2rem;
-}
-
-.menulist .text-listmenu2{
-	margin: 0;
-	padding: 10px;
-	width: 80px;
-	background-color: orange;
-	border-radius: 40px;
-	text-align: center;
-	margin: 10px;
-	color: white;
-	margin-top: 2rem;
-}
-
-.line1 hr{
 	border: none;
-	height: 3px;
+	background: rgb(255, 0, 0);
 	width: 100%;
-	background-color: orange;
-	margin-top: 5px;
-	
+	margin: 1rem 0 1rem 0;
+  }
+  .section-page {
+	padding : 1.5rem;
+  }
+  .menu-section{
+	margin:1rem 0;
 
-}
-.menulist {
-	margin: 1rem 0;
-}
-.sectionmenu{
-	padding: 18px;
+  }
+  .menu-section h3 {
+	margin : 0;
+	padding: 10px;
+	width : 90px;
+	background : rgb (190, 185, 185);
+	border-radius:100px;
+	text-align: center;
+	color: rgb(0, 0, 0);
+  }
+  
+.menus-section hr {
+	height: 3px;
+	border: none;
+	background: rgb(255, 196, 0);
+	width: 100%;
 }
 
 .menu-option{
@@ -134,21 +125,23 @@ footer{
 	align-items: flex-start;
 }
 
-.menu-option .img-menu{
+.menu-option  .img-menu{
+	/* widht : 100px;
+	height: 150px;*/
+	/*background: rgb(214, 135, 135);*/
 	width: 50%;
 	margin: 20px;
 	overflow: hidden;
-	border-radius: 0.5rem;
+	border-radius:0.5rem;
 }
 
 .img-menu img{
-	border-radius: 0.5rem;
-	width: 100%;
-	height: 100%;
+border-radius: 0.5rem;
+width: 100%;
+height: 100%;
 }
 
 .menu-option .text-menu{
-	padding: 10px;
 	width: 50%;
 	margin: -5px;
 	font-size: 15px;
@@ -158,6 +151,7 @@ footer{
 	font-size: 13px;
 	margin: 10px 0;
 }
+
 .menu-option .btn-menu{
 	display: flex;
 	flex-direction: row;
@@ -170,12 +164,139 @@ footer{
 	border-radius: 10px;
 	padding: 3px 1rem;
 	border: none;
-	background-color: rgb(255, 85, 113);
-	color: white;
+	background-color: rgb(255, 0, 0);
+	color: #ffeeee;
 	font-weight: bold;
 	font-size: 15px;
 }
 
-.btn-menu .plus{
-	font-size: 20px;
+.section-page .btn pesan{
+	font-family: Quicksand;
+	background: rgb(255, 0, 0);
+	padding: 0,75rem;
+	margin-top: 1rem;
+	width: 100%;
+	border: none;
+	border-radius: 0,375rem;
+	font-size: 17px;
+	font-weight: 500;
+	color: rgb(0, 0, 0)	;
+}
+
+/*pesan*/
+
+.pesan-section{
+	margin: 1rem;
+}
+.pesan-section h3{
+	margin: 0;
+	padding: 10px;
+	width: 90px;
+	background: #ffeeee;
+	border-radius: 100px;
+	text-align: center;
+	color: white;
+}
+.pesan-section hr{
+	height: 3px;
+	border: none;
+	background: #3498db;
+	width: 100%;
+}
+.pesan-section table th{
+	width: 100%;
+	background: #ffeeee;
+	padding: 10px;
+	border-radius: 0.5rem 0.5rem 0 0;
+}
+.pesan-section table td{
+	background: #fff;
+	padding: 5px;
+}
+.col-1{
+	text-align: center;
+}
+.pesan-section table td img{
+	border-radius: 0.5rem;
+	width: 100%;
+	height: 100px;
+}
+table .col{
+	display: flex;
+	align-items: center;
+}
+table .col .col-img{
+	margin: 5px;
+}
+table .col h4{
+	margin: 5px;
+}
+.section-page .card{
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 15px;
+	text-align: center;
+	/*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+	background: rgb(238, 233, 233);
+}
+.card h1{
+	font-size: 10px;
+	margin: 10px 0;
+}
+.card h1:first-child{
+	color: #333;
+}
+.card h2:last-child{
+	color: #0099ff;
+	font-weight: bold;
+}
+.input-cttn{
+	margin-top: 1rem;
+	padding: 10px;
+	background: rgb(238, 233, 233);
+	border-radius: 5px;
+	border: 1px solid #333;
+}
+.input-cttn .input{
+	display: flex;
+	align-items: center;
+	padding: 6px;
+	background: #fff;
+	font-weight: 600;
+	border-radius: 5px;
+	border: 1px solid #333;
+}
+
+.input-cttn .inputC input{
+	width: 100%;
+	padding: 5px;
+	outline: none;
+	border: none;
+}
+
+.input-checkbox h3{
+	padding: 10px;
+	width: 200%;
+	background: rgb(190, 185, 185);
+	border-radius: 100px;
+	text-align: center;
+	color: white;
+}
+
+.input-checkbox hr{
+	height: 3px;
+	border: none;
+	background: rgb(red, green, blue);
+	width: 100%;
+}
+
+.input-checkbox label {
+	display: flex;
+	align-items: center;
+	background: white;
+	border: 1px solid white;
+	padding: 0 5px 0 5px;
+	border-radius: 5px;
+	font-weight: 600;
+	margin-top: 1rem;
 }
