@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("/assets/font/Quicksand-VariableFont_wght.ttf") format("truetype");
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Quicksand";
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.container .headerMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.container .headerMenu img {
+  width: 15%;
+}
+
+.container .headerMenu label {
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.container hr {
+  font-weight: bold;
+  padding: 1.5px;
+  background-color: rgba(51, 217, 178, 1);
+  border: none;
+}
+
+.container .pembayaran {
+  background-color: rgba(150, 200, 235, 0.05);
+  padding: 20px;
+  margin: 20px;
+  font-size: 10px;
+  margin-top: 100px;
+}
+.container .pembayaran .harga {
+  color: rgba(255, 157, 33, 1);
+}
+
+.container .mainMenu {
+  background-color: rgba(255, 145, 145, 0.12);
+  padding: 50px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.container .mainMenu h1 {
+  color: rgba(51, 217, 178, 1);
+  font-size: 26px;
+}
+
+.container .footer p {
+  padding: 50px;
+}

@@ -1,100 +1,104 @@
 @font-face {
-	font-family: "Quicksand";
-	src: url("/assets/font/Quicksand-VariableFont_wght.ttf") format("truetype");
+  font-family: "Quicksand";
+  src: url("/assets/font/Quicksand-VariableFont_wght.ttf") format("truetype");
 }
 
 * {
-    padding: 0px;
-    margin: 0px;
-	font-family: "Quicksand";
+  padding: 0px;
+  margin: 0px;
+  font-family: "Quicksand";
 }
 
 .container {
-    text-align: center;
-    margin: 0 auto;
-    max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 .container .headerMenu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
-.container .headerMenu img{
-    width: 15%;
+.container .headerMenu img {
+  width: 15%;
 }
 
-.container .headerMenu label{
-    font-weight: bold;
-    font-size: 25px;
-    margin-top: 10px;
+.container .headerMenu label {
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 10px;/
 }
 
 .container hr {
-    padding: 1.5px;
-    background-color: rgba(255, 145, 145, 1); 
-    border: none;
+  padding: 1.5px;
+  background-color: rgba(255, 145, 145, 1);
+  border: none;
 }
 
-.container .mainMenu{
-    padding: 20px;
+.container .mainMenu {
+  padding: 15px;
 }
-.container .mainMenu .mainContent h1{
-    background-color: #ADADAD;
-    color: white;
-    width: 5rem;
-    border-radius: 20px;
-    font-size: 15px;    
-    padding: 7px;
-}
-
-.container .mainMenu hr{
-    margin-top: 12.99px;
-    background-color: #FF9D21;
+.container .mainMenu .mainContent h1 {
+  background-color: #adadad;
+  color: white;
+  width: 5rem;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 7px;
 }
 
-.container .flex {
-    display: flex;
-}
-.container .flex img {
-    margin-top: 10px;
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
+.container .mainMenu hr {
+  margin-top: 12.99px;
+  background-color: #ff9d21;
 }
 
-.container .flex .list {
-    text-align: start;
-    padding: 5px;
-    margin-left: 20px;
-    font-size: 13px;
+.container .content-menu {
+  display: flex;
 }
-.container .flex .list h3 {
-    margin-top: 10px;
+.container .content-menu img {
+  margin-top: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
 }
-.container .flex .list .jumlah {
-    display: flex;
-    text-align: start;
+
+.container .content-menu .list {
+  text-align: start;
+  padding: 5px;
+  margin-left: 20px;
+  font-size: 13px;
 }
-.container .flex .list .jumlah button{
-    width: 60px;
-    background-color: #96C8EB;
-    border-radius: 100px;
-    border: none;
-    height: 30px;
-    font-size: 20px;
-    margin-top: 5px;
-    margin-left: 20px;
+.container .content-menu .list h3 {
+  margin-top: 10px;
+}
+.container .content-menu .list .jumlah {
+  display: flex;
+  text-align: start;
+}
+.container .content-menu .list .jumlah button {
+  width: 60px;
+  background-color: #96c8eb;
+  border-radius: 100px;
+  border: none;
+  height: 30px;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-left: 20px;
 }
 
 .container .button {
-    width: 300px;
-    height: 35px;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    background-color: #FF9191;
-    margin-top: 20px;
+  background-color: rgba(255, 145, 145, 1);
+  padding: 10px;
+  width: 80%;
+  border-radius: 10px;
+  font-size: 25px;
+  border: none;
+  color: white;
+}
+
+.container .footer p {
+  padding: 50px;
 }

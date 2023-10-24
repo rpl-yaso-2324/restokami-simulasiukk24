@@ -32,7 +32,7 @@
   margin-top: 10px;
 }
 
-.container hr {
+.container .gagal hr {
   font-weight: bold;
   padding: 1.5px;
   background-color: rgba(150, 200, 235, 1);
@@ -120,6 +120,8 @@
   margin-top: 20px;
 }
 .container .mainMenu .metodePembayaran hr {
+  border: none;
+  padding: 1.5px;
   margin-top: 4px;
   background-color: rgba(255, 157, 33, 1);
 }
