@@ -18,26 +18,6 @@ const convertToCurrency = (money) => {
 const menuData = JSON.parse(localStorage.getItem("menu"));
 
 if (menuData) {
-  const pesananTable = document.querySelector("table");
-
-  if (pesananTable) {
-    for (const menuKey in menuData) {
-      const menu = menuData[menuKey];
-
-      const newRow = pesananTable.insertRow();
-
-      const menuCell = newRow.insertCell(0);
-      const kuantitasCell = newRow.insertCell(1);
-      const totalHargaCell = newRow.insertCell(2);
-
-      menuCell.textContent = `${menu.name} \n ${convertToCurrency(
-        menu.hargaMenu
-      )}`;
-      kuantitasCell.textContent = menu.quantity;
-      totalHargaCell.textContent = `${convertToCurrency(menu.totalHarga)}`;
-    }
-  }
-
   const totalPembayaranElement = document.getElementById("totalPembayaran");
 
   const totalPembayaran = parseFloat(localStorage.getItem("totalPembayaran"));

@@ -20,35 +20,40 @@
 				<div class="mt-7  border-b-2 border-[#FF9D21] pb-3">
 					<span class="border-2 rounded-full w-auto px-[15px] py-[2px] border-black">Paket</span>
 				</div>
-				<div class="mt-5 grid grid-cols-2">
+				<div class="mt-5 flex  gap-5">
 					<div>
-						<img src="../../assets/img/paket1.jpeg" alt="" width="140px" class="border-2 rounded-md">
+						<img src="../../assets/img/paket1.jpeg" alt="" width="170px" class="border-2 rounded-md">
 					</div>
 					<div>
 						<h2 class="text-[20px] font-semibold">Paket Hemat 1</h2>
 						<p class="text-[10px] opacity-50 my-2">Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal
 							+ Teh</p>
 						<span class="text-[17px]">Rp 36.000</span>
-						<div class="flex justify-between mt-3">
-							<span class="text-[15px]" id="paket1">Jumlah : 0</span>
+						<div class="flex justify-between items-center mt-3">
+							<span class="text-[13px]" id="paket1">Jumlah : 0</span>
 							<div class="flex gap-2">
+								<button class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold"
+									onclick="kurang('paket1')">-</button>
 								<button class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold"
 									onclick="beli('paket1')">+</button>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="mt-5 grid grid-cols-2">
+				<div class="mt-5 flex  gap-5">
 					<div>
-						<img src="../../assets/img/paket1.jpeg" alt="" width="140px" class="border-2 rounded-md">
+						<img src="../../assets/img/paket1.jpeg" alt="" width="170px" class="border-2 rounded-md">
 					</div>
 					<div>
 						<h2 class="text-[20px] font-semibold">Paket Hemat 2</h2>
-						<p class="text-[10px] opacity-50 my-2">Nasi Timbel + Ayam (bakar/goreng) + Teh</p>
-						<span class="text-[17px]">Rp 30.000</span>
-						<div class="flex justify-between mt-3">
-							<span class="text-[15px]" id="paket2">Jumlah : 0</span>
+						<p class="text-[10px] opacity-50 my-2">Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal
+							+ Teh</p>
+						<span class="text-[17px]">Rp 36.000</span>
+						<div class="flex justify-between items-center mt-3">
+							<span class="text-[13px]" id="paket2">Jumlah : 0</span>
 							<div class="flex gap-2">
+								<button class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold"
+									onclick="kurang('paket2')">-</button>
 								<button class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold"
 									onclick="beli('paket2')">+</button>
 							</div>
@@ -60,17 +65,19 @@
 				<div class="mt-7  border-b-2 border-[#FF9D21] pb-3">
 					<span class="border-2 rounded-full w-auto px-[15px] py-[2px] border-black">Makanan</span>
 				</div>
-				<div class="mt-5 grid grid-cols-2">
+				<div class="mt-5 flex  gap-5">
 					<div>
-						<img src="../../assets/img/spaghetti-b.png" alt="" width="140px" class="border-2 rounded-md">
+						<img src="../../assets/img/paket1.jpeg" alt="" width="112px" class="border-2 rounded-md">
 					</div>
 					<div>
-						<h2 class="text-[20px] font-semibold">Spaghetti bolognese</h2>
-						<p class="text-[10px] opacity-50 my-2">Dengan saus import asli</p>
-						<span class="text-[17px]">Rp 10.000</span>
-						<div class="flex justify-between mt-3">
-							<span class="text-[15px]" id="food1">Jumlah : 0</span>
-							<div class="flex gap-2">
+						<h2 class="text-[20px] font-semibold">Spaghetti</h2>
+						<p class="text-[10px] opacity-50 my-2">Spaghetti 1 + Teh manis 1 (dingin / panas)</p>
+						<span class="text-[17px]">Rp 36.000</span>
+						<div class="flex justify-between items-center mt-3">
+							<span class="text-[13px]" id="food1">Jumlah : 0</span>
+							<div class="flex gap-2 ml-5">
+								<button class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold"
+									onclick="kurang('food1')">-</button>
 								<button class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold"
 									onclick="beli('food1')">+</button>
 							</div>
@@ -82,18 +89,19 @@
 				<div class="mt-7  border-b-2 border-[#FF9D21] pb-3">
 					<span class="border-2 rounded-full w-auto px-[15px] py-[2px] border-black">Minuman</span>
 				</div>
-				<div class="mt-5 grid grid-cols-2">
+				<div class="mt-5 flex  gap-5">
 					<div>
-						<img src="../../assets/img/strawberry-drink.jpg" alt="" width="140px"
-							class="border-2 rounded-md">
+						<img src="../../assets/img/paket1.jpeg" alt="" width="112px" class="border-2 rounded-md">
 					</div>
 					<div>
 						<h2 class="text-[20px] font-semibold">Strawberry Drink</h2>
-						<p class="text-[10px] opacity-50 my-2">Strawberry olahan terbaik</p>
-						<span class="text-[17px]" id="qty">Rp 5.000</span>
-						<div class="flex justify-between mt-3">
-							<span class="text-[15px]" id="drink1">Jumlah : 0</span>
-							<div class="flex gap-2">
+						<p class="text-[10px] opacity-50 my-2">Dengan buah strawberry jus asli</p>
+						<span class="text-[17px]">Rp 36.000</span>
+						<div class="flex justify-between items-center mt-3">
+							<span class="text-[13px]" id="drink1">Jumlah : 0</span>
+							<div class="flex gap-2 ml-5">
+								<button class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold"
+									onclick="kurang('drink1')">-</button>
 								<button class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold"
 									onclick="beli('drink1')">+</button>
 							</div>

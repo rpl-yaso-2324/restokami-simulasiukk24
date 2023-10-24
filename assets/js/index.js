@@ -39,7 +39,7 @@ const menus = {
   paket1: {
     name: "Paket Hemat 1",
     price: 36000,
-    stock: 100,
+    stock: 5,
   },
   paket2: {
     name: "Paket Hemat 2",
@@ -58,11 +58,6 @@ const menus = {
   },
 };
 
-let qty1 = 0;
-let qty2 = 0;
-let qty3 = 0;
-let qty4 = 0;
-
 const beli = (menuKey) => {
   const pilihan = menus[menuKey];
 
@@ -77,7 +72,7 @@ const beli = (menuKey) => {
     };
   }
 
-  menuObj[menuKey].quantity++;
+  menuObj[menuKey].quantity >= pilihan.stock ? "" : menuObj[menuKey].quantity++;
 
   const hargaSatuan = parseFloat(pilihan.price);
   const qty = menuObj[menuKey].quantity;
@@ -105,3 +100,34 @@ for (const menuKey in menus) {
   const jumlah = menuObj[menuKey] ? menuObj[menuKey].quantity : 0;
   document.getElementById(menuKey).innerHTML = `Jumlah: ${jumlah}`;
 }
+
+const kurang = (menuKey) => {
+  const pilihan = menus[menuKey];
+
+  const menuObj = JSON.parse(localStorage.getItem("menu")) || {};
+
+  if (!menuObj[menuKey]) {
+    menuObj[menuKey] = {
+      quantity: 0,
+    };
+  }
+
+  menuObj[menuKey].quantity <= 0 ? 0 : menuObj[menuKey].quantity--;
+
+  const hargaSatuan = parseFloat(pilihan.price);
+  const qty = menuObj[menuKey].quantity;
+  menuObj[menuKey].totalHarga = hargaSatuan * qty;
+  menuObj[menuKey].hargaMenu = hargaSatuan;
+
+  let totalPembayaran = 0;
+  for (const key in menuObj) {
+    totalPembayaran += parseFloat(menuObj[key].totalHarga);
+  }
+  localStorage.setItem("totalPembayaran", totalPembayaran);
+
+  localStorage.setItem("menu", JSON.stringify(menuObj));
+
+  const jumlah = menuObj[menuKey].quantity;
+
+  document.getElementById(menuKey).innerHTML = `Jumlah: ${jumlah}`;
+};

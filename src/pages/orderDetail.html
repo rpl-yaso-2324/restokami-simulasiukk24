@@ -22,18 +22,6 @@
     </header>
     <main>
         <div class="px-5">
-            <section>
-                <div class="mt-7 border-b-2 border-[#FF9D21] pb-3">
-                    <span class="border-2 rounded-full w-auto px-[15px] py-[2px] border-black">Pesanan</span>
-                </div>
-                <table class="text-center mt-5 border-separate border-spacing-2 w-full">
-                    <tr>
-                        <th class="bg-[#D9D9D9] text-[14px]">Menu</th>
-                        <th class="bg-[#D9D9D9] text-[14px] px-2">Qty</th>
-                        <th class="bg-[#D9D9D9] text-[14px]">Total Harga</th>
-                    </tr>
-                </table>
-            </section>
             <section class="text-center mt-10">
                 <h2 class="text-[23px]">Total Pembayaran Sebesar</h2>
                 <p id="totalPembayaran" class="text-[23px] text-[#FF9D21] font-semibold">Rp 0</p>
@@ -50,42 +38,40 @@
                         class="border-2 rounded-full w-auto px-[15px] py-[5px] bg-[#ADADAD] text-white font-semibold">Metode
                         Pembayaran</span>
                 </div>
-                <div class="flex  flex-col mb-4 bg-[#F5F5F5] py-2 px-2 mt-5">
-                    <div class="flex justify-between w-full items-center">
+                <div class="flex flex-col gap-3 mt-4">
+                    <div class="flex justify-between items-center bg-[#e1e1e1] py-3 px-2 rounded-md">
                         <div class="flex items-center">
                             <input type="radio" value="Resto Pay" name="default-radio"
                                 class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                                 id="restoPay" onchange="setPembayaran('Resto Pay')">
-                            <label for="restoPay" class="ml-2 text-sm font-medium text-gray-900">Resto
+                            <label for="restoPay" class="ml-2 text-[17px] font-medium text-gray-900">Resto
                                 Pay</label>
                         </div>
                         <div class="flex flex-col">
-                            <span class="text-[10px]">Saldo Resto Pay</span>
-                            <span class="text-[#FF9D21] text-[10px]">Rp. 50.000</span>
+                            <span class="text-[15px]">Saldo RestoPay</span>
+                            <span class="text-[#FF9D21] text-[14px]">Rp. 500.000</span>
                         </div>
                     </div>
-                    <div class="flex justify-between w-full items-center">
-                        <div class="flex items-center">
-                            <input type="radio" value="Resto Pay" name="default-radio"
-                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                                id="cash" onchange="setPembayaran('Cash')">
-                            <label for="cash" class="ml-2 text-sm font-medium text-gray-900">Cash</label>
-                        </div>
-                        <div>
-                            <span class="text-[10px]">Siapkan uang cash!</span>
-                        </div>
+                    <div class="flex items-center bg-[#e1e1e1] py-3 px-2 rounded-md">
+                        <input type="radio" value="Resto Pay" name="default-radio"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                            id="cash" onchange="setPembayaran('Resto Pay')">
+                        <label for="cash" class="ml-2 text-[17px] font-medium text-gray-900">Cash</label>
+
+                        <span class="absolute right-8 text-[12px]">Siapkan uang sesuai nomimal pembayaran</span>
                     </div>
                 </div>
-            </section>
-            <section class="text-center my-10">
-                <button class="px-[50px] py-[8px] w-full border-2 mt-5 font-semibold rounded-lg bg-[#FF9191] text-white"
-                    onclick="bayarPesanan()">Bayar
-                    Pesanan</button>
-            </section>
+        </div>
+        </section>
+        <section class="text-center my-10 w-80 mx-auto">
+            <button class="px-[50px] py-[8px] w-full border-2 mt-5 font-semibold rounded-lg bg-[#FF9191] text-white"
+                onclick="bayarPesanan()">Bayar
+                Pesanan</button>
+        </section>
         </div>
     </main>
 
-    <footer class="text-center right-0 left-0 p-5">
+    <footer class="text-center absolute right-0 left-0 bottom-0 p-5">
         <p class="text-[13px]">&copy 2024 Restoran Kita</p>
         <p class="text-[13px]">All rights reserved.</p>
     </footer>
