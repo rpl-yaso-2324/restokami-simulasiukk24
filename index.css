@@ -1,21 +1,79 @@
-@font-face {
-	font-family: "Quicksand";
-	src: url("/assets/font/Quicksand-VariableFont_wght.ttf") format("truetype");
-}
+ /* CSS Anda di sini */
 
-header {
-	width: 300px;
+ body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+	min-height: 100vh; /* Menggunakan min-height untuk memastikan tinggi layar penuh bahkan jika konten tidak memadai */
 }
 
-header img {
+.login-container {
+	background-color: #fff;
+	padding: 100px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	max-width: 400px; /* Menggunakan max-width agar container tidak terlalu lebar pada layar besar */
+	width: 100%; /* Menggunakan width 100% agar container mengisi lebar maksimum */
+	text-align: center; /* Pusatkan konten secara horizontal */
+}
+
+.login-container h2 {
+	margin-bottom: 20px;
+}
+
+.login-container label {
+	display: block;
+	margin-bottom: 5px;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.login-container input {
+	/* width: 100%; */
+	padding: 10px;
+	width: 90%;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.login-container button {
+	background-color:rgba(255, 145, 145, 1);
+	padding: 10px 20px;
+	width: 300px;
+	height: 50px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.login-container button a{
+	text-decoration: none;
+	list-style: none;
+	color: #fff;
+	font-family: 'poppins',sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+
+}
+
+.login-container button:hover {
+	background-color: rgb(224, 134, 134);
+}
+
+.image {
+	display: block;
+	margin: 0 auto;
+	margin-top: -30px;
 	width: 100px;
 }
-header h1 {
-	font-family: Quicksand;
-	font-size: 20px;
-	font-weight: 600;
+
+/* CSS untuk footer */
+.footer {
 	text-align: center;
+	margin-top: 100px;
 }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="./assets/img/store.png" alt="" class="logo">
+        <h2>Menu</h2>
+        <div class="avatar-container">
+            <i class="fas fa-user avatar"></i>
+            <div class="logout-options">
+                <a href="#">Profile</a>
+                <a href="#">Settings</a>
+                <a href="./login.html">Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="card">
+            <h2 class="text">Paket</h2>
+            <hr class="card_hr">
+            <img src="./assets/img/Menu Img.png" alt="" class="image">
+        </div>
+        <div class="title">
+            <h1>Paket Hemat</h1>
+            <p>Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambel + Teh</p>
+            <h3>Rp. 35.000</h3>
+            <div class="jumlah">
+                <button style="background-color: rgba(255, 145, 145, 1);">-</button>
+                <h2>Jumlah: 2</h2>
+                <button style="background-color: rgba(150, 200, 235, 1);">+</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2 class="text1">Makanan</h2>
+            <hr class="card_hr">
+            <img src="./assets/img/Menu Img.png" alt="" class="image">
+        </div>
+        <div class="title">
+            <h1>Nasi Goreng</h1>
+            <p>Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambel + Teh</p>
+            <h3>Rp. 15.000</h3>
+            <div class="jumlah">
+                <button style="background-color: rgba(255, 145, 145, 1);">-</button>
+                <h2>Jumlah: 1</h2>
+                <button style="background-color: rgba(150, 200, 235, 1);">+</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2 class="text2">Minuman</h2>
+            <hr class="card_hr">
+            <img src="./assets/img/Menu Img.png" alt="" class="image">
+        </div>
+        <div class="title">
+            <h1>Lemon Teh</h1>
+            <p>Teh manis perasan lemon</p>
+            <h3>Rp. 35.000</h3>
+            <div class="jumlah">
+                <button style="background-color: rgba(255, 145, 145, 1);">-</button>
+                <h2>Jumlah: 2</h2>
+                <button style="background-color: rgba(150, 200, 235, 1);">+</button>
+            </div>
+        </div>
+        <button class="button_akhir"><a href="./detail.html">PESAN SEKARANG</a></button>
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2023 Nama Restoran Anda. <br>Hak Cipta Dilindungi.</p>
+        </div>
+    </div>
+
+    <script>
+         const avatarIcon = document.querySelector('.avatar');
+        const logoutOptions = document.querySelector('.logout-options');
+
+        avatarIcon.addEventListener('click', function (e) {
+            e.stopPropagation(); // Mencegah penyebaran klik ke elemen di luar avatar
+
+            if (logoutOptions.style.display === 'block') {
+                logoutOptions.style.display = 'none';
+            } else {
+                logoutOptions.style.display = 'block';
+            }
+        });
+
+        document.addEventListener('click', function () {
+            logoutOptions.style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>

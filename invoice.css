@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    /* background-color: #007BFF; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar .back-icon {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    /* Menggeser ikon kembali ke kiri */
+    font-size: 20px;
+}
+
+
+hr {
+    box-shadow: 10px 0 10px rgba(255, 145, 145, 1);
+    background-color: rgba(255, 145, 145, 1);
+    border: none;
+    height: 2px;
+}
+
+.navbar h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.navbar .logo {
+    display: block;
+    max-width: 100px;
+    /* Sesuaikan lebar logo sesuai kebutuhan */
+}
+
+.navbar .logo,
+.navbar h2 {
+    flex: 1;
+    /* Ini akan memberikan fleksibilitas yang sama pada kedua elemen */
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        margin-left: 10px;
+        margin-top: 100px;
+        background-color: rgba(255, 145, 145, 0.12);
+        border-radius: 30px;
+        width: 350px;
+        height: 340px;
+        padding: 10px;
+
+    }
+
+    .teks {
+        margin-left: 30px;
+        font-size: 16px;
+    }
+
+     .teks p{
+        color: rgba(255, 157, 33, 1);
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 90px;
+    }
+
+
+
+    .image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image img {
+        margin-left: 10px;
+        /* Properti CSS lain yang mungkin Anda miliki */
+        width: 200px;
+        /* Properti CSS lain yang mungkin Anda miliki */
+    }
+
+    h1 {
+        color: rgba(51, 217, 178, 1);
+        /* margin-left: 60px; */
+        margin-top: 2px;
+        font-size: 24px;
+    }
+
+    .footer {
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-right: 10px;
+    }
+}

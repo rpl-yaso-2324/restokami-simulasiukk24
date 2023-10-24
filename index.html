@@ -3,34 +3,29 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="main.css" />
 		<link rel="stylesheet" href="index.css" />
 		<title>Simulasi UKK</title>
 	</head>
 	<body>
-		<div class="container">
-			<header>
-				<img src="assets/img/store.png" alt="resto-kami" />
-				<h1>SELAMAT DATANG DI RESTORAN KAMI</h1>
-			</header>
-			<main>
-				<section class="login-section">
-					<form id="loginForm">
-						<label for="username">Username:</label>
-						<input type="text" id="username" name="username" required />
-						<label for="password">Password:</label>
-						<input type="password" id="password" name="password" required />
-						<button type="submit">Login</button>
-					</form>
-				</section>
-			</main>
-
-			<footer>
-				<p>
-					&copy; 2023 Restoran Kami. <br />
-					aAll rights reserved.
-				</p>
-			</footer>
+		<div class="login-container">
+			<img src="./assets/img/store.png" alt="" class="image">
+			<h2>SELAMAT DATANG DI <br>RESTORAN KAMI</h2>
+			<form>
+				<div class="form-group">
+					<label for="username" class="label">Nama Pelanggan</label>
+					<input type="text" id="username" name="username" required>
+				</div>
+				<div class="form-group">
+					<label for="password" class="label">Nomor Telepon</label>
+					<input type="password" id="password" name="password" required>
+				</div>
+				<button type="submit" class="button"><a href="./home.html">Lihat Menu </a></button>
+			</form>
+			
+			<!-- Footer -->
+			<div class="footer">
+				<p>&copy; 2023 Nama Restoran Anda. Hak Cipta Dilindungi.</p>
+			</div>
 		</div>
 	</body>
 </html>

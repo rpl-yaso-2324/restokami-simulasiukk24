@@ -1,20 +1,197 @@
-* {
-	margin: 0;
-	padding: 0;
-}
+        body {
+        	font-family: Arial, sans-serif;
+        	margin: 0;
+        	padding: 0;
+        }
 
-body {
-	max-width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+        .navbar {
+        	/* background-color: #007BFF; */
+        	display: flex;
+        	justify-content: space-between;
+        	align-items: center;
+        	justify-content: flex-end;
+        	padding: 10px 20px;
+        }
 
-.container {
-	width: 100%; /* Width 100% untuk mengisi lebar viewport pada kontainer utama */
-	max-width: 768px; /* Batasan lebar maksimum untuk ukuran mobile */
-	margin: 0 auto; /* Pusatkan kontainer pada layar */
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+        .avatar-container {
+        	display: flex;
+        	align-items: center;
+        	justify-content: flex-end;
+        	margin-left: 300px;
+        	flex: 1;
+        	position: relative;
+        }
+
+        .avatar {
+        	font-size: 20px;
+        	cursor: pointer;
+
+        }
+
+        .logout-options {
+        	display: none;
+        	position: absolute;
+        	top: 30px;
+        	right: 10px;
+        	background-color: #fff;
+        	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        	border-radius: 4px;
+        	padding: 10px;
+        }
+
+
+        .avatar-container:hover .logout-options {
+        	display: block;
+        }
+
+        .logout-options a {
+        	text-decoration: none;
+        	color: #333;
+        	display: block;
+        	padding: 5px 0;
+        }
+
+        .logout-options a:hover {
+        	background-color: #ff00005b;
+        	border-radius: 10px;
+        }
+
+        hr {
+        	box-shadow: 10px 0 10px rgba(255, 145, 145, 1);
+        	background-color: rgba(255, 145, 145, 1);
+        	border: none;
+        	height: 2px;
+        }
+
+        .navbar h2 {
+        	text-align: center;
+        	margin: 0;
+        }
+
+        .navbar .logo {
+        	display: block;
+        	max-width: 100px;
+        	/* Sesuaikan lebar logo sesuai kebutuhan */
+        }
+
+        .navbar .logo,
+        .navbar h2 {
+        	flex: 1;
+        	/* Ini akan memberikan fleksibilitas yang sama pada kedua elemen */
+        }
+
+        @media screen and (max-width: 768px) {
+        	.navbar {
+        		flex-direction: column;
+        		align-items: center;
+        	}
+
+        	.container {
+        		margin-top: 30px;
+        	}
+
+        	.container .card_hr {
+        		width: 89%;
+        	}
+
+        	.container .text {
+        		margin-left: 25px;
+        		background-color: rgba(173, 173, 173, 1);
+        		border-radius: 30px;
+        		width: 60px;
+        		color: #fff;
+        		padding: 10px;
+        		font-size: 20px;
+        	}
+
+        	.container .image {
+        		margin-left: 25px;
+        		margin-top: 20px;
+        		width: 100px;
+        		height: auto;
+        	}
+
+        	.container .card_hr {
+        		background-color: rgba(255, 157, 33, 1);
+        	}
+
+        	.title {
+        		font-size: 14px !important;
+        		margin-left: 155px;
+        		margin-top: -121px;
+        	}
+
+        	.jumlah {
+        		display: flex;
+        		flex-direction: row;
+        	}
+
+        	.jumlah h2 {
+        		margin-right: 10px;
+				margin-left: 10px;
+        		margin-top: -0.1px;
+				font-size: 16px;
+        	}
+
+        	.jumlah button {
+        		width: 60px;
+				margin-top: -1px;
+        		border-radius: 30px;
+        		height: 30px;
+        	}
+
+        	.button_akhir {
+        		width: 200px;
+        		align-items: center;
+        		height: 50px;
+        		margin-left: 100px;
+        		border-radius: 30px;
+        		margin-top: 20px;
+        		background-color: #FF9191;
+        		transition: background-color 0.3s;
+        		/* Efek transisi saat hover */
+
+        		/* Warna latar belakang */
+        	}
+
+        	.button_akhir a {
+        		color: #fff;
+        		font-size: 15px;
+        		font-weight: 600;
+        		text-decoration: none;
+        		list-style: none;
+        	}
+
+        	.button_akhir:hover {
+        		background-color: #FF6666;
+        		/* Warna latar belakang saat hover */
+        	}
+
+
+        	.text1 {
+        		margin-left: 25px;
+        		background-color: rgba(173, 173, 173, 1);
+        		border-radius: 30px;
+        		width: 85px;
+        		color: #fff;
+        		padding: 10px;
+        		font-size: 20px;
+        	}
+
+        	.text2 {
+        		margin-left: 25px;
+        		background-color: rgba(173, 173, 173, 1);
+        		border-radius: 30px;
+        		width: 85px;
+        		color: #fff;
+        		padding: 10px;
+        		font-size: 20px;
+        	}
+
+        	.footer {
+        		text-align: center;
+        		margin-top: 100px;
+        	}
+
+
+        }

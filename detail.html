@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="detail.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="./assets/img/store.png" alt="" class="logo">
+        <h2>Pesanan Anda</h2>
+        <a href="./home.html"><i class="fas fa-arrow-left back-icon"></i></a>
+    </div>
+    <hr>
+
+    <h2 class="text">Pesanan</h2>
+    <hr class="card_hr">
+
+    <table>
+        <tr>
+            <th>Menu</th>
+            <th>Qty</th>
+            <th>Total Harga</th>
+        </tr>
+        <tr>
+            <td class="col">
+                <span class="col-img">
+                    <img src="./assets/img/Menu Img.png" alt="">
+                </span>
+                <span class="col-txt">
+                    <h4>Paket Hemat 1<h4>
+                            <h4>Rp. 36.000</h4>
+                </span>
+            </td>
+            <td class="col-2">
+                <h4>2</h4>
+            </td>
+            <td class="col-1">
+                <h4>Rp. 72.000</h4>
+            </td>
+        </tr>
+        <tr>
+            <td class="col">
+                <span class="col-img">
+                    <img src="./assets/img/Menu Img.png" alt="">
+                </span>
+                <span class="col-txt">
+                    <h4>Ramen kumplit<h4>
+                            <h4>Rp. 15.000</h4>
+                </span>
+            </td>
+            <td class="col-2">
+                <h4>2</h4>
+            </td>
+            <td class="col-1">
+                <h4>Rp. 30.000</h4>
+            </td>
+        </tr>
+        <tr>
+            <td class="col">
+                <span class="col-img">
+                    <img src="./assets/img/Menu Img.png" alt="">
+                </span>
+                <span class="col-txt">
+                    <h4>Coffe<h4>
+                            <h4>Rp. 7.000</h4>
+                </span>
+            </td>
+            <td class="col-2">
+                <h4>2</h4>
+            </td>
+            <td class="col-1">
+                <h4>Rp. 14.000</h4>
+            </td>
+        </tr>
+    </table>
+
+    <div class="total">
+        <h2>Total Pembayaran Sebesar</h2>
+        <h3 class="harga">Rp. 101.000</h3>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Catatan." />
+    </div>
+
+    <h2 class="text3">Metode Pembayaran</h2>
+    <hr class="card_hr">
+
+    <form id="payment-form">
+        <label>
+            <input type="radio" name="payment-method" value="method1" onclick="changeColor(this)"> Resto Pay
+            <p>Saldo Resto Pay <br>
+                <span>Rp. 500.000</span>
+            </p> 
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="payment-method" value="method2" onclick="changeColor(this)"> Cash
+            <p class="p1">Siapkan uang sesuai nominal pembayaran!</p>
+        </label>
+    </form>
+    <button class="button_bayar" onclick="redirectToPaymentPage()">Bayar Pesanan</button>   
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>&copy; 2023 Nama Restoran Anda. Hak Cipta Dilindungi.</p>
+    </div>
+
+<script>
+
+function changeColor(element) {
+    var paymentMethod = element.value;
+    var bayarButton = document.querySelector('.button_bayar a');
+
+    if (paymentMethod === 'method1') {
+        bayarButton.href = 'invoice.html';
+    } else if (paymentMethod === 'method2') {
+        bayarButton.href = 'invoice2.html';
+    }
+}
+
+   function changeColor(radioButton) {
+    // Menghapus kelas "selected" dari semua elemen dengan class "payment-method"
+    var paymentMethods = document.getElementsByClassName('payment-method');
+    for (var i = 0; i < paymentMethods.length; i++) {
+        paymentMethods[i].classList.remove('selected');
+    }
+
+    // Menambah kelas "selected" hanya pada elemen yang sesuai dengan radio button yang dipilih
+    var selectedValue = radioButton.value;
+    var element = document.getElementById(selectedValue);
+    element.classList.add('selected');
+}
+
+
+</script>
+</body>
+
+</html>
