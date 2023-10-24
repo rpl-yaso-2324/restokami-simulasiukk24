@@ -17,22 +17,6 @@ const convertToCurrency = (money) => {
 let saldoResto = 50000;
 document.getElementById("saldo").textContent = convertToCurrency(saldoResto);
 
-const bayarPesanan = () => {
-  const totalPembayaran = parseInt(localStorage.getItem("totalPembayaran"));
-  console.log(typeof totalPembayaran);
-  const popup = document.getElementById("popup");
-  if (totalPembayaran < 5000) {
-    console.log("kurang");
-    popup.style.display = "none";
-  } else {
-    setTimeout(() => {
-      popup.style.display = "none";
-    }, 1500);
-    popup.style.display = "block";
-  }
-  // console.log("testtttttt");
-};
-
 const menuData = JSON.parse(localStorage.getItem("menu"));
 
 if (menuData) {
@@ -51,4 +35,29 @@ const setPembayaran = (methodPay) => {
   localStorage.setItem("MethodPay", methodPay);
 };
 
-// Masih progress
+const bayarPesanan = () => {
+  const totalPembayaran = parseInt(localStorage.getItem("totalPembayaran"));
+  console.log(typeof totalPembayaran);
+  const methodPay = localStorage.getItem("MethodPay");
+  const popup = document.getElementById("popup");
+
+  if (methodPay == "Resto Pay") {
+    if (saldoResto < totalPembayaran) {
+      console.log("kurang");
+      setTimeout(() => {
+        popup.style.display = "none";
+      }, 2500);
+      popup.style.display = "block";
+    } else {
+      popup.style.display = "none";
+      saldoResto = saldoResto - totalPembayaran;
+      document.getElementById("saldo").textContent =
+        convertToCurrency(saldoResto);
+      window.open("invoice.html", "_self");
+    }
+  } else {
+    window.open("invoice.html", "_self");
+  }
+
+  // console.log("testtttttt");
+};

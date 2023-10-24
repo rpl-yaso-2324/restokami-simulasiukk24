@@ -1,3 +1,5 @@
-#popup {
+#popup,
+#RestoPay,
+#Cash {
   display: none;
 }
