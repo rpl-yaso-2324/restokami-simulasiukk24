@@ -59,7 +59,11 @@ footer{
 }
 
 /* menu Pages */
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 8da898b51e84beca7542338306edd671ee98c783
 .container .menupage{
 	display: flex;
 	flex-direction: row;
@@ -78,7 +82,11 @@ footer{
 	width: 50px;
 }
 
+<<<<<<< HEAD
 .line hr{
+=======
+ hr{
+>>>>>>> 8da898b51e84beca7542338306edd671ee98c783
 	border: none;
 	height: 4px;
 	width: 100%;
@@ -87,6 +95,7 @@ footer{
 
 }
 
+<<<<<<< HEAD
 .menulist .text-listmenu1{
 	margin: 0;
 	padding: 10px;
@@ -179,3 +188,17 @@ footer{
 .btn-menu .plus{
 	font-size: 20px;
 }
+=======
+.menulist h3{
+	margin: 0;
+	padding: 10px;
+	width: 90px;
+	background-color: grey;
+	border-radius: 40px;
+	text-align: center;
+	margin: 10px;
+}
+
+
+
+>>>>>>> 8da898b51e84beca7542338306edd671ee98c783
