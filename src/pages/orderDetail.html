@@ -9,71 +9,47 @@
   <body>
     <div class="flex justify-center items-center mb-2">
       <img src="/assets/img/store.png" alt="resto-kami" class="w-[40px]" />
-      <h2 class="font-semibold text-lg ml-5">Pembayaran</h2>
+      <h2 class="font-semibold text-lg ml-5">Pesanan Anda</h2>
     </div>
     <div class="w-auto h-0.5 bg-red-700 mb-5"></div>
-    <div class="p-5">
-      <h2 class="bg-slate-100 rounded-lg w-24 pl-4 flex font-semibold">
-        Pesanan
-      </h2>
-      <div class="w-auto h-0.5 bg-red-700 mb-5"></div>
-    </div>
-    <div class="items-center justify-center flex">
-      <table class="w-3/4 border-separate border-spacing-2 text-center">
-        <tr class="bg-gray-100 rounded-md">
-          <td class="rounded-md">Menu</td>
-          <td class="rounded-md">Qty</td>
-          <td class="rounded-md">Total Harga</td>
-        </tr>
-        <tr>
-          <td>Paket 1</td>
-          <td>2</td>
-          <td>Rp.72.000</td>
-        </tr>
-        <tr>
-          <td>Nasi Goreng</td>
-          <td>2</td>
-          <td>Rp.15.000</td>
-        </tr>
-        <tr>
-          <td>Lemon Tea</td>
-          <td>2</td>
-          <td>RP.14.000</td>
-        </tr>
-      </table>
-    </div>
-    <div class="items-center justify-center flex mt-5">
-      <button>Total Pembayaran Sebesar</button>
+    <div class="items-center justify-center flex mt-10">
+      <h1 class="font-semibold">Total Pembayaran Sebesar</h1>
     </div>
     <div class="text-center">
-        <h1>RP.101.000.000</h1>
-        <input type="text" placeholder="catatan" class="w-[40vh] py-[0.7rem] rounded-md mt-5">
+        <h1 class="text-xl text-yellow-500 mt-3">RP.101.000.000</h1>
+        <input type="text" placeholder="catatan" class="w-full py-[0.7rem] pl-5 rounded-md mt-5">
     </div>
     <!-- metode pembayaran -->
     <div class="p-5">
-        <h2 class="bg-slate-100 rounded-lg w-[200px] text-center pl-4 flex font-semibold">
+        <h2 class="bg-gray-400 mb-3 rounded-lg w-[200px] text-center pl-6 p-1 flex font-semibold text-white">
           Metode Pembayaran
         </h2>
         <div class="w-auto h-0.5 bg-red-700 mb-5"></div>
-          <div class="">
-            <div class="bg-gray-100 rounded-md flex justify-between">
-            <input type="radio" value="Resto Pay">
-              <label for="" class="">Resto Pay</label><br>
-              <p>Saldo Resto Pay</p>
-              <p>Rp.500.000</p>
+          <div class="flex bg-gray-100 p-2 rounded-full justify-between items-center">
+            <div class="">
+              <input type="radio" value="Resto Pay">
+              <label for="" class="">Resto Pay</label> 
             </div>
-
-            <div class="bg-gray-100 rounded-md flex justify-between mt-3">
+            <div class="">
+              <p class="text-[12px]">Saldo Resto Pay</p>
+              <span> <p class="text-yellow-400 text-[12px]">Rp.500.000</p></span>
+            </div>
+          </div>
+          
+          <div class="flex bg-gray-100 p-2 rounded-full justify-between items-center mt-3">
+            <div class="">
               <input type="radio" value="Cash" name="Cash">
-              <label for="">Cash</label><br>
-              <p class="text-sm">Siapkan uang sesuaipembayaran anda</p>
+              <label for="" class="text-[15px]">Cash</label>
+            </div>
+            <div class="flex">
+              <p class="text-[12px] ">Siapkan uang sesuai pembayaran anda</p>
             </div>
           </div>
     </div>
 
      
         <div class="mt-[10px] text-center">
-          <button type="button" class="rounded-md bg-red-500 px-1.5 text-white m-2 w-[40vh] py-[0.7rem]"><a href="home.html" class="text-[1.5rem]">Bayar Pesanan</a></button>
+          <button type="button" class="rounded-md bg-red-500 px-1.5 text-white m-2 w-[50vh] py-[0.7rem]"><a href="invoice.html" class="text-[1.5rem]">Bayar Pesanan</a></button>
           <footer class="mt-[5rem]">
             <p>
               &copy; 2023 Restoran Kami. <br />
