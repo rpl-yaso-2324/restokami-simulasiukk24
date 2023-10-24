@@ -44,17 +44,17 @@ const menus = {
   paket2: {
     name: "Paket Hemat 2",
     price: 30000,
-    stock: 100,
+    stock: 10,
   },
   food1: {
     name: "Spaggheti Bolognese",
     price: 10000,
-    stock: 100,
+    stock: 50,
   },
   drink1: {
     name: "Strawberry Drink",
     price: 5000,
-    stock: 100,
+    stock: 8,
   },
 };
 
@@ -72,7 +72,9 @@ const beli = (menuKey) => {
     };
   }
 
-  menuObj[menuKey].quantity >= pilihan.stock ? "" : menuObj[menuKey].quantity++;
+  menuObj[menuKey].quantity >= pilihan.stock
+    ? alert(`Stock yang tersedia hanya ${pilihan.stock}`)
+    : menuObj[menuKey].quantity++;
 
   const hargaSatuan = parseFloat(pilihan.price);
   const qty = menuObj[menuKey].quantity;

@@ -14,6 +14,24 @@ const convertToCurrency = (money) => {
     minimumFractionDigits: 0,
   });
 };
+let saldoResto = 50000;
+document.getElementById("saldo").textContent = convertToCurrency(saldoResto);
+
+const bayarPesanan = () => {
+  const totalPembayaran = parseInt(localStorage.getItem("totalPembayaran"));
+  console.log(typeof totalPembayaran);
+  const popup = document.getElementById("popup");
+  if (totalPembayaran < 5000) {
+    console.log("kurang");
+    popup.style.display = "none";
+  } else {
+    setTimeout(() => {
+      popup.style.display = "none";
+    }, 1500);
+    popup.style.display = "block";
+  }
+  // console.log("testtttttt");
+};
 
 const menuData = JSON.parse(localStorage.getItem("menu"));
 
@@ -34,19 +52,3 @@ const setPembayaran = (methodPay) => {
 };
 
 // Masih progress
-const bayarPesanan = () => {
-  const menuData = JSON.parse(localStorage.getItem("menu"));
-  const methodPay = localStorage.getItem("MethodPay");
-  const catatan = localStorage.getItem("catatan");
-  const totalHarga = localStorage.getItem("totalPembayaran");
-  for (const menuKey in menuData) {
-    var menu = menuData[menuKey];
-  }
-  alert(
-    `Anda telah memesan ${menu.name} dengan jumlah ${
-      menu.quantity
-    } dengan catatan : "${catatan}" dan anda menggunakan metode pembayaran ${methodPay}. Total pembayaran anda ${convertToCurrency(
-      parseFloat(totalHarga)
-    )}`
-  );
-};
