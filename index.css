@@ -3,19 +3,179 @@
 	src: url("/assets/font/Quicksand-VariableFont_wght.ttf") format("truetype");
 }
 
+body{
+	font-family: Quicksand;
+}
 header {
 	width: 300px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 1rem;
 }
 
 header img {
 	width: 100px;
 }
 header h1 {
-	font-family: Quicksand;
+	
 	font-size: 20px;
 	font-weight: 600;
 	text-align: center;
+}
+.login-section{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5rem;
+}
+
+.login-section input{
+	border: none;
+	background-color: pink;
+	width: 250px;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.login-section button{
+	border: none;
+	background-color: orange;
+	width: 270px;
+	border-radius: 5px;
+	padding: 8px;
+	color: white;
+	font-family: Quicksand;
+	font-weight: 600;
+	font-size: 17px;
+	margin: 5px;
+
+}
+
+footer{
+	margin-top: 7rem;
+}
+
+/* menu Pages */
+ 
+.container .menupage{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	margin-top: 1 rem;
+
+} 
+
+.menupage h2{
+	font-size: 25px;
+	margin-left: 20px;
+}
+
+.menupage img{
+	width: 50px;
+}
+
+.line hr{
+	border: none;
+	height: 4px;
+	width: 100%;
+	background-color:pink ;
+	margin-top: 10px;
+
+}
+
+.menulist .text-listmenu1{
+	margin: 0;
+	padding: 10px;
+	width: 60px;
+	background-color: orange;
+	border-radius: 40px;
+	text-align: center;
+	margin: 10px;
+	color: white;
+	margin-top: 2rem;
+}
+
+.menulist .text-listmenu2{
+	margin: 0;
+	padding: 10px;
+	width: 80px;
+	background-color: orange;
+	border-radius: 40px;
+	text-align: center;
+	margin: 10px;
+	color: white;
+	margin-top: 2rem;
+}
+
+.line1 hr{
+	border: none;
+	height: 3px;
+	width: 100%;
+	background-color: orange;
+	margin-top: 5px;
+	
+
+}
+.menulist {
+	margin: 1rem 0;
+}
+.sectionmenu{
+	padding: 18px;
+}
+
+.menu-option{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.menu-option .img-menu{
+	width: 50%;
+	margin: 20px;
+	overflow: hidden;
+	border-radius: 0.5rem;
+}
+
+.img-menu img{
+	border-radius: 0.5rem;
+	width: 100%;
+	height: 100%;
+}
+
+.menu-option .text-menu{
+	padding: 10px;
+	width: 50%;
+	margin: -5px;
+	font-size: 15px;
+}
+
+.text-menu p{
+	font-size: 13px;
+	margin: 10px 0;
+}
+.menu-option .btn-menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.btn-menu button{
+	border-radius: 10px;
+	padding: 3px 1rem;
+	border: none;
+	background-color: rgb(255, 85, 113);
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.btn-menu .plus{
+	font-size: 20px;
 }
