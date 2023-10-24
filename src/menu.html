@@ -10,20 +10,20 @@
 </head>
 <body class="bg-gray-100">
     <!-- header -->
-    <div class="container flex items-center bg-white shadow-md h-screen mx-auto">
+    <div class="container flex items-center bg-white shadow-md h-full">
         <header class="flex-row items-center justify-center mt-4">
             <img src="../assets/img/store.png" alt="resto-kami" class="w-10" />
             <h1 class="text-xl ml-4">Menu</h1>
         </header>
         <hr class="border-t-2 border-red-500 my-4 w-full h-6">    
-        
 
         <!-- card produk 1-->
-        <div class="mr-auto ml-7">
-            <h1 class="bg-gray-400 text-white w-16 text-center font-medium rounded-full text-lg">Paket</h1>
+        <div class="mr-auto">
+            <h1 class="bg-gray-400 text-white w-full text-center font-medium rounded-full text-lg ml-8" id="kt">Paket</h1>
         </div>
-                
-        <hr class="border-t-2 border-orange-500 my-4" style="border-color: #FFA500; width: 85%;">
+        
+        <hr class="border-t-2 border-orange-500 mt-4" style="border-color: #FFA500; width: 85%; margin-bottom: 1rem;"> <!-- Menambahkan margin-bottom -->
+
         <div class="flex items-center px-7">
             <img src="../assets/img/timbel.jpeg" alt="Produk" class="w-32 h-32 object-cover rounded-xl shadow-xl" />
 
@@ -35,19 +35,96 @@
                 <p class="text-base font-semibold mt-2">Rp. 36.000</p>
 
                 <div class="flex items-center mt-2">
-                    <span class="text-gray-600 font-semibold text-sm">Jumlah:</span>
-                    <input type="number" value="1" class="w-12 ml-2 p-1 border border-gray-300 rounded" />
 
-                    <button class="bg-blue-500 hover:bg-blue-700 w-12 text-white font-bold  text-lg py-1 px-2 rounded-full ml-2">
+                    <button class="bg-blue-500 hover:bg-blue-700 w-12 text-white font-bold text-lg rounded-full">
                         +
                     </button>
-                </div>
-                
+                    <span class=" font-semibold text-sm pl-1">Jumlah:</span>
+                    <input type="number" value="1" class="w-7 font-semibold rounded text-center" />
+                    <button class="bg-red-500 hover:bg-red-700 w-12 text-white font-bold text-lg rounded-full">
+                        -
+                    </button>
+                </div> 
+            </div>
+        </div> <br><br>
 
-        
-                
-                
+
+
+        <!-- Card Produk 2 -->
+
+        <div class="mr-auto">
+            <h1 class="bg-gray-400 text-white w-full text-center font-medium rounded-full text-lg ml-8" id="kt">Makanan</h1>
         </div>
+        
+        <hr class="border-t-2 border-orange-500 my-4" style="border-color: #FFA500; width: 85%; margin-bottom: 1rem;"> 
+
+        <div class="flex items-center px-7">
+            <img src="../assets/img/nasgor.jpeg" alt="Produk" class="w-32 h-32 object-cover rounded-xl shadow-xl" />
+
+            <div class="ml-4">
+                <h2 class="text-base font-semibold">Nasi Goreng</h2>
+                
+                <p class="text-gray-600 text-xs">Nasi yang digoreng dengan bumbu dan Toping telur pada umumnya </p>
+                
+                <p class="text-base font-semibold mt-2">Rp. 15.000</p>
+
+                <div class="flex items-center mt-2">
+
+                    <button class="bg-blue-500 hover:bg-blue-700 w-12 text-white font-bold text-lg rounded-full">
+                        +
+                    </button>
+                    <span class=" font-semibold text-sm pl-1">Jumlah:</span>
+                    <input type="number" value="1" class="w-7 font-semibold rounded text-center" />
+                    <button class="bg-red-500 hover:bg-red-700 w-12 text-white font-bold text-lg rounded-full">
+                        -
+                    </button>
+                </div>
+            </div>
+        </div> <br><br>
+
+
+
+        <!-- Card Produk 3 -->
+
+        <div class="mr-auto" >
+            <h1 class="bg-gray-400 text-white w-full text-center font-medium rounded-full text-lg ml-8" id="kt">Minuman</h1>
+        </div>
+        
+        <hr class="border-t-2 border-orange-500 my-4" style="border-color: #FFA500; width: 85%; margin-bottom: 1rem;"> 
+
+        <div class="flex items-center px-7">
+            <img src="../assets/img/lemon.jpeg" alt="Produk" class="w-32 h-32 object-cover rounded-xl shadow-xl" />
+
+            <div class="ml-4">
+                <h2 class="text-base font-semibold">Lemon Tea</h2>
+                
+                <p class="text-gray-600 text-xs">Teh manis yang disempurnakan dengan perasan lemon dingin & segar</p>
+                
+                <p class="text-base font-semibold mt-2">Rp. 7.000</p>
+
+                <div class="flex items-center mt-2">
+
+                    <button class="bg-blue-500 hover:bg-blue-700 w-12 text-white font-bold text-lg rounded-full">
+                        +
+                    </button>
+                    <span class=" font-semibold text-sm pl-1">Jumlah:</span>
+                    <input type="number" value="1" class="w-7 font-semibold rounded text-center" />
+                    <button class="bg-red-500 hover:bg-red-700 w-12 text-white font-bold text-lg rounded-full">
+                        -
+                    </button>
+                </div>
+            </div>
+        </div><br><br>
+
+
+        <div class="flex justify-center mt-4">
+            <button class="bg-red-500 hover:bg-red-700 text-white py-2 px-32 font-semibold text-lg rounded-xl">Pesan</button>
+        </div> <br>
+
+        <footer class="text-center mt-4 text-gray-800 text-lg py-5">
+            <p>&copy; 2023 Restoran Kita.<br />All rights reserved.</p>
+        </footer>
+
+
     </div>
 </body>
-</html>

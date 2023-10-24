@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Order Detail</title>
+    
+</head>
+<body class="bg-gray-100">
+     <!-- header -->
+     <div class="container flex items-center bg-white shadow-md h-full">
+        <header class="flex-row items-center justify-center mt-4">
+            <img src="../assets/img/store.png" alt="resto-kami" class="w-10" />
+            <h1 class="text-xl ml-4">Pesanan Anda</h1>
+        </header>
+        <hr class="border-t-2 border-skyblue-500 my-4 w-full h-6">    
+
+
+    <div class="container mx-auto p-4"  >
+
+        <!-- Total Harga -->
+        <div class="text-center bg-sky-200">
+            <h1 class="font-semibold text-xl" id="ck">Total Pembayaran Sebesar </h1>
+            <span class="text-yellow-500" id="ck">Rp. 101.000</span>
+        </div>
+
+        <!-- Catatan -->
+        <div class="mt-4">
+            <label for="catatan" class="block text-sm font-medium text-gray-700">Catatan:</label>
+            <textarea id="catatan" name="catatan" rows="4" class="mt-1 p-2 w-full border rounded"></textarea>
+        </div>
+
+        <!-- Metode Pembayaran -->
+        <div class="mt-4">
+            <p class="font-semibold">Pilih metode pembayaran:</p>
+
+            <!-- Resto Pay -->
+            <label class="inline-flex items-center mt-2">
+                <input type="radio" name="metode" value="resto-pay" class="form-radio h-5 w-5 text-red-600">
+                <span class="ml-2">Resto Pay</span>
+            </label>
+
+            <!-- Cash -->
+            <label class="inline-flex items-center mt-2">
+                <input type="radio" name="metode" value="cash" class="form-radio h-5 w-5 text-red-600">
+                <span class="ml-2">Cash</span>
+            </label>
+        </div>
+
+        <!-- Tombol Submit -->
+        <div class="mt-4">
+            <button class="bg-red-500 hover:bg-red-700 text-white py-2 px-12 font-semibold text-lg rounded-xl">Bayar Pesanan</button>
+        </div>
+    </div>
+</body>
+</html>

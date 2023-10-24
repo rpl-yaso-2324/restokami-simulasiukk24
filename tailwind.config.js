@@ -8,7 +8,7 @@ module.exports = {
         quicksand: ['Quicksand', 'sans'],
       },
       borderColor: {
-        'custom-orange': '#FFA500', 
+        'skyblue': '#bae6fd', 
       },
     },
   },
