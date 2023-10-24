@@ -1,0 +1,72 @@
+h1{
+    margin-left: 53%;
+    margin-top: -4%;
+}
+.bayar {
+    margin-top: 10%;
+    margin-right: 30%;
+}
+.bayar h2 {
+margin-left: 65%;
+margin-top: -2%;
+}
+.kotak {
+    width: 300px;
+    height: 40px;
+    background-color: rgba(128, 128, 128, 0.712);
+    border-radius: 5px;
+}
+.kotak input {
+    justify-content: center;
+    margin-left: 5px;
+    margin-top: 8px;
+    width: 250px;
+    border-radius: 5px;
+    height: 20px;
+}
+.tombol {
+    background-color: #808a93eb;
+    color: #fff;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 65px;
+    margin-left: 10%;
+  }
+  .pemilihan p{
+margin-left: 30%;
+margin-top: -2%;
+
+  }
+  .pemilihan2 p{
+    margin-left: 30%;
+    margin-top: -2%;
+  }
+  .pemilihan{
+    background-color: #ccc; /* Gunakan kode warna abu yang sesuai */
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  .pemilihan2 {
+    background-color: #ccc; /* Gunakan kode warna abu yang sesuai */
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  .pesan button {
+    margin-top: 16%;
+    background-color: #f91c1c;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 200px;
+  }
+  footer {
+    font-size: 20px;
+    margin-top: 5%;
+}

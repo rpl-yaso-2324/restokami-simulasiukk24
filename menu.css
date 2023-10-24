@@ -161,3 +161,16 @@ h1{
     margin-left: 17%;
     margin-top: -25px;
   }
+  .pesan button {
+    margin-top: 16%;
+    background-color: #f91c1c;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 200px;
+  }
+  footer {
+		font-size: 20px;
+	}
