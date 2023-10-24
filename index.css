@@ -55,7 +55,12 @@ header h1 {
 }
 
 footer{
-	margin-top: 7rem;
+	margin-top: 6rem;
+}
+
+.ft-mn{
+	margin-left: 100px;
+	margin-top: 3rem;
 }
 
 /* menu Pages */
@@ -111,13 +116,12 @@ footer{
 	margin-top: 2rem;
 }
 
-.line1 hr{
+.line1{
 	border: none;
 	height: 3px;
 	width: 100%;
 	background-color: orange;
 	margin-top: 5px;
-	
 
 }
 .menulist {
@@ -148,7 +152,7 @@ footer{
 }
 
 .menu-option .text-menu{
-	padding: 10px;
+	padding: 20px;
 	width: 50%;
 	margin: -5px;
 	font-size: 15px;
@@ -158,6 +162,7 @@ footer{
 	font-size: 13px;
 	margin: 10px 0;
 }
+
 .menu-option .btn-menu{
 	display: flex;
 	flex-direction: row;
@@ -177,7 +182,11 @@ footer{
 }
 
 .btn-menu .plus{
-	font-size: 20px;
+	font-size: 15px;
+	background-color: aquamarine;
+}
+.btn-menu .min{
+	font-size: 15px;
 }
 
 .menulist h3{
@@ -190,5 +199,27 @@ footer{
 	margin: 10px;
 }
 
+.btn-menupage{
+	border: none;
+	background-color: orange;
+	width: 270px;
+	border-radius: 7px;
+	padding: 8px;
+	color: white;
+	font-family: Quicksand;
+	font-weight: 600;
+	font-size: 17px;
+	margin: 5px;
+	margin-left: 45px;
+}
 
+/* Pesanan Page */
+
+.line-pesanan{
+	border: none;
+	height: 3px;
+	width: 100%;
+	background-color: aquamarine;
+	margin-top: 5px;
+}
 
