@@ -1,40 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="https://cdn.tailwindcss.com"></script>
-		<title>Simulasi UKK</title>
-	</head>
-	<body>
-        <center>
-		<div class="">
-			<header class="mt-4">
-				<div class="navbar mb-2 flex justify-center gap-2">
-                    <img src="assets/img/store.png" class="w-10" alt="resto-kami" >
-                    <h1 class="text-center font-bold mt-2">MENU</h1>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Simulasi UKK</title>
+</head>
+
+<body>
+    <center>
+        <div class="">
+            <header class="mt-4">
+                <div class="navbar mb-2 flex justify-center gap-2">
+                    <img src="assets/img/store.png" class="w-10" alt="resto-kami">
+                    <h1 class="text-center font-bold mt-2">Menu</h1>
                 </div>
                 <hr class="mb-5" style="background-color:rgba(255, 145, 145, 1) ; padding: 1px;">
-			</header>
-			<main class="mx-auto ">
-				<div class="paket ml-[-18rem]">
-                    <h1 class="text-lg bg-gray-400 w-20 rounded-full text-white ">Paket</h1>
-                    <hr class="mt-2 w-11/12 mx-auto" style="background-color: rgba(255, 157, 33, 1); padding:1px;">
-                    <div class="paketan">
-                        <img src="" alt="" >
-                        <h1></h1>
-                        <p></p>
-                        <h1></h1>
-                        <h2></h2>
-                        <button></button>
+            </header>
+            <main class="mx-auto ">
+                <!-- paket 1 -->
+                <div class="paket ml-[-18rem] ">
+                    <h1 class="text-lg bg-gray-400 ml-5 w-20 rounded-full text-white ">Paket</h1>
+                    <hr class="mt-2 w-full" style="background-color: rgba(255, 157, 33, 1); padding:1px;">
+                    <div class="flex ml-72 mt-5 gap-8  w-7/12 align-start justify-center">
+                        <img src="/assets/img/store.png" width="100" alt="">
+                        <div class="">
+                            <h1 class="text-start w-52 font-bold text-sm">Paket Hemat 1</h1>
+                            <p class="w-52 text-start text-xs">Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal
+                                + Teh
+                            </p>
+                            <h1 class="w-52 text-start font-bold text-sm">Rp.36.000</h1>
+                            <div class="flex gap-5 w-52 text-start mt-2">
+                                <button class="bg-sky-500 text-white px-4 rounded-full">+</button>
+                                <h2 class="font-bold text-xs">Jumlah : 2</h2>
+                                <button class="bg-red-400 text-white px-4 rounded-full">-</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </main>
+                <!-- paket 2 -->
+                <div class="paket ml-[-18rem] mt-5">
+                    <h1 class="text-lg bg-gray-400 w-24 ml-8 rounded-full text-white ">Makanan</h1>
+                    <hr class="mt-2 w-full" style="background-color: rgba(255, 157, 33, 1); padding:1px;">
+                    <div class="flex ml-72 mt-5 gap-8  w-7/12 align-start justify-center">
+                        <img src="/assets/img/store.png" width="100" alt="">
+                        <div class="">
+                            <h1 class="text-start w-52 font-bold text-sm">Nasi Goreng</h1>
+                            <p class="w-52 text-start text-xs">Nasi yang digoreng bareng bumbu dan toping pada umumnya
+                            </p>
+                            <h1 class="w-52 text-start font-bold text-sm">Rp.15.000</h1>
+                            <div class="flex gap-5 w-52 text-start mt-2">
+                                <button class="bg-sky-500 text-white px-4 rounded-full">+</button>
+                                <h2 class="font-bold text-xs">Jumlah : 1</h2>
+                                <button class="bg-red-400 text-white px-4 rounded-full">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- paket 3 -->
+                <div class="paket ml-[-18rem] mt-5">
+                    <h1 class="text-lg bg-gray-400 w-24 ml-8 rounded-full text-white ">Minuman</h1>
+                    <hr class="mt-2 w-full" style="background-color: rgba(255, 157, 33, 1); padding:1px;">
+                    <div class="flex ml-72 mt-5 gap-8  w-7/12 align-start justify-center">
+                        <img src="/assets/img/store.png" width="100" alt="">
+                        <div class="">
+                            <h1 class="text-start w-52 font-bold text-sm">Lemon Tea</h1>
+                            <p class="w-52 text-start text-xs">Teh manis + perasan lemon
+                            </p>
+                            <h1 class="w-52 text-start font-bold text-sm">Rp.7.000</h1>
+                            <div class="flex gap-5 w-52 text-start mt-2">
+                                <button class="bg-sky-500 text-white px-4 rounded-full">+</button>
+                                <h2 class="font-bold text-xs">Jumlah : 2</h2>
+                                <button class="bg-red-400 text-white px-4 rounded-full">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-			<footer>
-				
-			</footer>
-		</div>
+              
+            </main>
+<button class="my-10 bg-red-400 px-24 py-3 rounded-lg text-white" >Pesan</button>
+            <footer>
+                <p>
+					&copy; 2023 Restoran Kami. <br />
+					All rights reserved.
+				</p>
+            </footer>
+        </div>
     </center>
-	</body>
+</body>
+
 </html>
