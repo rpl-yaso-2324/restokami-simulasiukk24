@@ -1,4 +1,4 @@
-h1{
+.container h1{
     margin-left: 53%;
     margin-top: -4%;
 }
@@ -7,14 +7,25 @@ h1{
     margin-right: 25%;
 }
 .selesai p{
-margin-left: 65%;
+margin-left: 60%;
 margin-top: 5%;
 }
-.container2 p{
+.selesai h1{
+    margin-left: 49%;
+    margin-top: -4%;
+}
+.container2 h1{
  color: #33D9B2;
 font-family: Nunito;
 font-size: 24px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
+}
+.container2 img{
+    width: 20%;
+}
+footer {
+    font-size: 20px;
+    margin-top: 14%;
 }
