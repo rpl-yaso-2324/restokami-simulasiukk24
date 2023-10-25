@@ -14,7 +14,7 @@ const convertToCurrency = (money) => {
     minimumFractionDigits: 0,
   });
 };
-let saldoResto = 50000;
+let saldoResto = 100000;
 document.getElementById("saldo").textContent = convertToCurrency(saldoResto);
 
 const menuData = JSON.parse(localStorage.getItem("menu"));
@@ -37,7 +37,7 @@ const setPembayaran = (methodPay) => {
 
 const bayarPesanan = () => {
   const totalPembayaran = parseInt(localStorage.getItem("totalPembayaran"));
-  console.log(typeof totalPembayaran);
+  // console.log(typeof totalPembayaran);
   const methodPay = localStorage.getItem("MethodPay");
   const popup = document.getElementById("popup");
 
@@ -53,6 +53,9 @@ const bayarPesanan = () => {
       saldoResto = saldoResto - totalPembayaran;
       document.getElementById("saldo").textContent =
         convertToCurrency(saldoResto);
+      localStorage.removeItem("menu");
+      localStorage.removeItem("totalPembayaran");
+      localStorage.removeItem("catatan");
       window.open("invoice.html", "_self");
     }
   } else {

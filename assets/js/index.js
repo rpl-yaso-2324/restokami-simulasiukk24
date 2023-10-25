@@ -16,13 +16,17 @@ function generateAccessToken() {
 const accessToken = generateAccessToken();
 
 const login = () => {
-  if (nameUser.value === "iqbal") {
-    if (telp.value === "089671542333") {
+  let nameLocal = localStorage.getItem("name");
+  let telpLocal = localStorage.getItem("telp");
+  if (nameUser.value === nameLocal) {
+    if (telp.value === telpLocal) {
       localStorage.setItem("accessToken", accessToken);
-      window.open("index.html", "_self");
+      window.open("/index.html", "_self");
     } else {
-      console.log("username salah");
+      alert("no telepon salah");
     }
+  } else {
+    alert("nama salah");
   }
 };
 
@@ -30,7 +34,7 @@ if (
   !localStorage.getItem("accessToken") &&
   !localStorage.getItem("alreadyRedirected")
 ) {
-  window.open("login.html", "_self");
+  window.open("src/pages/login.html", "_self");
 
   localStorage.setItem("alreadyRedirected", "true");
 }
@@ -93,8 +97,8 @@ const beli = (menuKey) => {
 
   document.getElementById(menuKey).innerHTML = `Jumlah: ${jumlah}`;
 
-  console.log({ menuKey });
-  console.log(menuObj);
+  // console.log({ menuKey });
+  // console.log(menuObj);
 };
 
 for (const menuKey in menus) {
