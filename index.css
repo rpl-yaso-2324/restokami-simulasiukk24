@@ -19,8 +19,8 @@ body{
 	width: 100px;
 }
 .header-login h1 {
-	font-size: 20px;
-	font-weight: 600;
+	font-size: 30px;
+	font-weight: 700;
 	text-align: center;
 }
 .login-section {
@@ -87,6 +87,14 @@ footer p{
 	
 }
 
+.container2 hr{
+	height: 4px;
+	border: none;
+	background: rgb(0, 46, 250);
+	width: 100%;
+	margin: 1rem 0 1rem 0;
+	
+}
 .section-page {
 	padding: 1.5rem;
 	
@@ -117,8 +125,6 @@ footer p{
 	
 }
 .menu-option  .img-menu{
-	/* width: 100px;
-	height: 150px; */
 	background: rgb(214, 135, 135);
 	width: 50%;
 	margin: 10px ;
@@ -168,4 +174,89 @@ footer p{
 	font-size: 17px;
 	font-weight: 500;
 	color: white;
+}
+
+
+/* pesananAnda */
+.header-pesanan{
+	width: 200px;
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.container hr{
+	height: 4px;
+	border: none;
+	background: rgb(105, 175, 255);
+	width: 100%;
+	margin: 1rem 0 1rem 0;
+	
+}
+
+.header-pesanan{
+	width: 200px;
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.header-pesanan img{
+	width: 50px;
+}
+
+.container h1{
+	font-size: large;
+}
+
+.container h2 {
+	color: orange;
+	font-size: xx-larger;
+}
+
+.container .input {
+	cursor: cell;
+	border: gray;
+	color: black;
+}
+
+.section-page {
+	padding: 1.5rem;
+}
+
+.pesanan-section{
+	margin: 1rem 0;
+}
+.pesanan-section h3 {
+	background: rgb(190, 185, 185);
+	border-radius: 8px;
+	text-align: center;
+	color: white;
+}
+.pesanan-section hr{
+	height: 3px;
+	border: none;
+	background: rgb(241, 200, 66);
+	width: 100%;
+}
+.pesanan-option{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	
+}
+
+.text-pesanan h6{
+	margin-left: 200%;
+	color: hsl(0, 0%, 0%);
+	font-size: small;
+}
+
+.text-pesanan p{
+	color: orange;
+	margin-left: 150%;
 }
