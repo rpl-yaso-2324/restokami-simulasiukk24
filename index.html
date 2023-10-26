@@ -15,106 +15,10 @@
 		<h1 class="text-[22px] font-semibold">Menu</h1>
 	</header>
 	<main>
-		<div class="h-[600px] px-5 overflow-y-scroll mb-7">
-			<section>
-				<div class="mt-7  border-b-2 border-[#FF9D21] pb-3">
-					<span class="border-2 rounded-full w-auto px-[15px] py-[2px] border-black">Paket</span>
-				</div>
-				<div class="mt-5 flex  gap-5">
-					<div>
-						<img src="../../assets/img/paket1.jpeg" alt="" width="170px" class="border-2 rounded-md">
-					</div>
-					<div>
-						<h2 class="text-[20px] font-semibold">Paket Hemat 1</h2>
-						<p class="text-[10px] opacity-50 my-2">Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal
-							+ Teh</p>
-						<span class="text-[17px]">Rp 36.000</span>
-						<div class="flex justify-between items-center mt-3">
-							<span class="text-[13px]" id="paket1">Jumlah : 0</span>
-							<div class="flex gap-2">
-								<button class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold"
-									onclick="kurang('paket1')">-</button>
-								<button class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold"
-									onclick="beli('paket1')">+</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="mt-5 flex  gap-5">
-					<div>
-						<img src="../../assets/img/paket1.jpeg" alt="" width="170px" class="border-2 rounded-md">
-					</div>
-					<div>
-						<h2 class="text-[20px] font-semibold">Paket Hemat 2</h2>
-						<p class="text-[10px] opacity-50 my-2">Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal
-							+ Teh</p>
-						<span class="text-[17px]">Rp 30.000</span>
-						<div class="flex justify-between items-center mt-3">
-							<span class="text-[13px]" id="paket2">Jumlah : 0</span>
-							<div class="flex gap-2">
-								<button class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold"
-									onclick="kurang('paket2')">-</button>
-								<button class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold"
-									onclick="beli('paket2')">+</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section>
-				<div class="mt-7  border-b-2 border-[#FF9D21] pb-3">
-					<span class="border-2 rounded-full w-auto px-[15px] py-[2px] border-black">Makanan</span>
-				</div>
-				<div class="mt-5 flex  gap-5">
-					<div>
-						<img src="../../assets/img/paket1.jpeg" alt="" width="112px" class="border-2 rounded-md">
-					</div>
-					<div>
-						<h2 class="text-[20px] font-semibold">Spaghetti</h2>
-						<p class="text-[10px] opacity-50 my-2">Spaghetti 1 + Teh manis 1 (dingin / panas)</p>
-						<span class="text-[17px]">Rp 10.000</span>
-						<div class="flex justify-between items-center mt-3">
-							<span class="text-[13px]" id="food1">Jumlah : 0</span>
-							<div class="flex gap-2 ml-5">
-								<button class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold"
-									onclick="kurang('food1')">-</button>
-								<button class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold"
-									onclick="beli('food1')">+</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section>
-				<div class="mt-7  border-b-2 border-[#FF9D21] pb-3">
-					<span class="border-2 rounded-full w-auto px-[15px] py-[2px] border-black">Minuman</span>
-				</div>
-				<div class="mt-5 flex  gap-5">
-					<div>
-						<img src="../../assets/img/paket1.jpeg" alt="" width="112px" class="border-2 rounded-md">
-					</div>
-					<div>
-						<h2 class="text-[20px] font-semibold">Strawberry Drink</h2>
-						<p class="text-[10px] opacity-50 my-2">Dengan buah strawberry jus asli</p>
-						<span class="text-[17px]">Rp 5.000</span>
-						<div class="flex justify-between items-center mt-3">
-							<span class="text-[13px]" id="drink1">Jumlah : 0</span>
-							<div class="flex gap-2 ml-5">
-								<button class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold"
-									onclick="kurang('drink1')">-</button>
-								<button class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold"
-									onclick="beli('drink1')">+</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
+		<div class="h-[600px] px-5 overflow-y-scroll mb-7 menu"></div>
 		<div class="text-center mt-[40px] mb-[20px]">
-			<a href="src/pages/orderDetail.html">
-				<button
-					class="border-2 px-9 py-2 w-[250px] rounded-lg font-semibold bg-[#FF9191] text-white">Pesan</button>
-			</a>
+			<button class="border-2 px-9 py-2 w-[250px] rounded-lg font-semibold bg-[#FF9191] text-white"
+				onclick="pesan()">Pesan</button>
 		</div>
 	</main>
 

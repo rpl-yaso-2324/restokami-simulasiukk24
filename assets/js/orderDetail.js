@@ -17,7 +17,7 @@ const convertToCurrency = (money) => {
 let saldoResto = 100000;
 document.getElementById("saldo").textContent = convertToCurrency(saldoResto);
 
-const menuData = JSON.parse(localStorage.getItem("menu"));
+const menuData = JSON.parse(localStorage.getItem("dataPembelian"));
 
 if (menuData) {
   const totalPembayaranElement = document.getElementById("totalPembayaran");
@@ -41,25 +41,29 @@ const bayarPesanan = () => {
   const methodPay = localStorage.getItem("MethodPay");
   const popup = document.getElementById("popup");
 
-  if (methodPay == "Resto Pay") {
-    if (saldoResto < totalPembayaran) {
-      console.log("kurang");
-      setTimeout(() => {
+  if (totalPembayaran === 0 || !totalPembayaran) {
+    alert("Anda belum membeli apapun");
+  } else {
+    if (methodPay == "Resto Pay") {
+      if (saldoResto < totalPembayaran) {
+        console.log("kurang");
+        setTimeout(() => {
+          popup.style.display = "none";
+        }, 2500);
+        popup.style.display = "block";
+      } else {
         popup.style.display = "none";
-      }, 2500);
-      popup.style.display = "block";
+        saldoResto = saldoResto - totalPembayaran;
+        document.getElementById("saldo").textContent =
+          convertToCurrency(saldoResto);
+        localStorage.removeItem("dataPembelian");
+        localStorage.removeItem("totalPembayaran");
+        localStorage.removeItem("catatan");
+        window.open("invoice.html", "_self");
+      }
     } else {
-      popup.style.display = "none";
-      saldoResto = saldoResto - totalPembayaran;
-      document.getElementById("saldo").textContent =
-        convertToCurrency(saldoResto);
-      localStorage.removeItem("menu");
-      localStorage.removeItem("totalPembayaran");
-      localStorage.removeItem("catatan");
       window.open("invoice.html", "_self");
     }
-  } else {
-    window.open("invoice.html", "_self");
   }
 
   // console.log("testtttttt");

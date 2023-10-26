@@ -7,6 +7,6 @@ const register = () => {
     localStorage.setItem("telp", telp.value);
     window.open("login.html", "_self");
   } else {
-    alert("silakan isi dengan benar");
+    alert("Silakan isi dengan benar!");
   }
 };
