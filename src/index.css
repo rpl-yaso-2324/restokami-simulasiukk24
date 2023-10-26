@@ -32,6 +32,13 @@ body {
 	width: 300px;
 }
 
+#password {
+	margin-bottom: 20px;
+	text-align: left;
+	width: 293px;
+	height: 35px;
+}
+
 button {
 	background-color: red;
 	color: white;
