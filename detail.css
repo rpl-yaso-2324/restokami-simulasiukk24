@@ -128,10 +128,11 @@ hr {
     }
 
     .total {
-        background-color: rgba(150, 200, 235, 0.05);
+        background-color: #d8d8d838;
         width: 90%;
         height: 90px;
         margin-left: 25px;
+        border-radius: 20px;
     }
 
     .total h2 {
@@ -152,11 +153,9 @@ hr {
         justify-content: center;
         align-items: center;
         background: #f0f0f0;
-        /* Warna latar belakang yang Anda inginkan */
         padding: 10px;
-        /* Anda dapat menyesuaikan padding sesuai kebutuhan */
         border-radius: 10px;
-        /* Mengubah sudut menjadi melengkung */
+        margin-top: 6%;
     }
 
 
@@ -199,7 +198,7 @@ hr {
     
     .selected {
         background: #007bff;
-        color: #fff;
+        color: #424242;
     }
     
     p{
@@ -230,7 +229,7 @@ hr {
         cursor: pointer;
     }
     
-     button a{
+     button {
         text-decoration: none;
         list-style: none;
         color: #fff;

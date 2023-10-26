@@ -97,6 +97,11 @@ hr {
         font-size: 24px;
     }
 
+    h1 span{
+        color: gray;
+        margin-top: 4px;
+    }
+
     .footer {
         margin-left: 20px;
         margin-top: 40px;

@@ -18,7 +18,7 @@
             <div class="logout-options">
                 <a href="#">Profile</a>
                 <a href="#">Settings</a>
-                <a href="./login.html">Logout</a>
+                <a href="./login.html" id="logout-link">Logout</a>
             </div>
         </div>
     </div>
@@ -27,18 +27,37 @@
 
     <div class="container">
         <div class="card">
-            <h2 class="text">Paket</h2>
+            <h2 class="text1">Paket</h2>
             <hr class="card_hr">
             <img src="./assets/img/Menu Img.png" alt="" class="image">
         </div>
         <div class="title">
-            <h1>Paket Hemat</h1>
-            <p>Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambel + Teh</p>
-            <h3>Rp. 35.000</h3>
+            <h1>Paket Hemat 1</h1>
+            <p>Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal + Teh </p>
+            <h3>Rp. 15.000</h3>
             <div class="jumlah">
-                <button style="background-color: rgba(255, 145, 145, 1);">-</button>
-                <h2>Jumlah: 2</h2>
-                <button style="background-color: rgba(150, 200, 235, 1);">+</button>
+                <button style="background-color: rgba(255, 145, 145, 1);" class="decrement">-</button>
+                <h2 class="quantity">1</h2>
+                <button style="background-color: rgba(150, 200, 235, 1);" class="increment">+</button>
+            </div>  
+        </div>
+    </div>
+    
+
+    <div class="container">
+        <div class="card">
+            <h2 class="text1">Makanan</h2>
+            <hr class="card_hr">
+            <img src="./assets/img/Menu Img.png" alt="" class="image">
+        </div>
+        <div class="title">
+            <h1>Nasi Goreng</h1>
+            <p>Nasi yang digoreng bareng bumbu dan toping pada umumnya</p>
+            <h3>Rp. 15.000</h3>
+            <div class="jumlah">
+                <button style="background-color: rgba(255, 145, 145, 1);" class="decrement">-</button>
+                <h2 class="quantity">1</h2>
+                <button style="background-color: rgba(150, 200, 235, 1);" class="increment">+</button>
             </div>
         </div>
     </div>
@@ -50,31 +69,13 @@
             <img src="./assets/img/Menu Img.png" alt="" class="image">
         </div>
         <div class="title">
-            <h1>Nasi Goreng</h1>
+            <h1>Lemon Teh</h1>
             <p>Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambel + Teh</p>
             <h3>Rp. 15.000</h3>
             <div class="jumlah">
-                <button style="background-color: rgba(255, 145, 145, 1);">-</button>
-                <h2>Jumlah: 1</h2>
-                <button style="background-color: rgba(150, 200, 235, 1);">+</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="card">
-            <h2 class="text2">Minuman</h2>
-            <hr class="card_hr">
-            <img src="./assets/img/Menu Img.png" alt="" class="image">
-        </div>
-        <div class="title">
-            <h1>Lemon Teh</h1>
-            <p>Teh manis perasan lemon</p>
-            <h3>Rp. 35.000</h3>
-            <div class="jumlah">
-                <button style="background-color: rgba(255, 145, 145, 1);">-</button>
-                <h2>Jumlah: 2</h2>
-                <button style="background-color: rgba(150, 200, 235, 1);">+</button>
+                <button style="background-color: rgba(255, 145, 145, 1);" class="decrement">-</button>
+                <h2 class="quantity">1</h2>
+                <button style="background-color: rgba(150, 200, 235, 1);" class="increment">+</button>
             </div>
         </div>
         <button class="button_akhir"><a href="./detail.html">PESAN SEKARANG</a></button>
@@ -84,8 +85,77 @@
         </div>
     </div>
 
+
     <script>
-         const avatarIcon = document.querySelector('.avatar');
+        document.addEventListener("DOMContentLoaded", function () {
+    // Ambil semua elemen dengan class "decrement" dan "increment"
+    const decrementButtons = document.querySelectorAll(".decrement");
+    const incrementButtons = document.querySelectorAll(".increment");
+
+    // Ambil semua elemen dengan class "quantity"
+    const quantityDisplays = document.querySelectorAll(".quantity");
+
+    // Ambil tombol "Pesan Sekarang"
+    const pesanButton = document.querySelector(".pesan");
+
+    // Harga per item
+    const hargaPerItem = 15000; // Ganti dengan harga yang sesuai
+
+    // Fungsi untuk mengupdate tampilan jumlah
+    function updateQuantityDisplay(index) {
+        return function () {
+            // Ambil jumlah saat ini
+            let quantity = parseInt(quantityDisplays[index].textContent, 10);
+
+            // Periksa tombol mana yang ditekan
+            if (this.classList.contains("decrement")) {
+                if (quantity > 1) {
+                    quantity--;
+                }
+            } else if (this.classList.contains("increment")) {
+                quantity++;
+            }
+
+            // Perbarui tampilan jumlah
+            quantityDisplays[index].textContent = quantity;
+        };
+    }
+
+    // Tambahkan event listener untuk setiap tombol
+    for (let i = 0; i < decrementButtons.length; i++) {
+        decrementButtons[i].addEventListener("click", updateQuantityDisplay(i));
+        incrementButtons[i].addEventListener("click", updateQuantityDisplay(i));
+    }
+
+    // Event listener untuk tombol "Pesan Sekarang"
+    pesanButton.addEventListener("click", function () {
+        let totalHarga = parseInt(quantityDisplays[0].textContent, 10) * hargaPerItem;
+        // Tampilkan alert dengan total harga
+        alert("Total Harga: Rp. " + totalHarga);
+    });
+});
+
+
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const logoutLink = document.getElementById('logout-link');
+
+            logoutLink.addEventListener('click', function (e) {
+                e.preventDefault(); // Mencegah tindakan bawaan dari link logout
+
+                // Munculkan pesan konfirmasi
+                const confirmLogout = confirm("Yakin Anda akan logout?");
+
+                // Redirect ke halaman logout hanya jika pengguna mengonfirmasi logout
+                if (confirmLogout) {
+                    window.location.href = logoutLink.getAttribute('href');
+                }
+            });
+        });
+
+
+        const avatarIcon = document.querySelector('.avatar');
         const logoutOptions = document.querySelector('.logout-options');
 
         avatarIcon.addEventListener('click', function (e) {

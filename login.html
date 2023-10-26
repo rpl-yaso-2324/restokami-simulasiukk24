@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+    <style>
+        /* CSS Anda di sini */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 20px; /* Mengurangi padding agar tidak terlalu lebar */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-container label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            background-color: rgba(255, 145, 145, 1);
+            padding: 10px 20px;
+            width: 100%; /* Menggunakan width 100% agar tombol mengikuti lebar kontainer */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-container button a {
+            text-decoration: none;
+            list-style: none;
+            color: #fff;
+            font-family: 'poppins', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .login-container button:hover {
+            background-color: rgb(224, 134, 134);
+        }
+
+        .image {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+        }
+
+        /* CSS untuk footer */
+        .footer {
+            text-align: center;
+            margin-top: 20px; /* Mengurangi margin atas pada footer */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="./assets/img/store.png" alt="" class="image">
+        <h2>SELAMAT DATANG DI <br>RESTORAN KAMI</h2>
+        <form>
+            <div class="form-group">
+                <label for="username" class="label">Nama Pelanggan</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password" class="label">Nomor Telepon</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="button"><a href="./home.html">Lihat Menu </a></button>
+        </form>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2023 Nama Restoran Anda. Hak Cipta Dilindungi.</p>
+        </div>
+    </div>
+</body>
+</html>

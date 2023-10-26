@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="detail.css">
-    <title>Document</title>
+    <title>Pesanan Anda</title>
 </head>
 
 <body>
@@ -67,7 +67,7 @@
                 </span>
                 <span class="col-txt">
                     <h4>Coffe<h4>
-                            <h4>Rp. 7.000</h4>
+                    <h4>Rp. 7.000</h4>
                 </span>
             </td>
             <td class="col-2">
@@ -93,52 +93,84 @@
 
     <form id="payment-form">
         <label>
-            <input type="radio" name="payment-method" value="method1" onclick="changeColor(this)"> Resto Pay
+            <input type="radio" name="navigation" value="about" id="about-radio"> Resto Pay
             <p>Saldo Resto Pay <br>
                 <span>Rp. 500.000</span>
-            </p> 
+            </p>
         </label>
         <br>
         <label>
-            <input type="radio" name="payment-method" value="method2" onclick="changeColor(this)"> Cash
+            <input type="radio" name="navigation" value="contact" id="contact-radio"> Cash
             <p class="p1">Siapkan uang sesuai nominal pembayaran!</p>
+
         </label>
     </form>
-    <button class="button_bayar" onclick="redirectToPaymentPage()">Bayar Pesanan</button>   
+    <button id="action-button">Bayar Pesanan</button>
 
-      <!-- Footer -->
-      <div class="footer">
+    <!-- Footer -->
+    <div class="footer">
         <p>&copy; 2023 Nama Restoran Anda. Hak Cipta Dilindungi.</p>
     </div>
 
-<script>
+    <script>
 
-function changeColor(element) {
-    var paymentMethod = element.value;
-    var bayarButton = document.querySelector('.button_bayar a');
+document.addEventListener("DOMContentLoaded", function () {
+    const aboutRadio = document.getElementById("about-radio");
+    const contactRadio = document.getElementById("contact-radio");
+    const actionButton = document.getElementById("action-button");
 
-    if (paymentMethod === 'method1') {
-        bayarButton.href = 'invoice.html';
-    } else if (paymentMethod === 'method2') {
-        bayarButton.href = 'invoice2.html';
-    }
-}
+    actionButton.addEventListener("click", function (e) {
+        e.preventDefault(); // Mencegah tindakan bawaan dari tombol
 
-   function changeColor(radioButton) {
-    // Menghapus kelas "selected" dari semua elemen dengan class "payment-method"
-    var paymentMethods = document.getElementsByClassName('payment-method');
-    for (var i = 0; i < paymentMethods.length; i++) {
-        paymentMethods[i].classList.remove('selected');
-    }
+        if (!aboutRadio.checked && !contactRadio.checked) {
+            alert("Pilih dulu metode pembayaran!");
+        } else {
+            // Lanjutkan dengan tindakan sesuai dengan metode pembayaran yang dipilih
+            if (aboutRadio.checked) {
+                // Redirect atau lakukan tindakan yang sesuai untuk halaman "About".
+                window.location.href = "invoice.html"; // Ganti "invoice.html" dengan URL yang sesuai.
+            } else if (contactRadio.checked) {
+                // Redirect atau lakukan tindakan yang sesuai untuk halaman "Contact".
+                window.location.href = "invoice2.html"; // Ganti "invoice2.html" dengan URL yang sesuai.
+            }
+        }
+    });
+});
 
-    // Menambah kelas "selected" hanya pada elemen yang sesuai dengan radio button yang dipilih
-    var selectedValue = radioButton.value;
-    var element = document.getElementById(selectedValue);
-    element.classList.add('selected');
-}
+        document.addEventListener("DOMContentLoaded", function () {
+            const aboutRadio = document.getElementById("about-radio");
+            const contactRadio = document.getElementById("contact-radio");
+            const aboutContent = document.getElementById("about-content");
+            const contactContent = document.getElementById("contact-content");
+            const actionButton = document.getElementById("action-button");
+
+            aboutRadio.addEventListener("change", function () {
+                if (aboutRadio.checked) {
+                    aboutContent.style.display = "block";
+                    contactContent.style.display = "none";
+                }
+            });
+
+            contactRadio.addEventListener("change", function () {
+                if (contactRadio.checked) {
+                    contactContent.style.display = "block";
+                    aboutContent.style.display = "none";
+                }
+            });
+
+            actionButton.addEventListener("click", function () {
+                if (aboutRadio.checked) {
+                    // Redirect atau lakukan tindakan yang sesuai untuk halaman "About".
+                    window.location.href = "invoice.html"; // Ganti "about.html" dengan URL yang sesuai.
+                } else if (contactRadio.checked) {
+                    // Redirect atau lakukan tindakan yang sesuai untuk halaman "Contact".
+                    window.location.href = "invoice2.html"; // Ganti "contact.html" dengan URL yang sesuai.
+                }
+            });
+        });
 
 
-</script>
+    </script>
 </body>
 
 </html>
