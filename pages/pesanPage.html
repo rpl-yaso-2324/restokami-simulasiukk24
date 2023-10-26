@@ -17,7 +17,7 @@
 			<main>
                 <section class="section-page">
 
-                    <div class="pesan-section">
+                    <!-- <div class="pesan-section">
                         <h3 >Pesanan</h3>
                     <hr>
                         <table>
@@ -66,7 +66,7 @@
                                 <td class="col-1"><h4>Rp. 14.000</h4></td>
                             </tr>
                         </table>
-                    </div>
+                    </div> -->
                     <div class="card">
                         <h1>Total Pembayaran Sebesar</h1>
                         <h2>Rp. 101.000</h2>
@@ -82,15 +82,26 @@
                     <hr>
                     <span class="input-check">
                         <label for="radio1"> 
-                            <input type="radio" name="payment" id="radio1"> <p>Resto Pay</p>
+                            <input type="radio" name="payment" id="radio1"><span class="mt-byr">
+                                <p>Resto Pay</p>
+                                <span class="dc">
+                                    <p>Saldo Resto Pay</p>
+                                    <p id="saldo"></p>
+                                </span>
+                            </span> 
                         </label>
                         <label for="radio2"> 
-                            <input type="radio" name="payment" id="radio2"> <p>GoPay</p>
+                            <input type="radio" name="payment" id="radio2"> 
+                            <span class="mt-byr">
+                                <p>Cash </p>
+
+                                <h5>Siapkan uang sesuai nominal pembayaran !</h5>
+                            </span>
                         </label>
                         
                     </span>
                  </div>
-                <button class="btn-pesan">Bayar Pesanan</button>
+                <button type="button" class="btn-pesan" onclick="bayar()">Bayar Pesanan</button>
             </section>
                 
 			</main>
@@ -103,4 +114,5 @@
 			</footer>
 		</div>
 	</body>
+    <script src="/script.js"></script>
 </html>
