@@ -16,37 +16,48 @@
             <img src="../assets/img/store.png" alt="resto-kami" class="w-10" />
             <h1 class="text-xl ml-4">Pesanan Anda</h1>
         </header>
-        <hr class="border-t-2 border-skyblue-500 my-4 w-full h-6">    
+        <hr class="border-t-2 border-blue-500 my-4 w-full h-6">    
 
 
     <div class="container mx-auto p-4"  >
 
         <!-- Total Harga -->
-        <div class="text-center bg-sky-200">
+        <div class="text-center ">
             <h1 class="font-semibold text-xl" id="ck">Total Pembayaran Sebesar </h1>
             <span class="text-yellow-500" id="ck">Rp. 101.000</span>
         </div>
 
         <!-- Catatan -->
-        <div class="mt-4">
-            <label for="catatan" class="block text-sm font-medium text-gray-700">Catatan:</label>
-            <textarea id="catatan" name="catatan" rows="4" class="mt-1 p-2 w-full border rounded"></textarea>
+        <div class="mt-4 bg-gray-100 p-3 rounded-xl">
+            <div class="w-full flex">
+                <textarea id="catatan" name="catatan" rows="1" cols="40" class="mt-1 p-2 flex-1 outline-none rounded-lg" placeholder="Catatan: "></textarea>
+            </div>
         </div>
+        
+        
 
         <!-- Metode Pembayaran -->
-        <div class="mt-4">
-            <p class="font-semibold">Pilih metode pembayaran:</p>
 
+        <div class="mr-auto mt-10">
+            <h1 class="bg-gray-400 text-white w-full text-center font-medium rounded-full text-lg ml-3" id="kt">Metode pembayaran</h1>
+        </div>
+        
+        <hr class="border-t-2 border-orange-500 mt-1" style="border-color: #FFA500; width: 95%; margin-bottom: 1rem;"> 
+
+        <div>
             <!-- Resto Pay -->
+            <div class="bg-gray-200">
             <label class="inline-flex items-center mt-2">
-                <input type="radio" name="metode" value="resto-pay" class="form-radio h-5 w-5 text-red-600">
-                <span class="ml-2">Resto Pay</span>
+                <input type="radio" value="resto-pay" class="form-radio h-5 w-5 text-red-600">
+                <span class="ml-2 text-gray-600" id="metode">Resto Pay</span>
+                <p>Saldo Resto Pay <span>Rp.500.000</span></p>
             </label>
+            </div><br>
 
             <!-- Cash -->
-            <label class="inline-flex items-center mt-2">
-                <input type="radio" name="metode" value="cash" class="form-radio h-5 w-5 text-red-600">
-                <span class="ml-2">Cash</span>
+            <label class="inline-flex items-center">
+                <input type="radio" value="cash" class="form-radio h-5 w-5 text-red-600">
+                <span class="ml-2 text-gray-600" id="metode">Cash</span>
             </label>
         </div>
 
