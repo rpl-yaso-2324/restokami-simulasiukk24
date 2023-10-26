@@ -96,7 +96,7 @@ for (const category in menusByCategory) {
   </div>`;
 
   menusByCategory[category].forEach((menu) => {
-    cardMenu += cardComponent(
+    cardMenu += CardComponent(
       menu.id,
       menu.image,
       menu.title,
@@ -107,7 +107,7 @@ for (const category in menusByCategory) {
   });
 }
 
-function cardComponent(id, image, title, desc, price, params) {
+function CardComponent(id, image, title, desc, price, params) {
   return `
     <section>
     <div class="mt-5 flex gap-5">
@@ -172,12 +172,6 @@ const beli = (menuKey) => {
   document.getElementById(menuKey).innerHTML = `Jumlah: ${jumlah}`;
 };
 
-menus.forEach((menu) => {
-  const data = JSON.parse(localStorage.getItem("menu")) || {};
-  const jumlah = data[menu.id] ? data[menu.id].quantity : 0;
-  document.getElementById(menu.id).innerHTML = `Jumlah: ${jumlah}`;
-});
-
 const kurang = (menuKey) => {
   const pilihan = menus.find((menu) => menu.id === menuKey);
 
@@ -208,6 +202,12 @@ const kurang = (menuKey) => {
 
   document.getElementById(menuKey).innerHTML = `Jumlah: ${jumlah}`;
 };
+
+menus.forEach((menu) => {
+  const data = JSON.parse(localStorage.getItem("dataPembelian")) || {};
+  const jumlah = data[menu.id] ? data[menu.id].quantity : 0;
+  document.getElementById(menu.id).innerHTML = `Jumlah: ${jumlah}`;
+});
 
 const pesan = () => {
   const data = JSON.parse(localStorage.getItem("dataPembelian"));
