@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body>
+    <div>
+        <nav>
+            <div class="flex flex-row justify-center gap-5 text-lg items-center border-b border-b-4 border-blue-400 py-2 font-semibold">
+                <img src="/src/assets/img/store.png" class="w-[10%]" alt="">
+                <h1>Pesanan anda</h1>
+            </div>
+        </nav>  
+        <content>
+            <div class="flex justify-center text-center">
+            <div class="m-7">
+                <h1>Total Pembayaran Sebesar</h1>
+                <h1 class="text-xl text-yellow-500 font-semibold">Rp. 101.000</h1>
+                <div class="mt-5">
+                    <div class="border-8 rounded-lg w-72">
+                <input type="text" class=" w-64 outline-none" name="" id="" placeholder="Catatan:">
+            </div>
+            </div>
+            </div>
+        </div>  
+                <div class="p-5">
+                    <h1 class="bg-pink-200 text-white font-normal rounded-2xl max-w w-44 h-[25px] items-center flex justify-center">Metode Pembayaran</h1>
+                    <hr class="pb-1 mb-2 flex justify-center bg-yellow-400">
+                    <div>
+                        <div class="flex items-center bg-gray-200 mb-5 p-2 rounded-lg">
+                        <input type="radio" name="restoPay" id="restoPay" class="mr-1">
+                        <label for="restoPay">Resto Pay</label>
+                        <div class="flex flex-col items-end pl-36">
+                            <p class="text-sm">Saldo resto pay</p>
+                            <p class="text-yellow-500 font-semibold">Rp. 500.000</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-gray-200 p-2 rounded-lg">
+                        <input type="radio" name="cash" id="cash" class="mr-1">
+                        <label for="cash">Cash</label>
+                        <div class="pl-14 text-xs">
+                            <p>Bayar uang sesuai nomimanal pembayaran</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="flex justify-center mt-28">
+                        <button class="bg-pink-400 text-white p-1 w-72 rounded-lg">Bayar Pesanan</button>
+                    </div>
+                </div>
+        </content>
+        <footer class="flex justify-center">
+            <p>
+                &copy; 2023 Restoran Kami.<br />
+                All rights reserved.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

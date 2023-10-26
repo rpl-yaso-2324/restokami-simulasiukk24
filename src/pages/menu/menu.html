@@ -8,26 +8,34 @@
 </head>
 <body>
     <div>
-        <nav>
+        <header>
             <div class="flex flex-row justify-center gap-5 text-lg items-center border-b border-b-4 border-red-400 py-2 font-semibold">
                 <img src="/src/assets/img/store.png" class="w-[10%]" alt="">
                 <h1>Menu</h1>
             </div>
-        </nav>
+        </header>
         <main>
             <div class="p-5">
-                <h1 class="bg-pink-200 rounded-2xl mt-6 w-[90px] h-[35px] items-center flex justify-center">Paket</h1>
+                <h1 class="bg-pink-200 rounded-2xl mt-6 w-[80px] h-[30px] items-center flex justify-center text-xl text-white">Paket</h1>
                 <hr class="pb-1 mt-1 flex justify-center bg-yellow-400">
-                <div class="mt-4 flex flex-row gap-10">
-                <img src="https://via.placeholder.com/300" class="w-[100px] h-28 rounded-lg" alt="">
+                <div class="mt-4 flex flex-row gap-7">
+                <img src="https://via.placeholder.com/300" class="max-w h-28 rounded-lg" alt="">
                 <div>
-                    <h1 class="font-bold">Paket hemat 1</h1>
+                    <h1 class="font-semibold">Paket hemat 1</h1>
+                    <div class="text-xs">
                     <p>Nasi timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal + Teh</p>
-                    <p>Rp.36.000</p>
+                    </div>
+                    <div class="font-semibold">
+                    <p class="my-2">Rp.36.000</p>
+                    <div class="flex flex-row gap-2">
+                    <button class="bg-cyan-400 w-14 rounded-xl text-white">+</button>
                     <p>Jumlah: 2</p>
+                    <button class="bg-red-400 w-14 rounded-xl text-white">-</button>
+                    </div>
+                </div>
                 </div>
             </div>
-            <button class="flex mx-auto w-80 justify-center items-center h-10 rounded-lg mt-4 bg-pink-400">Pesan</button>
+            <button class="flex mx-auto w-80 justify-center items-center h-10 rounded-lg mt-4 bg-pink-400 text-xl text-white">Pesan</button>
            </div>
         </main>
         <footer class="flex justify-center">

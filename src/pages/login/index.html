@@ -1,37 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- <link rel="stylesheet" href="main.css" /> -->
-		<!-- <link rel="stylesheet" href="index.css" /> -->
-		<link rel="stylesheet" href="/dist/output.css">
-		<title>Simulasi UKK</title>
-	</head>
-	<body class="max-w-[100%] flex justify-center items-center">
-		<div class="container w-[30%] max-w-[768px] m-auto flex flex-col items-center border-none border-black">
-			<header class="w-[300px] flex flex-col items-center mb-[100px]">
-				<img src="assets/img/store.png" alt="resto-kami" class="w-[100px]"/>
-				<h1 class="text-[20px] font-semibold text-center font-quicksand">SELAMAT DATANG DI RESTORAN KAMI</h1>
-			</header>
-			<main>
-				<section class="login-section">
-					<form id="loginForm" class=" flex flex-col">
-						<label for="username">Nama pelanggan</label>
-						<input type="text" class="bg-slate-300 h-[40px] rounded p-1" id="username" name="username" required />
-						<label for="nomor">Nomor telepon</label>
-						<input type="number" class="bg-slate-300 h-[40px] w-[300px] mb-3 rounded p-1" id="nomor" name="nomor" required />
-						<a href="/menu/menu.html"><button type="submit" class="mt-[10px] h-[40px] w-[300px] bg-pink rounded-lg text-xl mb-52">Lihat menu</button></a>
-					</form>
-				</section>
-			</main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="main.css" /> -->
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+    <link rel="stylesheet" href="/dist/output.css" />
+    <script src="/src/script/login.js"></script>
+    <title>Simulasi UKK</title>
+  </head>
+  <body>
+    <div
+      class="m-auto flex flex-col items-center"
+    >
+      <header class="w-[300px] flex flex-col items-center mb-[70px] mt-[50px]">
+        <img src="/src/assets/img/store.png" alt="resto-kami" class="w-[100px]" />
+        <h1 class="text-[20px] font-semibold text-center font-quicksand">
+          SELAMAT DATANG DI RESTORAN KAMI
+        </h1>
+      </header>
+      <main>
+        <form id="loginForm" class="flex flex-col">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            class="bg-slate-300 h-[40px] rounded p-1"
+            id="username"
+            name="username"
+            required
+          />
+          <label for="pass">Password</label>
+          <input
+            type="password"
+            class="bg-slate-300 h-[40px] w-[300px] mb-3 rounded p-1"
+            id="pass"
+            name="pass"
+            required
+          />
+            <button
+              type="submit"
+              onclick="login()"
+              class="mt-[10px] h-[40px] w-[300px] bg-pink-400 rounded-lg text-xl text-white mb-24"
+            >
+              Lihat menu
+            </button>
+        </form>
+      </main>
 
-			<footer>
-				<p>
-					&copy; 2023 Restoran Kami.<br />
-					All rights reserved.
-				</p>
-			</footer>
-		</div>
-	</body>
+      <footer>
+        <p>
+          &copy; 2023 Restoran Kami.<br />
+          All rights reserved.
+        </p>
+      </footer>
+    </div>
+    <!-- <script>
+      function login() {
+          // Mendapatkan nilai username dan password dari input
+          var username = document.getElementById('username').value;
+          var password = document.getElementById('pass').value;
+
+          // Contoh validasi sederhana (ganti dengan validasi yang lebih aman)
+          if (username === 'afif' && pass === 'pip') {
+              // Menyimpan informasi login di local storage
+              localStorage.setItem('isLoggedIn', 'true');
+              localStorage.setItem('username', username);
+
+              // Redirect atau lakukan aksi setelah login berhasil
+              alert('Login berhasil!');
+          } else {
+              alert('Login gagal. Cek kembali username dan password.');
+          }
+      }
+  </script> -->
+
+</body>
 </html>
