@@ -18,68 +18,41 @@
             <h1>Pesanan anda</h1>
         </ul>
     </nav>
-
-    <div class="persegi-panjang">
-        PAKET
+    <div class="total">
+        <h2>Total Pembayaran Sebesar</h2>
+        <h3 class="harga">Rp. 101.000</h3>
     </div>
-    <hr>
-    <table>
-        <tr>
-            <th>Menu</th>
-            <th>Qty</th>
-            <th>Total Harga</th>
-        </tr>
-        <tr>
-            <td class="col">
-                <span class="col-img">
-                    <img src="./img/hemat.png" alt="">
-                </span>
-                <span class="col-txt">
-                    <h4>Paket Hemat<h4>
-                            <h4>Rp. 36.000</h4>
-                </span>
-            </td>
-            <td class="col-2">
-                <h4>2</h4>
-            </td>
-            <td class="col-1">
-                <h4>Rp. 72.000</h4>
-            </td>
-        </tr>
-        <tr>
-            <td class="col">
-                <span class="col-img">
-                    <img src="./img/nasgor.png" alt="">
-                </span>
-                <span class="col-txt">
-                    <h4>Nasi Goreng<h4>
-                            <h4>Rp. 15.000</h4>
-                </span>
-            </td>
-            <td class="col-2">
-                <h4>2</h4>
-            </td>
-            <td class="col-1">
-                <h4>Rp. 30.000</h4>
-            </td>
-        </tr>
-        <tr>
-            <td class="col">
-                <span class="col-img1">
-                    <img src="./img/tea.png" alt="">
-                </span>
-                <span class="col-txt">
-                    <h4>Mountea<h4>
-                            <h4>Rp.10.000</h4>
-                </span>
-            </td>
-            <td class="col-2">
-                <h4>2</h4>
-            </td>
-            <td class="col-1">
-                <h4>Rp.20.000</h4>
-            </td>
-        </ti>
-    </table>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Catatan." />
+    </div>
+
+    <h2 class="text3">Metode Pembayaran</h2>
+    <hr class="card_hr">
+
+    <form id="payment-form">
+        <label>
+            <input type="radio" name="navigation" value="about" id="about-radio"> Resto Pay
+            <p>Saldo Resto Pay <br>
+                <span>Rp. 500.000</span>
+            </p>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="navigation" value="contact" id="contact-radio"> Cash
+            <p class="p1">Siapkan uang sesuai nominal pembayaran!</p>
+
+        </label>
+    </form>
+    <button id="action-button">Bayar Pesanan</button>
+
+    <div class="foot">
+        <footer>
+            <p>
+                &copy; 2023 Restoran Kami. <br/>
+                All rights reserved.
+            </p>
+        </footer>
+    </div>
 </body>
 </html>
