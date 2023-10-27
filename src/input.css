@@ -6,4 +6,73 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  /* background-color: #222; */
+}
+
+/* Container Styles */
+.image-container {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+
+/* Text Styles */
+.title {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 10px;
+  opacity: 0.5;
+  margin-top: 2px;
+}
+
+.price {
+  font-size: 17px;
+}
+
+.quantity {
+  font-size: 13px;
+}
+
+.body-card {
+  width: 100%;
+}
+
+/* Button Styles */
+
+.button {
+  padding: 1px 20px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+
+.minus-button {
+  background-color: #96c8eb;
+  margin-right: 2px;
+}
+
+.plus-button {
+  background-color: #96c8eb;
+}
+
+.overflow-y-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.overflow-y-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.overflow-y-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overflow-y-scroll::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
 }

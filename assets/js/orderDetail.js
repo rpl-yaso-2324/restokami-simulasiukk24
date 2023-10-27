@@ -57,8 +57,10 @@ const bayarPesanan = () => {
         document.getElementById("saldo").textContent =
           convertToCurrency(saldoResto);
         localStorage.removeItem("dataPembelian");
-        localStorage.removeItem("totalPembayaran");
-        localStorage.removeItem("catatan");
+        // setTimeout(() => {
+        //   localStorage.removeItem("totalPembayaran");
+        //   localStorage.removeItem("catatan");
+        // }, 3000);
         window.open("invoice.html", "_self");
       }
     } else {

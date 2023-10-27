@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="../index.css">
 </head>
 
-<body>
+<body class="w-[375px] mx-auto">
     <div class="bg-slate-50 text-center absolute left-16 right-16 top-8 p-5 rounded-lg shadow-lg" id="popup">
         <h2 class="text-[#F29595] font-semibold text-[18px]">Saldo Anda Kurang!</h2>
     </div>
 
     <header class="flex justify-center items-center gap-5 py-4 border-b-2 border-[#96C8EB]">
-        <a href="/index.html">
-            <img src="../../assets/img/store.png" alt="" width="40px">
+        <a href="index.html">
+            <img src="../../assets/img/store.png" alt="store.png" width="40px">
         </a>
         <h1 class="text-[22px] font-semibold">Pesanan Anda</h1>
     </header>
@@ -52,13 +52,18 @@
                             <span class="text-[#FF9D21] text-[14px]" id="saldo"></span>
                         </div>
                     </div>
-                    <div class="flex items-center bg-[#e1e1e1] py-3 px-2 rounded-md">
-                        <input type="radio" value="Resto Pay" name="default-radio"
-                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                            id="cash" onchange="setPembayaran('Cash')">
-                        <label for="cash" class="ml-2 text-[17px] font-medium text-gray-900">Cash</label>
+                    <div class="flex items-center justify-between bg-[#e1e1e1] py-3 px-2 rounded-md">
 
-                        <span class="absolute right-8 text-[12px]">Siapkan uang pembayaran</span>
+                        <div class="flex items-center">
+                            <input type="radio" value="Resto Pay" name="default-radio"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                                id="cash" onchange="setPembayaran('Cash')">
+                            <label for="cash" class="ml-2 text-[17px] font-medium text-gray-900">Cash</label>
+                        </div>
+                        <div>
+                            <span class=" text-[12px]">Siapkan uang pembayaran</span>
+                        </div>
+
                     </div>
                 </div>
         </div>

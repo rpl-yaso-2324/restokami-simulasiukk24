@@ -1,10 +1,10 @@
 const register = () => {
-  let name = document.getElementById("nameUser");
-  let telp = document.getElementById("telp");
+  let username = document.getElementById("username");
+  let password = document.getElementById("password");
 
-  if (name.value && telp.value) {
-    localStorage.setItem("name", name.value);
-    localStorage.setItem("telp", telp.value);
+  if (username.value && password.value) {
+    localStorage.setItem("username", username.value);
+    localStorage.setItem("password", password.value);
     window.open("login.html", "_self");
   } else {
     alert("Silakan isi dengan benar!");

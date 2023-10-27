@@ -1,5 +1,5 @@
-let nameUser = document.getElementById("nameUser");
-let telp = document.getElementById("telp");
+let username = document.getElementById("username");
+let password = document.getElementById("password");
 
 function generateAccessToken() {
   let dt = new Date().getTime();
@@ -9,12 +9,12 @@ function generateAccessToken() {
 const accessToken = generateAccessToken();
 
 const login = () => {
-  let nameLocal = localStorage.getItem("name");
-  let telpLocal = localStorage.getItem("telp");
-  if (nameUser.value === nameLocal) {
-    if (telp.value === telpLocal) {
+  let usernameLocal = localStorage.getItem("username");
+  let passwordLocal = localStorage.getItem("password");
+  if (username.value === usernameLocal) {
+    if (password.value === passwordLocal) {
       localStorage.setItem("accessToken", accessToken);
-      window.open("/index.html", "_self");
+      window.open("index.html", "_self");
     } else {
       alert("no telepon salah");
     }
@@ -27,7 +27,7 @@ if (
   !localStorage.getItem("accessToken") &&
   !localStorage.getItem("alreadyRedirected")
 ) {
-  window.open("src/pages/login.html", "_self");
+  window.open("login.html", "_self");
   localStorage.setItem("alreadyRedirected", "true");
 }
 
@@ -91,7 +91,7 @@ let menuSection = document.querySelector(".menu");
 let cardMenu = ``;
 
 for (const category in menusByCategory) {
-  cardMenu += `<div class="mt-7  border-b-2 border-[#FF9D21] pb-3">
+  cardMenu += `<div class="mt-7 border-b-2 border-[#FF9D21] pb-3">
     <span class="border-2 rounded-full w-auto px-[15px] py-[2px] border-black">${category}</span>
   </div>`;
 
@@ -109,29 +109,28 @@ for (const category in menusByCategory) {
 
 function CardComponent(id, image, title, desc, price, params) {
   return `
-    <section>
-    <div class="mt-5 flex gap-5">
-      <div>
-        <div style="width: 120px; height: 120px;">
-          <img src="${image}" alt="" width="100%" height="100%" class="border-2 rounded-md">
-        </div>
+  <section>
+  <div class="mt-5 flex gap-5">
+    <div>
+      <div class="image-container">
+        <img src="${image}" alt="image.jpeg">
       </div>
-      <div class="flex flex-col">
-        <h2 class="text-[17px] font-semibold">${title}</h2>
-        <p class="text-[10px] opacity-50 my-2">${desc}</p>
-        <span class="text-[17px]">${price}</span>
-        <div class="flex justify-between items-center mt-3">
-          <span class="text-[13px]" id=${id}>Jumlah : 0</span>
-          <div class="flex gap-2 ml-5">
-            <button class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold"
-              onclick="kurang(${params})">-</button>
-            <button class="px-6 rounded-full bg-[#96C8EB] text-white text-[15px] font-bold"
-              onclick="beli(${params})">+</button>
-          </div>
+    </div>
+    <div class="body-card">
+      <h2 class="title">${title}</h2>
+      <p class="description">${desc}</p>
+      <span class="price">${price}</span>
+      <div class="qty">
+        <span class="quantity" id=${id}>Jumlah : 0</span>
+        <div>
+          <button class="button minus-button" onclick="kurang(${params})">-</button>
+          <button class="button plus-button" onclick="beli(${params})">+</button>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
   `;
 }
 
@@ -215,6 +214,6 @@ const pesan = () => {
   if (!data || !totalPembayaran || totalPembayaran === 0) {
     alert("Anda belum memesan apapun");
   } else {
-    window.open("src/pages/orderDetail.html", "_self");
+    window.open("orderDetail.html", "_self");
   }
 };

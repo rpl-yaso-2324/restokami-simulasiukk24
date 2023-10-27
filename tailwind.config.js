@@ -4,5 +4,8 @@ module.exports = {
   theme: {
     extend: {},
   },
+  colors: {
+    buttonPM : '#96C8EB'
+  },
   plugins: [],
 };

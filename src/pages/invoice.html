@@ -9,33 +9,37 @@
     <link rel="stylesheet" href="../index.css">
 </head>
 
-<body>
+<body class="w-[375px] mx-auto">
     <header class="flex justify-center items-center gap-5 py-4 border-b-2 border-[#96C8EB]">
-        <a href="/index.html">
-            <img src="../../assets/img/store.png" alt="" width="40px">
+        <a href="index.html">
+            <img src="../../assets/img/store.png" alt="store.png" width="40px">
         </a>
         <h1 class="text-[22px] font-semibold">Invoice</h1>
     </header>
     <div class="text-center mt-6">
         <h2 class="text-[23px]">Total pembayaran sebesar</h2>
-        <p class="text-[22px] text-[#FF9D21] font-semibold">Rp 100.000</p>
+        <p class="text-[22px] text-[#FF9D21] font-semibold" id="total">Rp 0</p>
+    </div>
+    <div class="text-center mt-4">
+        <p>Catatan Anda : </p>
+        <p id="catatan"></p>
     </div>
     <section>
         <div class="bg-green-400 m-8 p-16 text-center rounded-lg" id="RestoPay">
             <div class="flex flex-col items-center justify-center">
-                <img src="../../assets/img/invoice/successPay.png" alt="">
+                <img src="../../assets/img/invoice/successPay.png" alt="successPay.png">
                 <h4 class="text-[22px] font-semibold text-white">Pembayaran Sukses!</h4>
             </div>
         </div>
 
         <div class="bg-red-400 m-8 p-16 text-center rounded-lg" id="Cash">
             <div class="flex flex-col items-center justify-center">
-                <img src="../../assets/img/invoice/kasir.png" alt="">
+                <img src="../../assets/img/invoice/kasir.png" alt="kasir.png">
                 <h4 class="text-[22px] font-semibold text-white">Silakan Bayar di Kasir</h4>
             </div>
         </div>
         <div class="mx-8 mt-3">
-            <a href="/index.html">
+            <a href="index.html">
                 <button
                     class="px-[50px] py-[8px] w-full border-2 font-semibold rounded-lg bg-[#FF9191] text-white">Kembali
                     ke home</button>
