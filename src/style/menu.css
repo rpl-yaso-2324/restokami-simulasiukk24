@@ -1,0 +1,88 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.container {
+    width: 390px;
+    margin-bottom: 50px;
+    background-color: whitesmoke;
+}
+
+.menu {
+display: inline-flex;
+}
+
+.garis1 {
+    border: 2px solid;
+    color: brown;
+}
+
+.garis {
+    border: 1.5px solid;
+    color: yellow;
+    width: 345px;
+}
+
+.paket{
+    background-color: gray;
+    width: 80px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 270px;
+    margin-bottom: -3px;
+}
+
+.paket2{
+    background-color: gray;
+    width: 110px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 240px;
+    margin-bottom: -3px;
+}
+.bungkus{
+    display: flex;
+}
+
+.keterangan1 {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.tbl1 {
+    width: 45px;
+    height: 38px;
+    border-radius: 10px;
+    background-color: aqua;
+    border: none;
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.tbl2 {
+    width: 45px;
+    height: 38px;
+    border-radius: 10px;
+    background-color: red;
+    border: none;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 300px;
+    margin-top: 40px;
+}
+
+footer {
+    margin-top: 50px;
+}

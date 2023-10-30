@@ -3,161 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/src/style/menu.css">
+    <title>Menu</title>
 </head>
-<style>
-    body{
-        font-family: Arial, sans-serif;
-	    background-color: white;
-    }
-
-    .container {
-        width: 390px;
-        margin-bottom: 50px;
-        background-color: whitesmoke;
-    }
-
-    .menu {
-    display: inline-flex;
-    }
-
-    .garis1 {
-        border: 2px solid;
-        color: brown;
-    }
-
-    .garis {
-        border: 1.5px solid;
-        color: yellow;
-        width: 345px;
-    }
-
-    .paket{
-        background-color: gray;
-        width: 80px;
-        border-radius: 5px;
-        color: white;
-        margin-right: 270px;
-        margin-bottom: -3px;
-    }
-
-    .paket2{
-        background-color: gray;
-        width: 110px;
-        border-radius: 5px;
-        color: white;
-        margin-right: 240px;
-        margin-bottom: -3px;
-    }
-    .bungkus{
-        display: flex;
-    }
-
-    .keterangan1 {
-        text-align: left;
-        margin-left: 20px;
-    }
-
-    .tbl1 {
-        width: 45px;
-        height: 38px;
-        border-radius: 10px;
-        background-color: aqua;
-        border: none;
-        margin-top: 15px;
-        margin-right: 10px;
-        padding: 10px;
-    }
-
-    .tbl2 {
-        width: 45px;
-        height: 38px;
-        border-radius: 10px;
-        background-color: red;
-        border: none;
-        margin-top: 15px;
-        margin-left: 10px;
-        padding: 10px;
-    }
-
-    .btn {
-	background-color: red;
-	color: white;
-	padding: 10px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	width: 300px;
-}
-</style>
-
 <body>
     <center>
         <div class="container">
-            <div class="menu">
-                <img src="/assets/img/store.png" alt="" width="50px" height="55px" style="margin-top: 5px;">
-                <h2 style="margin-left: 10px;">Menu</h2>
-            </div>
+
+            <header>
+                <div class="menu">
+                    <img src="/assets/img/store.png" alt="" width="50px" height="55px" style="margin-top: 5px;">
+                    <h2 style="margin-left: 10px;">Menu</h2>
+                </div>
+            </header>
+
             <hr class="garis1"><br>
 
-            <!-- Paket -->
-            <h2 class="paket">Paket</h2>
-            <hr class="garis">
-            <div class="bungkus">
-                <img src="/assets/img/paket1.jpg" alt="" style="width: 210px; height: 130px; border-radius: 25px; margin-top: 10px; margin-left: 18px;">
-                <div class="keterangan1">
-                    <h3>Paket Hemat 1</h3>
-                    <p>Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal + Teh</p>
-                    <h3>Rp. 36.000</h3>
-                    <div style="display: flex;">
-                        <button type="submit" class="tbl1">+</button>
-                        <h4>Jumlah: 2</h4>
-                        <button type="submit" class="tbl2">-</button>
+            <main>
+                <!-- Paket -->
+                <h2 class="paket">Paket</h2>
+                <hr class="garis">
+                <div class="bungkus">
+                    <img src="/assets/img/paket1.jpg" alt="" style="width: 210px; height: 130px; border-radius: 25px; margin-top: 10px; margin-left: 18px;">
+                    <div class="keterangan1">
+                        <h3>Paket Hemat 1</h3>
+                        <p>Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal + Teh</p>
+                        <h3>Rp. 36.000</h3>
+                        <div style="display: flex;">
+                            <button type="submit" class="tbl1">+</button>
+                            <h4>Jumlah: 2</h4>
+                            <button type="submit" class="tbl2">-</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Makanan -->
-            <h2 class="paket2">Makanan</h2>
-            <hr class="garis">
-            <div class="bungkus">
-                <img src="/assets/img/nasi goreng.jpg" alt="" style="width: 235px; height: 135px; border-radius: 25px; margin-top: 10px; margin-left: 18px;">
-                <div class="keterangan1">
-                    <h3>Nasi Goreng</h3>
-                    <p>Nasi yang digoreng bareng bumbu dan toping pada umumnya</p>
-                    <h3>Rp. 15.000</h3>
-                    <div style="display: flex;">
-                        <button type="submit" class="tbl1">+</button>
-                        <h4>Jumlah: 1</h4>
-                        <button type="submit" class="tbl2">-</button>
+    
+                <!-- Makanan -->
+                <h2 class="paket2">Makanan</h2>
+                <hr class="garis">
+                <div class="bungkus">
+                    <img src="/assets/img/nasi goreng.jpg" alt="" style="width: 235px; height: 135px; border-radius: 25px; margin-top: 10px; margin-left: 18px;">
+                    <div class="keterangan1">
+                        <h3>Nasi Goreng</h3>
+                        <p>Nasi yang digoreng bareng bumbu dan toping pada umumnya</p>
+                        <h3>Rp. 15.000</h3>
+                        <div style="display: flex;">
+                            <button type="submit" class="tbl1">+</button>
+                            <h4>Jumlah: 1</h4>
+                            <button type="submit" class="tbl2">-</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Minuman -->
-            <h2 class="paket2">Minuman</h2>
-            <hr class="garis">
-            <div class="bungkus">
-                <img src="/assets/img/lemon tea.jpg" alt="" style="width: 145px; height: 135px; border-radius: 25px; margin-top: 10px; margin-left: 18px;">
-                <div class="keterangan1">
-                    <h3>Lemon Tea</h3>
-                    <p>Teh manis + perasan lemon</p>
-                    <h3>Rp. 7.000</h3>
-                    <div style="display: flex;">
-                        <button type="submit" class="tbl1">+</button>
-                        <h4>Jumlah: 2</h4>
-                        <button type="submit" class="tbl2">-</button>
+    
+                <!-- Minuman -->
+                <h2 class="paket2">Minuman</h2>
+                <hr class="garis">
+                <div class="bungkus">
+                    <img src="/assets/img/lemon tea.jpg" alt="" style="width: 145px; height: 135px; border-radius: 25px; margin-top: 10px; margin-left: 18px;">
+                    <div class="keterangan1">
+                        <h3>Lemon Tea</h3>
+                        <p>Teh manis + perasan lemon</p>
+                        <h3>Rp. 7.000</h3>
+                        <div style="display: flex;">
+                            <button type="submit" class="tbl1">+</button>
+                            <h4>Jumlah: 2</h4>
+                            <button type="submit" class="tbl2">-</button>
+                        </div>
                     </div>
                 </div>
-            </div><br><br>
-
+                
                 <button type="submit" class="btn">Pesan</button>
-            <br><br>
+            </main>
             
-            <p>&Copy: 2023 Restoran Kita</p>
-            <p>All rights reserved</p>
+            <footer>
+                <p>&Copy: 2023 Restoran Kita</p>
+                <p>All rights reserved</p>
+            </footer>
 
-            <br>    
+               
 
         </div>
     </center>
