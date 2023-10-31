@@ -59,9 +59,12 @@ footer{
 	margin-top: 6rem;
 }
 
+footer p{
+	text-align: center;
+}
+
 .ft-mn{
-	margin-left: 100px;
-	margin-top: 3rem;
+	text-align: center;
 }
 
 /* menu Pages */
@@ -213,6 +216,7 @@ footer{
 	margin: 5px;
 	margin-left: 45px;
 	cursor: pointer;
+	margin-top: 70px;
 }
 
 /* Pesanan Page */
@@ -280,7 +284,57 @@ footer{
 	border: none;
 	height: 3px;
 	width: 100%;
-	background-color: orange;
+	background-color: rgb(0, 87, 58);
 	margin-top: -5px;
 	
+}
+
+.input-check label{
+	display: flex;
+	align-items: center;
+	background: #f0eaea;
+	border: 1px solid #ccc;
+	padding: 5px;
+	border-radius: 5px;
+	font-weight: 600;
+	margin-top: 1rem;
+
+}
+
+.input-check .mt-byr{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.mt-byr h5{
+	margin-left: 4rem;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+#saldo{
+	margin-left: 10rem;
+	color: rgb(0, 87, 58);
+}
+
+.dc p{
+	margin-left: 8rem;
+	margin-top: -5px;
+}
+
+.btn-pesanan{
+	border: none;
+	background-color: rgb(0, 87, 58);
+	width: 270px;
+	border-radius: 7px;
+	padding: 8px;
+	color: white;
+	font-family: Quicksand;
+	font-weight: 600;
+	font-size: 17px;
+	margin: 5px;
+	margin-left: 50px;
+	cursor: pointer;
+	margin-top: 70px;
 }
