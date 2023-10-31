@@ -4,7 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="/main.css" />
-		<link rel="stylesheet" href="/index.css" />
+		
+        <link rel="stylesheet" href="/index.css">
 		
 		<title>Simulasi UKK</title>
 	</head>
@@ -15,60 +16,16 @@
 				<h1>Menu</h1>
 			</header>
             <hr >
-			<main>
-                <section class="section-page">
+			<main class="main-menu">
+                <section class="menu-section">
+                    
 
-                    <div class="menu-section">
-                        <h3 >Paket</h3>
-                    <hr>
-                    <div class="menu-option">
-                        <div class="img-menu"><img src="/assets/img/logo.PNG" alt=""></div>
-                        <div class="text-menu">
-                            <h4>Paket Hemat 1</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quaerat?</p>
-                            <h5>Rp. 20.000</h5>
-                            <span class="btn-menu">
-                                <h5>jumlah: 1</h5>
-                                <button class="plus">+</button>
-                            </span>
-                        </div>
-                    </div>
-				</div>
-				<div class="menu-section">
-					<h3 >Makanan</h3>
-                    <hr>
-                    <div class="menu-option">
-                        <div class="img-menu"><img src="/assets/img/product3.jpeg"  alt=""></div>
-                        <div class="text-menu">
-                            <h4>Lorem ipsum dolor sit amet.</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi molestiae, doloremque quod iste asperiores vitae.</p>
-                            <h5>Rp. 20.000</h5>
-                            <span class="btn-menu">
-                                <h5>jumlah: 1</h5>
-                                <button class="plus">+</button>
-                            </span>
-                        </div>
-                    </div>
-				</div>
-				<div class="menu-section">
-                    <h3 >Minuman</h2>
-                        <hr>
-                    <div class="menu-option">
-                        <div class="img-menu"><img src="/assets/img/Picsart_23-07-17_21-31-34-940-removebg-preview.png" alt=""></div>
-                        <div class="text-menu">
-                            <h4>Lorem ipsum dolor sit amet.</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi molestiae, doloremque quod iste asperiores vitae.</p>
-                            <h5>Rp. 20.000</h5>
-                            <span class="btn-menu">
-                                <h5>jumlah: 1</h5>
-                                <button class="plus">+</button>
-                            </span>
-                        </div>
-                    </div>
-				</div>
-                <a href="pesanPage.html"  ><button class="btn-pesan">Pesan</button></a>
+                       
+				
+                <button class="btn-pesan" id="order" onclick="pesan()">Pesan</button>
+            
             </section>
-                
+            
 			</main>
 
 			<footer>
@@ -78,5 +35,6 @@
 				</p>
 			</footer>
 		</div>
+        <script src="/scripts/menu.js"></script>
 	</body>
 </html>

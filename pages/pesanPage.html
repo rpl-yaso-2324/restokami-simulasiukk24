@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./main.css" />
+		<link rel="stylesheet" href="/main.css" />
 		<link rel="stylesheet" href="/index.css" />
 		<title>Simulasi UKK</title>
 	</head>
@@ -15,7 +15,7 @@
 			</header>
             <hr >
 			<main>
-                <section class="section-page">
+                <section class="section-pesan">
 
                     <!-- <div class="pesan-section">
                         <h3 >Pesanan</h3>
@@ -69,7 +69,8 @@
                     </div> -->
                     <div class="card">
                         <h1>Total Pembayaran Sebesar</h1>
-                        <h2>Rp. 101.000</h2>
+                        <input type="hidden" id="total-pembayaran" value="101.000">
+                        <h2 id="total">Rp. 101.000</h2>
                     </div>
                     <div class="input-cttn">
                         <span class="inputC">
@@ -77,12 +78,12 @@
                         <input type="text">
                     </span>
                     </div>
-                 <div class="input-checkbox">
-                    <h3 >Metode Pembayaran</h3>
+                 <div class="input-checkbox" >
+                    <h3 aria-readonly="true">Metode Pembayaran</h3>
                     <hr>
                     <span class="input-check">
-                        <label for="radio1"> 
-                            <input type="radio" name="payment" id="radio1"><span class="mt-byr">
+                        <label for="resto-pay"> 
+                            <input type="radio" name="metode-pembayaran" id="resto-pay"><span class="mt-byr">
                                 <p>Resto Pay</p>
                                 <span class="dc">
                                     <p>Saldo Resto Pay</p>
@@ -90,8 +91,8 @@
                                 </span>
                             </span> 
                         </label>
-                        <label for="radio2"> 
-                            <input type="radio" name="payment" id="radio2"> 
+                        <label for="Cash"> 
+                            <input type="radio" name="payment" id="Cash"> 
                             <span class="mt-byr">
                                 <p>Cash </p>
 
@@ -101,7 +102,7 @@
                         
                     </span>
                  </div>
-                <button type="button" class="btn-pesan" onclick="bayar()">Bayar Pesanan</button>
+                <button type="button" class="btn-pesan" onclick="bayar()" >Bayar Pesanan</button>
             </section>
                 
 			</main>
@@ -114,5 +115,5 @@
 			</footer>
 		</div>
 	</body>
-    <script src="/script.js"></script>
+    <script src="/scripts/script.js"></script>
 </html>
