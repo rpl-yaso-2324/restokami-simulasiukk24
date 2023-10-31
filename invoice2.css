@@ -1,0 +1,25 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.container {
+    width: 390px;
+    margin-bottom: 50px;
+    background-color: whitesmoke;
+}
+
+.invoice {
+display: inline-flex;
+}
+
+.garis1 {
+    border: 2px solid;
+    color: #ff7b00;
+}
+
+.container2 {
+    width: 310px;
+    height: 260px;
+    background-color: blanchedalmond;
+}

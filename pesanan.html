@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pesanan.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./assets/img/store.png" alt="Logo">
+        </div>
+        <ul class="pesanan">
+            <li><a href="#"></a></li>
+            <h1>Pesanan anda</h1>
+        </ul>
+    </nav>
+    <div class="total">
+        <h2>Total Pembayaran Sebesar</h2>
+        <h3 class="harga">Rp. 101.000</h3>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Catatan." />
+    </div>
+
+    <h2 class="text3">Metode Pembayaran</h2>
+    <hr class="card_hr">
+
+    <form id="payment-form">
+        <label>
+            <input type="radio" name="navigation" value="about" id="about-radio"> Resto Pay
+            <p>Saldo Resto <br>
+                <span>Rp. 300.000</span>
+            </p>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="navigation" value="contact" id="contact-radio"> Cash
+            <p class="p1">Siapkan uang sesuai nominal pembayaran!</p>
+
+        </label>
+    </form>
+    <button id="action-button">Bayar Pesanan</button>
+
+    <div class="foot">
+        <footer>
+            <p>
+                &copy; 2023 Restoran Kami. <br/>
+                All rights reserved.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
