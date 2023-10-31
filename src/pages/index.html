@@ -9,25 +9,29 @@
     <center>
       <img src="/src//assets/img/warung.png" class="w-60" alt="" />
       <h1 class="text-3xl font-mono mb-5">Selamat Datang</h1>
-      <div class="mb-10">
+      <form id="loginForm" class="mb-10">
         <input
           class="bg-cyan-200 mb-5 h-10 w-50 text-center rounded"
           type="text"
           placeholder="Masukan Nama"
+          id="name"
         />
         <br />
         <input
           class="bg-cyan-200 h-10 w-50 text-center rounded"
-          type="number"
-          placeholder="Masukan Nomor telpon aktif"
+          type="password"
+          placeholder="Password"
+          id="pass"
         />
-      </div>
-      <a href="/src/pages/home.html">
-        <button class="bg-red-300 h-10 w-60 text-center rounded">
+      </form>
+      
+        <button class="bg-red-300 h-10 w-60 text-center rounded" type="submit">
         Lihat Menu
       </button>
-      </a>
-      <p class="mt-10">&copy: 2023 Restoran kita <br> All right reserved</p>
+      
+      <footer><p class="mt-10">&copy: 2023 Restoran kita <br> All right reserved</p></footer>
+      
     </center>
+    <script src="scripts/login.js"></script>
   </body>
 </html>
