@@ -5,6 +5,7 @@ var menu = [
     desc: "Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal + Teh",
     price: 20000,
     count: 0,
+    img_path : "https://via.placeholder.com/300",
   },
   {
     id: 1,
@@ -12,6 +13,7 @@ var menu = [
     desc: "Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal + Teh",
     price: 10000,
     count: 0,
+    img_path : "https://via.placeholder.com/300",
   },
   {
     id: 2,
@@ -19,6 +21,7 @@ var menu = [
     desc: "Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal + Teh",
     price: 100000,
     count: 0,
+    img_path : "https://via.placeholder.com/300",
   },
 ];
 
@@ -26,17 +29,17 @@ var menu = [
 const menuSection = document.querySelector(".menu-section");
 let card = ``;
 menu.map((data) => {
-  card += innerCardMenu(data.name, data.desc, data.price, data.count, data.id);
+  card += innerCardMenu(data.name, data.desc, data.price, data.count, data.id, data.img_path);
   menuSection.innerHTML = card;
 });
 
-function innerCardMenu(name, desc, price, count, id) {
+function innerCardMenu(name, desc, price, count, id, image) {
   return `<!-- card -->
     <div class="card p-4">
     <h1 class="bg-pink-200 rounded-2xl mt-6 w-[80px] h-[30px] items-center flex justify-center text-xl text-white">Paket</h1>
     <hr class="pb-1 mt-1 flex justify-center bg-yellow-400">
     <div class="mt-4 flex flex-row gap-7">
-    <img src="https://via.placeholder.com/300" class="max-w h-28 rounded-lg" alt="">
+    <img src="${image}" class="max-w h-28 rounded-lg" alt="">
     <div>
         <h1 class="font-semibold">${name}</h1>
         <div class="text-xs">

@@ -13,12 +13,13 @@
                 <img src="/src/assets/img/store.png" class="w-[10%]" alt="">
                 <h1>Pesanan anda</h1>
             </div>
-        </nav>  
+        </nav>
         <content>
             <div class="flex justify-center text-center">
             <div class="m-7">
                 <h1>Total Pembayaran Sebesar</h1>
-                <h1 class="text-xl text-yellow-500 font-semibold">Rp. 101.000</h1>
+                <input type="hidden" id="total-pembayaran" value="101.000" />
+                <h1 class="text-xl text-yellow-500 font-semibold" id="total">Rp. 101.000</h1>
                 <div class="mt-5">
                     <div class="border-8 rounded-lg w-72">
                 <input type="text" class=" w-64 outline-none" name="" id="" placeholder="Catatan:">
@@ -31,14 +32,15 @@
                     <hr class="pb-1 mb-2 flex justify-center bg-yellow-400">
                     <div>
                         <div class="flex items-center bg-gray-200 mb-5 p-2 rounded-lg">
-                        <input type="radio" name="restoPay" id="restoPay" class="mr-1">
+                        <input type="radio" name="resto-pay" id="resto-pay" class="mr-1">
                         <label for="restoPay">Resto Pay</label>
-                        <div class="flex flex-col items-end pl-36">
+                        <div class="container-metode-pembayaran flex flex-col items-end pl-36">
                             <p class="text-sm">Saldo resto pay</p>
-                            <p class="text-yellow-500 font-semibold">Rp. 500.000</p>
+                            <p class="text-yellow-500 font-semibold" id="saldo">Rp. 500.000</p>
+                            <input type="hidden" id="saldo-resto-pay" value="500000" />
                         </div>
                     </div>
-                    <div class="flex items-center bg-gray-200 p-2 rounded-lg">
+                     <div class="container-metode-cash flex items-center bg-gray-200 p-2 rounded-lg">
                         <input type="radio" name="cash" id="cash" class="mr-1">
                         <label for="cash">Cash</label>
                         <div class="pl-14 text-xs">
@@ -57,7 +59,19 @@
                 All rights reserved.
             </p>
         </footer>
-        <script src="/src/script/menu.js"></script>
+
+        <!-- modal -->
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closemodal">$times;</span>
+                <p id="message"> Lorem ipsum dolor, sit amet consectetur</p>
+            </div>
+        </div>
+
+        <div id="overlay" class="overlay"></div>
+
+        <script src="/src/script/order.js"></script>
     </div>
 </body>
 </html>
