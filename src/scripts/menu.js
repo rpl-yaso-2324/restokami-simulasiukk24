@@ -26,7 +26,7 @@ var menu = [
   ];
   
   // add menu card
-  const menuSection = document.querySelector(".menu-section");
+  const menuSection = document.querySelector(".section-menu");
   let card = ``;
   menu.map((data) => {
     card += innerCardMenu(data.name, data.desc, data.price, data.count, data.id);
@@ -35,29 +35,34 @@ var menu = [
   
   function innerCardMenu(name, desc, price, count, id) {
     return `<!-- card -->
-      <div class="card">
-          <button class="kategori" aria-readonly="true">Paket</button>
-          <hr class="line" />
-          <div class="container-content">
-              <div>
-                  <img
-                      src="./images/example-product/indomie.jpg"
-                      alt=""
-                      class="produk-img"
-                  />
-              </div>
-              <div class="content">
-                  <p>${name}</p>
-                  <p>${desc}</p>
-                  <p>${price}</p>
-                  <div class="content2">
-                      <p>Jumlah:</p>
-                      <p id="count${id}">${count}</p>
-                      <button class="tambah" id="addCount${id}">+</button>
-                  </div>
-              </div>
-          </div>
-      </div>`;
+    <div class="mx-5 mb-10">
+    <h2
+      class="bg-yellow-200 w-28 h-10 mt-5 mb-1 rounded-xl text-center text-2xl"
+    >
+      Paket
+    </h2>
+    <hr class="mb-5 border-black" />
+    <div class="flex justify-left">
+      <img
+        src="/src/assets/img/paket1.jpg"
+        class="w-[150px] h-[150px] bg-slate-300 mr-5 rounded-xl"
+        alt="Gambar Menu"
+      />
+      <div class="w-[18rem]">
+        <h1 class="underline underline-offset-1 text-xl">
+          <b>${name}</b>
+        </h1>
+        <p>${desc}</p>
+        <p class="text-bold"><b>Rp.${price}</b></p>
+        <p>Jumlah: </p> 
+        <p id="count${id}">${count}</p>
+        <div class="flex justify-center mt-5">
+        
+          <button class="bg-red-300 w-20 rounded" id="addCount${id}">+</button>
+        </div>
+      </div>
+    </div>
+  </div>`;
   }
   
   // add count
@@ -103,7 +108,7 @@ var menu = [
     order.map((item) => {
       if (item.count != null) {
         console.log(item.count);
-        window.location.href = "order.html";
+        window.location.href = "pesanan.html";
       } else {
         alert();
         console.log("data tidak boleh kosong");

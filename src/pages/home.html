@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body>
     <div class="flex justify-center">
@@ -11,8 +11,14 @@
       <h1 class="mt-5 text-2xl">Home</h1>
     </div>
     <div class="bg-red-300 w-full h-1"></div>
+    <main class="w-[360px] h-[81vh]">
+      <section class="w-[90%] section-menu"></section>
+    </main>
+    <div class="container-bayar">
+      <button class="w-full h-10 bg-red-300 text-xl rounded-xl" id="order" onclick="pesan()">Pesan</button>
+    </div>
 
-    <div class="mx-5 mb-10">
+    <!-- <div class="mx-5 mb-10">
       <h2
         class="bg-yellow-200 w-28 h-10 mt-5 mb-1 rounded-xl text-center text-2xl"
       >
@@ -37,9 +43,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="mx-5 mb-10">
+    <!-- <div class="mx-5 mb-10">
       <h2
         class="bg-yellow-200 w-32 h-10 mt-16 mb-1 rounded-xl text-center text-2xl"
       >
@@ -89,10 +95,13 @@
           </div>
         </div>
       </div>
-    </div>
-    <button class="w-full h-10 bg-red-300 text-xl rounded-xl">
-      Pesan
-    </button>
-    <p class="mt-10 text-center">&copy: 2023 Restoran kita <br> All right reserved</p>
+    </div> -->
+    <footer>
+      <p class="mt-10 text-center">
+      &copy: 2023 Restoran kita <br />
+      All right reserved
+    </p>
+    </footer>
+    <script src="/src/scripts/menu.js"></script>
   </body>
 </html>
