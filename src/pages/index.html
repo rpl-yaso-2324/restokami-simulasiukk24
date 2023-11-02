@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/dist/output.css">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>Document</title>
 </head>
 <body>
-	
-	<div class="text-center">
-		<img src="/assets/img/store.png" class="w-24 mx-auto">
-		<h2 class="font-semibold text-[1.5rem]">Selamat Datang di</h2>
-		<h2 class="font-semibold text-[1.5rem]">Restoran Kami</h2>
-		<form class="flex flex-col text-center mt-[5rem]">
-			<div>
-				<label for="" class="font-semibold">Nama Pelanggan</label>
-			</div>
-			<div>
-				<input type="text" class="bg-slate-100 rounded-md w-[40vh] py-[0.7rem]">
-			</div>
-			<div>
-			<div class="mt-[20px]">
-				<label for="" class="font-semibold">Nomor Telepon</label>
-			</div>
-			<div>
-				<input type="text"class="bg-slate-100 rounded-md w-[40vh] py-[0.7rem]">
-			</div>
-			<div>
-			<div class="mt-[20px]">
-				<button type="button" class="rounded-md bg-red-500 px-1.5 text-white m-2 w-[40vh] py-[0.7rem]"><a href="home.html" class="text-[1.5rem]">Lihat Menu</a></button>
-			</div>
-		</form>
-		<footer class="mt-[15rem]">
+    <div class="text-center">
+        <img src="/assets/img/store.png" class="w-24 mx-auto">
+        <h2 class="font-semibold text-[1.5rem]">Selamat Datang di</h2>
+        <h2 class="font-semibold text-[1.5rem]">Restoran Kami</h2>
+    </div>
+        <form class="flex flex-col text-center mt-[5rem] m-10" id="loginForm">
+            <div>
+                <label for="username" class="font-semibold">Nama Pelanggan</label>
+            </div>
+            <div>
+                <input type="text" id="username" class="bg-slate-100 rounded-md w-full py-[0.7rem]" name="username">
+            </div>
+            <div>
+            <div class="mt-[20px]">
+                <label for="password" class="font-semibold">Nomor Telepon</label>
+            </div>
+            <div>
+                <input type="password" id="password" class="bg-slate-100 rounded-md w-full py-[0.7rem]" name="password">
+            </div>
+            <div>
+            <div class="mt-[20px]">
+                <button type="submit" class="rounded-md bg-red-500 px-1.5 text-white m-2 w-full py-[0.7rem]" >Lihat Menu</button>
+            </div>
+        </form>
+        <footer class="mt-[10rem]">
             <p>
                 &copy; 2023 Restoran Kami. <br />
                 All rights reserved.
             </p>
         </footer>
-</body>
+
+        <script src="/src/scripts/login.js"></script>
+
+        <!-- <script>
+            const masuk = () => {
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+                const validName = name ==
+                if (username.trim() === "" || password.trim() === "") {
+                    alert("Cihuyyy masukin username dan password");
+                }
+        </script> -->
+    </body>
 </html>

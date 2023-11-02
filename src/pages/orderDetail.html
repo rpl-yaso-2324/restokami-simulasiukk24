@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="/src/style.css" />
     <title>Order Detail</title>
   </head>
   <body>
@@ -12,51 +13,89 @@
       <h2 class="font-semibold text-lg ml-5">Pesanan Anda</h2>
     </div>
     <div class="w-auto h-0.5 bg-red-700 mb-5"></div>
-    <div class="items-center justify-center flex mt-10">
-      <h1 class="font-semibold">Total Pembayaran Sebesar</h1>
-    </div>
-    <div class="text-center">
-        <h1 class="text-xl text-yellow-500 mt-3">RP.101.000.000</h1>
-        <input type="text" placeholder="catatan" class="w-full py-[0.7rem] pl-5 rounded-md mt-5">
-    </div>
-    <!-- metode pembayaran -->
-    <div class="p-5">
-        <h2 class="bg-gray-400 mb-3 rounded-lg w-[200px] text-center pl-6 p-1 flex font-semibold text-white">
-          Metode Pembayaran
-        </h2>
-        <div class="w-auto h-0.5 bg-red-700 mb-5"></div>
-          <div class="flex bg-gray-100 p-2 rounded-full justify-between items-center">
-            <div class="">
-              <input type="radio" value="Resto Pay">
-              <label for="" class="">Resto Pay</label> 
-            </div>
-            <div class="">
-              <p class="text-[12px]">Saldo Resto Pay</p>
-              <span> <p class="text-yellow-400 text-[12px]">Rp.500.000</p></span>
-            </div>
-          </div>
-          
-          <div class="flex bg-gray-100 p-2 rounded-full justify-between items-center mt-3">
-            <div class="">
-              <input type="radio" value="Cash" name="Cash">
-              <label for="" class="text-[15px]">Cash</label>
-            </div>
-            <div class="flex">
-              <p class="text-[12px] ">Siapkan uang sesuai pembayaran anda</p>
-            </div>
-          </div>
+    
+    <div class="bg-slate-100 text-center mx-10 py-6 text-3xl" id="invoice">
+      <h2 class="text-red-200">Saldo Anda Kurang !</h2>
     </div>
 
-     
-        <div class="mt-[10px] text-center">
-          <button type="button" class="rounded-md bg-red-500 px-1.5 text-white m-2 w-[50vh] py-[0.7rem]"><a href="invoice.html" class="text-[1.5rem]">Bayar Pesanan</a></button>
-          <footer class="mt-[5rem]">
-            <p>
-              &copy; 2023 Restoran Kami. <br />
-              All rights reserved.
-            </p>
-          </footer>
+    <div
+      class="items-center justify-center flex flex-col mt-10 bg-slate-100 m-5"
+    >
+      <h1 class="font-semibold">Total Pembayaran Sebesar</h1>
+      <input type="hidden" id="total-pembayaran" value="101.000" />
+      <h1 class="text-xl text-yellow-500 mt-1" id="total">RP.101.000.000</h1>
+    </div>
+
+    <div class="text-center m-5">
+      <input
+        type="text"
+        placeholder="catatan"
+        class="w-full py-[0.7rem] pl-5 rounded-md mt-5 border-2"
+      />
+    </div>
+
+    <!-- metode pembayaran -->
+    <div class="p-5">
+      <h2
+        class="pesanan 
+              bg-gray-400 mb-3 rounded-lg w-[200px] text-center pl-6 p-1 flex font-semibold text-white"
+      >
+        Metode Pembayaran
+      </h2>
+      <div class="w-auto h-0.5 bg-red-700 mb-5"></div>
+
+      <div
+        class="flex bg-gray-100 p-2 rounded-full justify-between items-center"
+      >
+        <div class="">
+          <div class="">
+            <input type="radio" name="metode-pembayaran" id="resto-pay">
+            <label for="resto-pay">Resto Pay</label>
+          </div>
         </div>
-     
+        <div class="detail-metode">
+          <p class="text-[12px] mr-1">Saldo Resto Pay</p>
+          <span><p class="text-yellow-400 text-[12px]" id="Saldo" >Rp.500.000</p></span>
+          <input
+            type="hidden"
+            id="saldo-resto-pay"
+            value="500000"
+          />
+        </div>
+      </div>
+
+      <div
+        class="container-metode-cash 
+              flex bg-gray-100 p-2 rounded-full justify-between items-center mt-3"
+      >
+        <div class="">
+          <input type="radio" name="metode-pembayaran" id="cash" />
+          <label for="Cash" class="text-[15px]">Cash</label>
+        </div>
+        <div class="detail-metode
+                    flex">
+          <p class="text-[12px]">Siapkan uang sesuai pembayaran anda</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-bayar 
+                mt-[10px] text-center m-5">
+      <button
+        type="button"
+        class="rounded-md bg-red-500 px-1.5 text-white w-full py-[0.7rem]"
+        onclick="bayar()"
+      >
+        <a href="invoice.html" class="text-[1.5rem]">Bayar Pesanan</a>
+      </button>
+      <footer class="mt-[5rem]">
+        <p>
+          &copy; 2023 Restoran Kami. <br />
+          All rights reserved.
+        </p>
+      </footer>
+    </div>
+
+    <script src="/src/scripts/order.js"></script>
   </body>
 </html>
