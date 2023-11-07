@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <title>pesan</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header-menu">
+            <img src="/assets/img/store.png" alt="" />
+            <h1>Pesanan Anda</h1>
+        </header>
+        <hr>
+        <main>
+            <section class="section-page">
+                <div class="card">
+                    <h1>Total Pembayaran Sebesar</h1>
+                    <input type="hidden" id="total-pembayaran" value="101.000">
+                    <h2>Rp. 101.000</h2>
+                </div>
+                <div class="input-cttn">
+                    <span class="inputC">
+                        Catatan:
+                        <input type="text">
+                    </span>
+                </div>
+                <div class="input-checkbox">
+                    <h3>Metode Pembayaran</h3>
+                    <hr>
+                    <span class="input-check">
+                        <label for="radio1">
+                            <input type="radio" name="payment" id="resto-pay"><span class="mt-byr">
+                                <p>Resto Pay</p>
+                                <span class="dc">
+                                    <p>Saldo Resto Pay</p>
+                                    <p id="phei">Rp. 500.000</p>
+                                    <input type="hidden" id="saldo-resto-pay" value="500000">
+                                    <p id="saldo"></p>
+                                </span>
+                            </span>
+                        </label>
+                        <label for="radio2">
+                            <input type="radio" name="payment" id="cash">
+                            <span class="mt-byr">
+                                <p>Cash </p>
+                                <h5>Siapkan uang sesuai nominal pembayaran !</h5>
+                            </span>
+                        </label>
+
+                    </span>
+                </div>
+                <button type="button" class="btn-pesan" onclick="bayar()">Bayar Pesanan</button>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>
+                &copy; 2023 Restoran Kami. <br />
+                All rights reserved.
+            </p>
+        </footer>
+    </div>
+</body>
+<script>
+    const d = document;
+    let restoPay = d.getElementById("resto-pay");
+    let cash = d.getElementById("cash");
+    let saldo = d.getElementById("saldo-resto-pay").value;
+    let totalPembayaran = d.getElementById("total-pembayaran").value;
+    console.log(localStorage.getItem("total"));
+    const formatUang = (rupiah) => {
+        return rupiah.toLocaleString("id-ID", {
+            style: "currency",
+            currency: "IDR",
+            minimumFractionDigits: 0,
+        });
+    };
+    let data = localStorage.getItem("total");
+    let total = (document.getElementById("total").innerHTML = formatUang(
+        parseInt(data)
+    ));
+    let saldo_u = 50000;
+    const saldo_user = (document.getElementById("saldo").innerHTML =
+        formatUang(saldo_u));
+    const bayar = () => {
+        let restoPay = d.getElementById("resto-pay").checked;
+        let cash = d.getElementById("cash").checked;
+
+        console.log("pulih restopay " + restoPay);
+        console.log("pilih cash " + cash);
+        console.log("saldo " + saldo);
+        console.log("totalPembayaran " + totalPembayaran);
+        // Cek apakah memilih metode resto-pay
+        if (!restoPay && !cash) {
+            openModal();
+            d.getElementById("message").innerHTML =
+                "Plih metode pembayaran terlebih dahulu !";
+        } else {
+            if (restoPay === true) {
+                if (saldo_u < data) {
+                    openModal();
+                    d.getElementById("message").innerHTML = "Saldo Tidak Cukup !";
+                    d.getElementById("imgpayment").src = "./assets/img/image 2.png";
+                } else {
+                    window.location.href = "succes.html";
+                }
+            } else if (cash === true) {
+                console.log("berhasil pindah halman ke cash");
+                window.location.href = "cashier.html";
+            }
+        }
+    };
+
+    // open modal
+    const openModal = () => {
+        d.getElementById("myModal").style.display = "block";
+        d.getElementById("overlay").style.display = "block";
+    };
+
+    // close modal
+    const closeModal = () => {
+        d.getElementById("myModal").style.display = "none";
+        d.getElementById("overlay").style.display = "none";
+    };
+
+    d.getElementById("closeModal").addEventListener("click", () => {
+        closeModal();
+    });
+
+    d.getElementById("overlay").addEventListener("click", () => {
+        closeModal();
+    });
+
+    // klik container pembayaran
+
+    const klikRestoPay = d.querySelector(".container-metode-pembayaran");
+    const klikCash = d.querySelector(".container-metode-cash");
+
+    // restoPay = d.getElementById("resto-pay") = true
+    let checkedResto = false;
+    klikRestoPay.addEventListener("click", () => {
+        checkedResto = !checkedResto;
+        restoPay.checked = checkedResto;
+    });
+
+    let checkedCash = false;
+    klikCash.addEventListener("click", () => {
+        checkedCash = !checkedCash;
+        cash.checked = checkedCash;
+    });
+</script>
+
+</html>

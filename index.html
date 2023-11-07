@@ -1,36 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="main.css" />
-		<link rel="stylesheet" href="index.css" />
-		<title>Simulasi UKK</title>
-	</head>
-	<body>
-		<div class="container">
-			<header class="header-login">
-				<img src="assets/img/store.png" alt="resto-kami" /> <br>
-				<h1>SELAMAT DATANG DI RESTORAN KAMI</h1>
-			</header>
-			<main>
-				<section class="login-section">
-					<form id="loginForm">
-						<label for="username">Username:</label>
-						<input type="text" id="username" name="username"/>
-						<label for="password">Password:</label>
-						<input type="password"  id="password" name="password"/>
-						<button type="submit"><a href="/pages/menuPage.html" style="text-decoration: none; color: aliceblue;">Lihat Menu</a></button>
-					</form>
-				</section>
-			</main>
-			
-			<footer>
-				<p>
-					&copy; 2023 Restoran Kami <br />
-					All rights reserved.
-				</p>
-			</footer>
-		</div>
-	</body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="main.css" />
+	<link rel="stylesheet" href="index.css" />
+	<title>login</title>
+</head>
+
+<body>
+	<div class="container">
+		<header class="header-login">
+			<img src="assets/img/store.png" alt="" />
+			<h1>SELAMAT DATANG DI RESTORAN KAMI</h1>
+		</header>
+		<main>
+			<section class="login-section">
+				<form id="loginForm" onsubmit="return verif();">
+					<label for="username">Nama Pelanggan:</label>
+					<input type="text" id="username" name="username" />
+					<label for="password">Nomor Pelanggan:</label>
+					<input type="password" id="password" name="password" />
+					<button type="submit">Lihat Menu</button>
+				</form>
+			</section>
+		</main>
+
+		<footer>
+			<p>
+				&copy; 2023 Restoran Kami. <br />
+				All rights reserved.
+			</p>
+		</footer>
+	</div>
+
+	<script>
+		const username = document.getElementById('username');
+		const password = document.getElementById('password');
+		const verif = () => {
+			if (username.value === "cemeii" && password.value === "17") {
+				window.location.href = "pages/menuPage.html";
+
+			} else if (username.value !== "cemeii") {
+				alert('Nama Pelanggan salah');
+			} else {
+				alert('Nomor Pelanggan salah');
+			}
+			return false;
+		}
+	</script>
+</body>
+
 </html>

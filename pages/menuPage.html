@@ -1,84 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/main.css" />
-		<link rel="stylesheet" href="/index.css" />
-		<title>Simulasi UKK</title>
-	</head>
-	<body>
-		<div class="container">
-			<header class="header-menu">
-				<img src="/assets/img/store.png" alt="resto-kami" />
-				<h1>Menu</h1>
-			</header>
-            <hr >
-			<main>
-                <section class="section-page">
 
-                    <div class="menu-section">
-                        <h3 >Paket</h2>
-                    <hr>
-                    <div class="menu-option">
-                        <div class="img-menu"><img src="/assets/img/produk2.jpg" alt=""></div>
-                        <div class="text-menu">
-                            <h4>Paket Hemat 1</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quaerat?</p>
-                            <h5>Rp. 20.000</h5>
-                            <span class="btn-menu">
-                                <button class="plus">-</button>
-                                <h5>jumlah: 1</h5>
-                                <button class="plus">+</button>
-                            </span>
-                        </div>
-                    </div>
-				</div>
-				<div class="menu-section">
-					<h3 >Makanan</h3>
-                    <hr>
-                    <div class="menu-option">
-                        <div class="img-menu"><img src="/assets/img/produk1.jpg"  alt=""></div>
-                        <div class="text-menu">
-                            <h4>Lorem ipsum dolor sit amet.</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi molestiae, doloremque quod iste asperiores vitae.</p>
-                            <h5>Rp. 20.000</h5>
-                            <span class="btn-menu">
-                                <button class="plus">-</button>
-                                <h5>jumlah: 1</h5>
-                                <button class="plus">+</button>
-                            </span>
-                        </div>
-                    </div>
-				</div>
-				<div class="menu-section">
-                    <h3 >Minuman</h2>
-                        <hr>
-                    <div class="menu-option">
-                        <div class="img-menu"><img src="/assets/img/produk3.webp" alt=""></div>
-                        <div class="text-menu">
-                            <h4>Lorem ipsum dolor sit amet.</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi molestiae, doloremque quod iste asperiores vitae.</p>
-                            <h5>Rp. 20.000</h5>
-                            <span class="btn-menu">
-                                <button class="plus">-</button>
-                                <h5>jumlah: 1</h5>
-                                <button class="plus">+</button>
-                            </span>
-                        </div>
-                    </div>
-				</div>
-                <button class="btn-pesan"><a href="/pages/pesananAnda.html" style="text-decoration: none; color: aliceblue;">Pesan</a></button>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/index.css" />
+
+    <title>menu</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header-menu">
+            <img src="/assets/img/store.png" alt="" />
+            <h1>Menu</h1>
+        </header>
+        <hr>
+        <main>
+            <section class="section-page">
+                <div class="menu-section">
+                </div>
             </section>
-                
-			</main>
+            <a href="pesanPage.html"><button class="btn-pesan">Pesan</button></a>
+        </main>
+        <footer>
+            <p>
+                &copy; 2023 Restoran Kami. <br />
+                All rights reserved.
+            </p>
+        </footer>
+    </div>
+    <script>
+        var menu = [
+            {
+                id: 0,
+                name: "Paket 1",
+                desc: "Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal + Teh",
+                price: 36000,
+                count: 0,
+            },
+            {
+                id: 1,
+                name: "Paket 2",
+                desc: "Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal + Teh",
+                price: 36000,
+                count: 0,
+            },
+            {
+                id: 2,
+                name: "Paket 3",
+                desc: "Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal + Teh",
+                price: 36000,
+                count: 0,
+            },
+        ];
 
-			<footer>
-				<p>
-					&copy; 2023 Restoran Kami. <br />
-					All rights reserved.
-				</p>
-			</footer>
-		</div>
-	</body>
+        // add menu card
+        const menuSection = document.querySelector(".menu-section");
+        let card = ``;
+        menu.map((data) => {
+            card += innerCardMenu(data.name, data.desc, data.price, data.count, data.id);
+            menuSection.innerHTML = card;
+        });
+
+        function innerCardMenu(name, desc, price, count, id,) {
+            return `
+            <h3>Paket</h3>
+                    <hr>
+                    <div class="menu-option">
+                        <div class="img-menu"><img src="/assets/img/logo.PNG" alt=""></div>
+                        <div class="text-menu">
+                            <h4>${name}</h4>
+                            <p>${desc}</p>
+                            <h5>${price}</h5>
+                            <span class="btn-menu">
+                                <button>-</button>
+                                <h5 id="count${id}">${count}</h5>
+                                <button id="addCount${id}">+</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>`;
+        }
+
+        // add count
+        let order = [];
+
+        menu.map((data) => {
+            data.count = 0; // Inisialisasi jumlah untuk setiap item menjadi 0
+
+            const addButton = document.getElementById(`addCount${data.id}`);
+            const countElement = document.getElementById(`count${data.id}`);
+
+            addButton.addEventListener("click", function (event) {
+                event.preventDefault();
+                data.count++; // Tambahkan jumlah hanya untuk item saat ini
+                countElement.innerHTML = data.count;
+
+                const subtotal = data.price * data.count; // Hitung subtotal hanya untuk item saat ini
+                console.log(`Subtotal for ${data.name}: ${subtotal}`);
+
+                if (order[data.id] == null) {
+                    order[data.id] = {
+                        id: data.id,
+                        name: data.name,
+                        desc: data.desc,
+                        price: data.price,
+                        count: data.count,
+                    };
+                } else {
+                    order[data.id].count = data.count;
+                }
+
+                // Hitung total harga
+                let totalPrice = 0;
+                order.map((item) => {
+                    totalPrice += item.price * item.count;
+                });
+
+                console.log(`Total Price: ${totalPrice}`);
+                localStorage.setItem("total", totalPrice);
+            });
+        });
+        const pesan = () => {
+            order.map((item) => {
+                if (item.count != null) {
+                    console.log(item.count);
+                    window.location.href = "order.html";
+                } else {
+                    alert();
+                    console.log("data tidak boleh kosong");
+                }
+            });
+        };
+    </script>
+</body>
+
 </html>
