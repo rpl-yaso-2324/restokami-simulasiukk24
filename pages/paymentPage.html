@@ -20,7 +20,7 @@
                  
                     <div class="card-pay">
                         <h1>Total Pembayaran Sebesar</h1>
-                        <h2>Rp. 101.000</h2>
+                        <h2 id="total">Rp. 101.000</h2>
                     </div>
                     <div class="img-pay">
                         <img src="/assets/img/pay.png" alt="">
@@ -40,5 +40,19 @@
 			</footer>
 		</div>
 	</body>
-    <script src="/script.js"></script>
+    <script>
+
+	console.log(localStorage.getItem("total"));
+
+	const formatUang = (Rp) => {
+    	return Rp.toLocaleString("id-ID", {
+        style: "currency",
+        currency: "IDR",
+        minimumFractionDigits: 0,
+      });
+	}
+	let data = localStorage.getItem("total");
+	
+	let total = (document.getElementById("total").innerHTML = formatUang(parseInt(data)));
+	</script>
 </html>

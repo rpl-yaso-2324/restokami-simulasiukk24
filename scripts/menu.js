@@ -1,27 +1,45 @@
-
+const formatUang = (Rp) => {
+    return Rp.toLocaleString("id-ID", {
+        style: "currency",
+        currency: "IDR",
+        minimumFractionDigits: 0,
+      });
+}
 
 var menu = [
     {
         id: 0,
-        name: "Paket 1",
+        title: "Paket-01",
+        name: "Nasi Timbel",
         desc: "Nasi Timbel + Ayam (bakar/goyeng)+ Tahu & Tempe + Sambal + Teh",
-        price: 36000,
+        price: formatUang(36000),
         count: 0
     },
     {
-        id: 1,
-        name: "Paket 1",
+        id: 0,
+        title: "Paket-01",
+        name: "Nasi Timbel",
         desc: "Nasi Timbel + Ayam (bakar/goyeng)+ Tahu & Tempe + Sambal + Teh",
-        price: 36000,
+        price: formatUang(36000),
         count: 0
     },
     {
-        id: 1,
-        name: "Paket 1",
+        id: 0,
+        title: "Paket-01",
+        name: "Nasi Timbel",
         desc: "Nasi Timbel + Ayam (bakar/goyeng)+ Tahu & Tempe + Sambal + Teh",
-        price: 36000,
+        price: formatUang(36000),
         count: 0
     },
+    {
+        id: 0,
+        title: "Paket-01",
+        name: "Nasi Timbel",
+        desc: "Nasi Timbel + Ayam (bakar/goyeng)+ Tahu & Tempe + Sambal + Teh",
+        price: formatUang(36000),
+        count: 0
+    },
+    
 ];
 
 // add menu card
@@ -29,25 +47,24 @@ var menu = [
 const menuSection = document.querySelector(".menu-section");
 let card = ``;
 menu.map((data) => {
-    card += innerCardMenu(data.name,data.desc,data.price,data.count,data.id);
+    card += innerCardMenu(data.title,data.name,data.desc,data.price,data.count,data.id);
     menuSection.innerHTML = card;
 });
 
-function innerCardMenu(name,desc,price,count,id) {
+function innerCardMenu(title,name,desc,price,count,id) {
     return `
     <div class="card-menu">
-    <h3 >Paket</h3>
-    <hr>
     <div class="menu-option">
         <div class="img-menu">
-        <img src="/images/example-product/nasi.jpeg" alt=""></div>
+        <img src="/assets/img/baso.jpeg" alt=""></div>
         <div class="text-menu">
-            <h4>${name}</h4>
-            <p>${desc}</p>
-    <h5>${price}</h5>
+        <h5>${title}</h5>
+        <h4>${name}</h4>
+        <p>${desc}</p>
+        
     <span class="btn-menu">
-        <p >jumlah:<p id="count${id}">${count}</p> </p>
-        <button class="plus" id="addCount${id}">+</button>
+        <p>${price}</p>
+        <button class="plus" id="addCount${id}">pesan</button>
     </span>
 </div>
 </div>
@@ -98,7 +115,7 @@ const pesan = () => {
     order.map((item) => {
         if (item.count != null) {
             console.log(item.count);
-            window.location.href = "pages/pesanPage.html"
+            window.location.href = "pesanPage.html"
         } else {
             alert();
             console.log("data tidak boleh kosong");
