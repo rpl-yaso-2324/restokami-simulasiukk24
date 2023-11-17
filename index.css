@@ -23,7 +23,7 @@ header h1 {
 	text-align: center;
 }
 .login-section{
-	width: 100%;
+	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -36,7 +36,7 @@ header h1 {
 	width: 250px;
 	padding: 10px;
 	border-radius: 5px;
-	margin: 5px;
+	margin: 6px;
 }
 
 .login-section button{
@@ -62,8 +62,9 @@ footer p{
 	text-align: center;
 }
 
-.ft-mn{
+.ft-mn p{
 	text-align: center;
+	margin-top: -70px;
 }
 
 /* menu Pages */
@@ -131,7 +132,10 @@ footer p{
 	margin: 1rem 0;
 }
 .sectionmenu{
-	padding: 18px;
+	background-color: rgb(235, 235, 235);
+	margin: 15px;
+	border-radius: 8px;
+	
 }
 
 .menu-option{
@@ -142,10 +146,12 @@ footer p{
 }
 
 .menu-option .img-menu{
-	width: 50%;
+	width: 200px;
 	margin: 20px;
 	overflow: hidden;
+	height: 110px;
 	border-radius: 0.5rem;
+
 }
 
 .img-menu img{
@@ -156,14 +162,17 @@ footer p{
 
 .menu-option .text-menu{
 	padding: 20px;
-	width: 50%;
+	width: 70%;
 	margin: -5px;
 	font-size: 15px;
 }
 
-.text-menu p{
-	font-size: 13px;
-	margin: 10px 0;
+.text-menu h4{
+	background-color: rgb(192, 190, 190);
+	width: 90px;
+	padding: 4px;
+	border-radius: 7px;
+	
 }
 
 .menu-option .btn-menu{
@@ -192,15 +201,6 @@ footer p{
 	font-size: 15px;
 }
 
-.menulist h3{
-	margin: 0;
-	padding: 10px;
-	width: 90px;
-	background-color: grey;
-	border-radius: 40px;
-	text-align: center;
-	margin: 10px;
-}
 
 .btn-menupage{
 	border: none;
