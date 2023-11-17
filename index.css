@@ -96,38 +96,6 @@ footer p{
 
 }
 
-.menulist .text-listmenu1{
-	margin: 0;
-	padding: 5px;
-	width: 60px;
-	background-color: orange;
-	border-radius: 40px;
-	text-align: center;
-	margin: 10px;
-	color: white;
-	margin-top: 2rem;
-}
-
-.menulist .text-listmenu2{
-	margin: 0;
-	padding: 7px;
-	width: 80px;
-	background-color: orange;
-	border-radius: 40px;
-	text-align: center;
-	margin: 10px;
-	color: white;
-	margin-top: 2rem;
-}
-
-.line1{
-	border: none;
-	height: 3px;
-	width: 100%;
-	background-color: orange;
-	margin-top: 5px;
-
-}
 .menulist {
 	margin: 1rem 0;
 }
@@ -135,7 +103,6 @@ footer p{
 	background-color: rgb(235, 235, 235);
 	margin: 15px;
 	border-radius: 8px;
-	
 }
 
 .menu-option{
@@ -172,50 +139,29 @@ footer p{
 	width: 90px;
 	padding: 4px;
 	border-radius: 7px;
-	
 }
 
-.menu-option .btn-menu{
+.text-menu .rp{
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+.btn {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
-	margin-top: 1rem;
 }
 
-.btn-menu button{
-	border-radius: 10px;
-	padding: 3px 1rem;
+.btn .btn-psn{
 	border: none;
-	background-color: rgb(255, 85, 113);
-	color: white;
-	font-weight: bold;
-	font-size: 15px;
-}
-
-.btn-menu .plus{
-	font-size: 15px;
-	background-color: orange;
-}
-.btn-menu .min{
-	font-size: 15px;
-}
-
-
-.btn-menupage{
-	border: none;
-	background-color: orange;
-	width: 270px;
+	background-color: rgb(236, 104, 126);
+	width: 75px;
 	border-radius: 7px;
-	padding: 8px;
 	color: white;
-	font-family: Quicksand;
 	font-weight: 600;
-	font-size: 17px;
-	margin: 5px;
-	margin-left: 45px;
+	font-family: Quicksand;
+	margin-right: -6px;
 	cursor: pointer;
-	margin-top: 70px;
 }
 
 /* Pesanan Page */
