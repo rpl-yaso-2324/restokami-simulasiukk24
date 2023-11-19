@@ -87,6 +87,8 @@ const menusByCategory = menus.reduce((x, menu) => {
   return x;
 }, {});
 
+// console.log(menusByCategory);
+
 let menuSection = document.querySelector(".menu");
 let cardMenu = ``;
 
@@ -119,13 +121,9 @@ function CardComponent(id, image, title, desc, price, params) {
     <div class="body-card">
       <h2 class="title">${title}</h2>
       <p class="description">${desc}</p>
-      <span class="price">${price}</span>
-      <div class="qty">
-        <span class="quantity" id=${id}>Jumlah : 0</span>
-        <div>
-          <button class="button minus-button" onclick="kurang(${params})">-</button>
-          <button class="button plus-button" onclick="beli(${params})">+</button>
-        </div>
+      <div class="action">
+          <span class="price">${price}</span>
+          <button onclick="beli(${params})" data-modal-target="static-modal" data-modal-toggle="static-modal">Pesan</button>
       </div>
     </div>
   </div>
@@ -136,84 +134,35 @@ function CardComponent(id, image, title, desc, price, params) {
 
 menuSection.innerHTML = cardMenu;
 
+let pilihanMenu = {};
+const jumlahBeli = document.getElementById("input-jumlah");
+
 const beli = (menuKey) => {
   const pilihan = menus.find((menu) => menu.id === menuKey);
+  console.log(pilihan);
 
-  const data = JSON.parse(localStorage.getItem("dataPembelian")) || {};
-
-  if (!data[menuKey]) {
-    data[menuKey] = {
-      quantity: 0,
-      totalHarga: 0,
-    };
-  }
+  pilihanMenu = { ...pilihan };
 
   // console.log(pilihan);
-
-  data[menuKey].quantity >= pilihan.stock
-    ? alert(`Stock yang tersedia hanya ${pilihan.stock}`)
-    : data[menuKey].quantity++;
-
-  const hargaSatuan = parseFloat(pilihan.price);
-  const qty = data[menuKey].quantity;
-  data[menuKey].totalHarga = hargaSatuan * qty;
-
-  let totalPembayaran = 0;
-  for (const key in data) {
-    totalPembayaran += parseFloat(data[key].totalHarga);
-  }
-  localStorage.setItem("totalPembayaran", totalPembayaran);
-
-  localStorage.setItem("dataPembelian", JSON.stringify(data));
-
-  const jumlah = data[menuKey].quantity;
-
-  document.getElementById(menuKey).innerHTML = `Jumlah: ${jumlah}`;
 };
 
-const kurang = (menuKey) => {
-  const pilihan = menus.find((menu) => menu.id === menuKey);
-
+const pesan = () => {
   const data = JSON.parse(localStorage.getItem("dataPembelian")) || {};
 
-  if (!data[menuKey]) {
-    data[menuKey] = {
-      quantity: 0,
-      totalHarga: 0,
+  if (!data[pilihanMenu.id]) {
+    data[pilihanMenu.id] = {
+      id: pilihanMenu.id,
+      menu: pilihanMenu.title,
+      harga: pilihanMenu.price,
+      jumlahBeli: Number(jumlahBeli.value),
     };
   }
 
-  data[menuKey].quantity <= 0 ? 0 : data[menuKey].quantity--;
-
-  const hargaSatuan = parseFloat(pilihan.price);
-  const qty = data[menuKey].quantity;
-  data[menuKey].totalHarga = hargaSatuan * qty;
-
-  let totalPembayaran = 0;
-  for (const key in data) {
-    totalPembayaran += parseFloat(data[key].totalHarga);
-  }
-  localStorage.setItem("totalPembayaran", totalPembayaran);
+  let totalHarga = jumlahBeli.value * pilihanMenu.price;
+  console.log(totalHarga);
 
   localStorage.setItem("dataPembelian", JSON.stringify(data));
-
-  const jumlah = data[menuKey].quantity;
-
-  document.getElementById(menuKey).innerHTML = `Jumlah: ${jumlah}`;
-};
-
-menus.forEach((menu) => {
-  const data = JSON.parse(localStorage.getItem("dataPembelian")) || {};
-  const jumlah = data[menu.id] ? data[menu.id].quantity : 0;
-  document.getElementById(menu.id).innerHTML = `Jumlah: ${jumlah}`;
-});
-
-const pesan = () => {
-  const data = JSON.parse(localStorage.getItem("dataPembelian"));
-  const totalPembayaran = localStorage.getItem("totalPembayaran");
-  if (!data || !totalPembayaran || totalPembayaran === 0) {
-    alert("Anda belum memesan apapun");
-  } else {
-    window.open("orderDetail.html", "_self");
-  }
+  localStorage.setItem("totalPembayaran", totalHarga);
+  jumlahBeli.value = ''
+  window.location.href = "orderDetail.html"
 };

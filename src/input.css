@@ -7,10 +7,12 @@
 body {
   font-family: "Montserrat", sans-serif;
   /* background-color: #222; */
+  position: relative;
 }
 
 /* Container Styles */
 .image-container {
+  flex-direction: ver;
   width: 120px;
   height: 120px;
   border: 2px solid #000;
@@ -41,23 +43,28 @@ body {
   width: 100%;
 }
 
+.action {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+#popupbeli {
+  display: none;
+}
+
 /* Button Styles */
 
-.button {
+.action button {
   padding: 1px 20px;
   border-radius: 7px;
   font-size: 15px;
   font-weight: bold;
   color: white;
-}
-
-.minus-button {
-  background-color: #96c8eb;
-  margin-right: 2px;
-}
-
-.plus-button {
-  background-color: #96c8eb;
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
 }
 
 .overflow-y-scroll::-webkit-scrollbar {
