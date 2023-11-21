@@ -1,5 +1,8 @@
 // const dom = document;
 let restoPay = document.getElementById("resto-pay")
+let desc = localStorage.getItem("desc")
+let name = localStorage.getItem("name")
+ingfo.innerHTML = `Anda telah memesan ${name} : ${desc}`
 let cash = document.getElementById("cash")
 let saldo = document.getElementById("saldo-resto-pay").value //inputan saldo resto pay
 let totalPembayaran = document.getElementById("total-pembayaran").value
