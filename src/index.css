@@ -3,28 +3,36 @@
 	src: url("/assets/font/Quicksand-VariableFont_wght.ttf") format("truetype");
 }
 
-header {
-	width: 300px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+@font-face {
+	font-family: "Nunito-italic";
+    src: url("../assets/font/Nunito-Italic-VariableFont_wght.ttf")
+    format("truetype");
+}
+  
+@font-face {
+    font-family: "Nunito";
+    src: url("../assets/font/Nunito-VariableFont_wght.ttf") format("truetype");
 }
 
-header img {
-	width: 100px;
-}
-header h1 {
+.hdr h1{
 	font-family: Quicksand;
-	font-size: 20px;
+	font-size: 22px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.hrg{
+	font-family: Quicksand;
+	font-size: 16px;
 	font-weight: 600;
 	text-align: center;
 }
 
-#kt{
+
+.namep{
 	font-family: Quicksand;
 	font-size: 20px;
-	font-weight: 400;
-	text-align: center;
+	font-weight: 600;
 }
 
 button{
@@ -38,19 +46,7 @@ footer{
 	font-size: 20px;
 	text-align: center;
 }
-#ck{
-	font-family: Quicksand;
-	font-size: 21px;
-	font-weight: 600;
-	text-align: center;
-}
-#metode{
-	font-family: Quicksand;
-	font-size: 21px;
-	font-weight: 500;
-	text-align: center;
 
-}
 
 
 

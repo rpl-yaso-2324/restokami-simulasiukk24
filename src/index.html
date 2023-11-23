@@ -8,26 +8,48 @@
     <link rel="stylesheet" href="index.css" />
     <title>Login</title>
 </head>
-<body class="bg-gray-100">
-    <div class="container flex flex-col items-center bg-white shadow-md h-screen mx-auto">
-        <header>
+<style>
+    header {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header img {
+	width: 100px;
+}
+header h1 {
+	font-family: Quicksand;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+}
+</style>
+<body>
+    <div class="container flex flex-col items-center bg-white">
+        <header class="w-[360px]">
             <img src="../assets/img/store.png" alt="resto-kami" class="w-32 mx-auto mt-10" />
             <h1 class="text-xl text-center mt-4">SELAMAT DATANG DI RESTORAN KAMI</h1>
         </header>
+
         <main>
             <section class="login-section mt-8 ">
-                <form id="loginForm" class="rounded px-8 pt-6 pb-8 mb-4">
+                <form id="loginForm" class="loginForm rounded px-8 pt-6 pb-8 mb-4">
                     <label for="username" class="block text-gray-700 text-lg mb-2" style="font-family: Quicksand;">username</label>
-                    <input type="text" id="username" name="username" required class="bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+                    <input type="text" id="name" name="username" required class="bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
                     <label for="password" class="block text-gray-700 text-lg mb-2 mt-4" style="font-family: Quicksand;">password</label>
-                    <input type="text" id="password" name "password" required class="bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
-                    <button type="submit" class="bg-red-500 w-full hover:bg-blue-700 text-white py-2 px-4 font-semibold text-xl rounded-xl mt-4 focus:outline-none focus:shadow-outline">Lihat Menu</button>
+                    <input type="text" id="pass" name="password" required class="bg-gray-100 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+                    <button type="submit" id="submit" class="button-full bg-red-500 w-full hover:bg-blue-700 text-white py-2 px-4 font-semibold text-xl rounded-xl mt-4 focus:outline-none focus:shadow-outline">Lihat Menu</button>
                 </form>
             </section>
         </main>
-        <footer class="text-center mt-4 text-gray-800 text-lg">
+        <footer class="text-center mt-28 text-gray-800 text-lg">
             <p>&copy; 2023 Restoran Kita.<br />All rights reserved.</p>
         </footer>
+
+
+        <script src="../js/login.js"></script>
     </div>
 </body>
 </html>
