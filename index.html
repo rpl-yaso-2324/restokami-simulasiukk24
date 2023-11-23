@@ -1,37 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="https://cdn.tailwindcss.com"></script>
-		<title>Simulasi UKK</title>
-	</head>
-	<body>
-		<center>
-		<div class="container mt-20">
-			<header>
-				<img src="assets/img/store.png" class="w-28" alt="resto-kami" />
-				<h1 class="text-center mt-2 mb-2 text-2xl w-3/5 font-bold">SELAMAT DATANG DI RESTORAN KAMI</h1>
-			</header>
-			<main class="mb-10 mt-8">
-				<section class="login-section">
-					<form id="loginForm" class="flex flex-col">
-						<label for="username" class="text-start ps-10">Nama Pelanggan</label>
-						<input type="text" id="username" name="username" class="p-3 w-4/5 mx-auto mb-2 mt-2 border-solid border-2 black"  required />
-						<label for="text" class="text-start ps-10">Nomor Telepon</label>
-						<input type="text" id="telepon" name="telepon" class="p-3 w-4/5 mx-auto mb-2 mt-2 border-solid border-2 black" required />
-						<button type="submit" href="/menu.html"  class="p-4 w-4/5 mx-auto rounded-lg mt-3 text-xl text-white" style="background-color: rgba(255, 145, 145, 1);">Login</button>
-					</form>
-				</section>
-			</main>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Simulasi UKK</title>
+</head>
+<style>
+	@media (max-width:480px) {
+		header{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			margin: 1rem 0 0 0;
+		}
+		header img{
+			width: 125px;
+		}
+		header h1{
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 30px;
+		}
+		main {
 
-			<footer>
-				<p>
-					&copy; 2023 Restoran Kami. <br />
-					All rights reserved.
-				</p>
-			</footer>
-		</div>
-	</center>
-	</body>
+		}
+		main label {
+			font-size: 17px;
+			margin: 0 0 0 1.5rem;
+		}
+		main input{
+			
+			width: 85%;
+			display: flex;
+			margin: 0.5rem 0 1rem 1.4rem;
+			height: 2.5rem;
+			background-color: whitesmoke;
+			border: none;
+			outline: none;
+			border-radius:5px ;
+		}
+		main button{
+			width: 86%;
+			height: 2.6rem;
+			border: none;
+			outline: none;
+			border-radius: 5px;
+			margin:0.5rem 0 0 1.4rem;
+			background-color: lightcoral;
+			color: white;
+		}
+		footer{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			margin: 5rem 0 0 0;
+		}
+	}
+</style>
+<body>
+<div class="">
+	<header>
+		<img src="/assets/img/store.png" alt="img">
+		<h1>selamat datang di restoran kami</h1>
+	</header>
+	<main>
+		<form action="">
+			<label for="">Username
+				<input type="text" id="username">
+			</label>
+			<label for="">Password
+				<input type="password" id="password">
+			</label>
+			<button type="submit" onclick="login()">LOGIN</button>
+		</form>
+
+		<form action="">
+			<input type="text" id="name">
+			<input type="password" id="pass">
+			<button type="submit" onclick="regis()">regis</button>
+		</form>
+	</main>
+	<footer>
+		<p>
+			&copy; 2023 Restoran Kami. <br />
+			All rights reserved.
+		</p>
+	</footer>
+</div>
+<script>
+const username = document.getElementById("name")
+const password = document.getElementById("pass")
+
+function regis() {
+	const regisUsername = localStorage.setItem("name" , username.value)
+	const regisPassword = localStorage.setItem("pass" , password.value)
+}
+
+function login() {
+	const dataUsername = localStorage.getItem("name" , username)
+	const dataPassword = localStorage.getItem("pass" , password)
+
+	const loginUsername = document.getElementById("username")
+	const loginPassword = document.getElementById("password")
+
+	if (loginUsername.value === dataUsername || loginPassword.value === dataPassword) {
+		alert("berhasil")
+	} else {
+		alert("gagal")
+	}
+}
+</script>
+</body>
+
 </html>
