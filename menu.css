@@ -1,176 +1,48 @@
-h1{
-    margin-left: 55%;
-    margin-top: -4%;
+header p{
+  width: 60px;
+  font-family: Quicksand;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 60%;
+  margin-top: -45%;
 }
-.text-uppercase {
-    text-transform: uppercase;
-  }
-
-  .container-main{
-    background-color: grey;
-    width: 8%;
-    border-radius: 30px;
-    height: 35px;
-    margin-left: 5%;
-    text-align: center;
-    font-size: 25px;
-  }
-  .card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    width: 300px;
-    background-color: #fff;
-    margin: 10px;
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .card-body {
-    padding: 10px;
-  }
-  
-.text1{
-  margin-left: 30%;
-  margin-top: -19%;
+header img{
+  width: 30px;
+  margin-top: 30%;
 }
-
-  .card h3 {
-    font-size: 20px;
-    margin: 0;
-    margin-left: 20%;
-  }
-  
-  .card p {
-    margin: 10px 0;
-  }
-  .tombol1 {
-    background-color: #007bff;
-    color: #fff;
-    padding: 7px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-left: 17%;
-    margin-top: -25px;
-  }
-  .container-main2{
-    background-color: grey;
-    width: 11%;
-    border-radius: 30px;
-    height: 35px;
-    margin-left: 5%;
-    text-align: center;
-    font-size: 25px;
-  }
-  .text-uppercase2 {
-    text-transform: uppercase;
-  }
-  .text2{
-    margin-left: 30%;
-    margin-top: -20%;
-  }
-  .card2 h3 {
-    font-size: 20px;
-    margin: 0;
-    margin-left: 20%;
-  }
-  .card2 p {
-    margin: 10px 0;
-  }
-  .card2 img {
-    width: 100%;
-    height: auto;
-  }
-  .card2 {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    width: 300px;
-    background-color: #fff;
-    margin: 10px;
-  }
-  .card-body2 {
-    padding: 10px;
-  }
-  .tombol2 {
-    background-color: #007bff;
-    color: #fff;
-    padding: 7px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-left: 17%;
-    margin-top: -25px;
-  }
-  .container-main3{
-    background-color: grey;
-    width: 12%;
-    border-radius: 30px;
-    height: 35px;
-    margin-left: 5%;
-    text-align: center;
-    font-size: 25px;
-  }
-  .text-uppercase3 {
-    text-transform: uppercase;
-  }
-  .text3{
-    margin-left: 30%;
-    margin-top: -25%;
-  }
-  .card3 h3 {
-    font-size: 20px;
-    margin: 0;
-    margin-left: 20%;
-  }
-  .card3 p {
-    margin: 10px 0;
-  }
-  .card3 img {
-    width: 100%;
-    height: auto;
-  }
-  .card3 {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    width: 300px;
-    background-color: #fff;
-    margin: 10px;
-  }
-  .card-body3 {
-    padding: 10px;
-  }
-  .tombol3 {
-    background-color: #007bff;
-    color: #fff;
-    padding: 7px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-left: 17%;
-    margin-top: -25px;
-  }
-  .pesan button {
-    margin-top: 16%;
-    background-color: #f91c1c;
-    color: #fff;
-    padding: 7px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 200px;
-  }
-  footer {
-		font-size: 20px;
-	}
+footer p{
+  width: 300px;
+  font-family: Quicksand;
+  font-size: 16px;
+  margin-left: 32%;
+  margin-top: 10%;
+}
+footer{
+  width: 360px;
+  height: 100px;
+ 
+}
+main h1{
+  width: 87.69px;
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 35%;
+  margin-top: -20%;
+}
+main img{
+  width: 80px;
+  height: 80px;
+  margin-left: 4%;
+  border-radius: 10px;
+  margin-top: 4%;
+}
+main p{
+  width: 167.08px;
+  height: 25.35px;
+  top: 114.63px;
+  left: 124px;
+  font-family: Nunito;
+  font-size: 15px;
+  margin-left: 35%;
+}

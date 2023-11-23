@@ -1,31 +1,61 @@
-.container h1{
-    margin-left: 53%;
-    margin-top: -4%;
-}
-.selesai{
+header p{
+    width: 60px;
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 60%;
+    margin-top: -45%;
+  }
+  header img{
+    width: 30px;
+    margin-top: 30%;
+  }
+  footer p{
+    width: 300px;
+    font-family: Quicksand;
+    font-size: 16px;
+    margin-left: 32%;
     margin-top: 10%;
-    margin-right: 25%;
+  }
+  footer{
+    width: 360px;
+    height: 100px;
+   
+  }
+  .container {
+	width: 100%; /* Width 100% untuk mengisi lebar viewport pada kontainer utama */
+	max-width: 768px; /* Batasan lebar maksimum untuk ukuran mobile */
+	margin: 0 auto; /* Pusatkan kontainer pada layar */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-.selesai p{
-margin-left: 60%;
-margin-top: 5%;
+* {
+	margin: 0;
+	padding: 0;
 }
-.selesai h1{
-    margin-left: 49%;
-    margin-top: -4%;
+
+body {
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.container2 h1{
- color: #33D9B2;
-font-family: Nunito;
-font-size: 24px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+main h1{
+    width: 295px;
+    height: 22px;
+    margin-left: 10%;
+    margin-top: 40%;
+    font-size: 19px;
 }
-.container2 img{
-    width: 20%;
-}
-footer {
-    font-size: 20px;
-    margin-top: 14%;
+main p{
+    width: 105px;
+    height: 25px;
+    margin-top: 3%;
+    margin-left: 33%;
+    font: Quicksand;
+    font-weight: 800;
+    size: 20px;
+    line-height: 25px;
+    color: #ff9D21;
 }

@@ -1,15 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 100%; /* Width 100% untuk mengisi lebar viewport pada kontainer utama */
+	max-width: 768px; /* Batasan lebar maksimum untuk ukuran mobile */
+	margin: 0 auto; /* Pusatkan kontainer pada layar */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container .login-section {
+	width: 300px;
+	height: 203px;
+	top: 329px;
+	left: 30px;
+	margin-top: 28%;
+
+}
+
+.button-full{
+	width: 150px;
+	height: 40px;
+	top: 472px;
+	left: 50px;
+	border-radius: 10px;
+	margin-top: 10%;
+	margin-left: 25%;
+	background-color: #ff9191;
+	color: white;
+	border: none;
+}
 @font-face {
 	font-family: "Quicksand";
 	src: url("/assets/font/Quicksand-VariableFont_wght.ttf") format("truetype");
 }
-body{
-	font-family: Arial,sans-serif;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	margin:0;
-	}
 
 header {
 	width: 300px;
@@ -20,52 +54,39 @@ header {
 
 header img {
 	width: 100px;
+	height: 100px;
+	top: 56px;
+	left: 130px;
+	margin-top: 7%;
 }
 header h1 {
 	font-family: Quicksand;
 	font-size: 20px;
-	font-weight: 600;
+	font-weight: 900;
 	text-align: center;
+	width: 300px;
+	height: 50px;
+	top: 172px;
+	left: 30px;
+	margin-top: 3%;
 }
-button {
-    background-color: rgb(249, 29, 29);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
+label {
+	width: 163px;
+	font-family: Quicksand;
+	font-size: 16px;
 }
 
-button:hover {
-    background-color: rgb(249, 53, 53);
-    color: white;
+footer p{
+	margin-top: 80%;
+	font-size: 115%;
 }
-/* .login-container{
-	background: #f9f9f9;
-	padding: 20px;
+input {
+	width: 300px;
+	height: 40px;
+	top: 426px;
+	left: 30px;
 	border-radius: 5px;
-	box-shadow: 0px opx 10px 0px rgba(0, 0, 0, 0.1);
-	max-width: 300px;
-	width: 100%;
-
-	} */
-	.form-group {
-		margin-bottom: 15px;
-		text-align: left;
-	}
-	
-	label {
-		display: block;
-		font-weight: bold;
-	}
-	input{
-		width: 100%;
-		padding: 8px;
-		font-size: 16px;
-		border: 1px solid #ccc;
-		border-radius: 5px;
-	}	
-	footer {
-		font-size: 15px;
-	}
+    background-color: rgb(254, 238, 238);
+	margin-top: 3%;
+	border: none;
+}
