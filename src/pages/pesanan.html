@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Restoran</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+    <header class="flex justify-center items-center">
+        <img src="/assets/img/store.png" class="w-[100px]">
+        <h2 class="font-semibold text-5xl">Pesanan</h2>
+    </header>
+    <hr class="h-[6px] mt-[10px] border-none bg-blue-400 w-full my-1">
+
+    <div class="bg-slate-100 text-center mx-10 py-6 text-5xl rounded-full" id="kurang">
+        <h2 class="text-pink-500">Saldo Anda Kurang !</h2>
+    </div>
+
+    <div class="font-semibold text-center flex justify-center flex-col bg-slate-100 mx-10 py-[10px] rounded-md mt-[5vh]">
+        <h1 class="text-5xl">Total Pembayaran Sebesar</h1>
+        <h1 class="text-5xl text-orange-600">Rp. 101.000</h1>
+    </div>
+    <div class="flex justify-center mt-[40px]">
+        <input type="text" class="py-3 w-[43vh] border-8 rounded-md text-4xl" placeholder="Catatan:">
+    </div>
+    <!-- Metode Pembayaran -->
+    <div class="p-7 mt-[40px]">
+        <h2 class="rounded-full bg-neutral-400 w-[600px] py-2 text-center ml-[10px] text-white text-5xl">Metode
+            Pembayaran</h2>
+        <hr class="h-[6px] mt-[10px] border-none bg-amber-500 w-full mb-[10px]">
+        <div>
+            <div class="bg-slate-100 rounded-md flex w-full h-[70px]">
+                <div class="flex items-center mb-4 ml-3">
+                    <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-6 h-6">
+                    <label for="default-radio-1" class="font-medium text-gray-900 dark:text-gray-300 ml-3 text-4xl">Resto Pay</label>
+                </div>
+                <h1 class="pl-[21vh] text-3xl">Saldo Resto Pay <br><span class="text-amber-500 font-semibold">Rp.
+                        50.000</span></h1>
+            </div>
+            <div class="bg-slate-100 rounded-md flex w-full mt-[20px] h-[70px]">
+                <div class="flex items-center ml-3">
+                    <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-6 h-6">
+                    <label for="default-radio-2" class="font-medium text-gray-900 dark:text-gray-300 text-4xl ml-3 ">Cash</label>
+                </div>
+                <h1 class="mt-[13px] pl-[6vh] text-3xl">Siapkan uang sesuai nominal pembayaran !</h1>
+            </div>
+        </div>
+    </div>
+    <div class="mt-[20px] text-center">
+        <button type="button" class="rounded-3xl bg-red-500 px-1.5 text-white m-2 w-[40vh] py-[1vh] text-6xl"><a
+                href="./Invoice.html">Pesan</a></button>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>

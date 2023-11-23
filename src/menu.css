@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+	font-family: "Quicksand";
+	src: url("/assets/font/Quicksand-VariableFont_wght.ttf") format("truetype");
+}
+
+body{
+    width: 70%;
+    margin: auto;
+    font-family: Quicksand;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+header img{
+    width: 40px;
+    height: 40px;
+}
+
+header h1{
+    font-size: 30px;
+    font-family: Quicksand;
+}
+
+.card{
+    background-color: rgb(165, 165, 165);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.menu{
+    display: flex;
+    gap: 8px;
+}
+.paket{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.button{
+    display: flex;
+    gap: 10px;
+}
+button{
+    color: white;
+    background-color: black;
+    width: 80px;
+    padding: 2px;
+    border: none;
+    border-radius: 10px;
+}
+.menu-section{
+    overflow-y: scroll;
+    height: 70vh;
+}
+footer p{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+h5{
+    border-radius: 5px;
+    text-align: center;
+    width: 80px;
+    padding: 3px 0 3px 0;
+    background-color: rgb(216, 211, 211);
+}

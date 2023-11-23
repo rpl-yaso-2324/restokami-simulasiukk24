@@ -1,0 +1,56 @@
+@font-face {
+	font-family: "Quicksand";
+	src: url("/assets/font/Quicksand-VariableFont_wght.ttf") format("truetype");
+}
+body{
+	gap: 50px;
+}
+header {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	font-family: Quicksand;
+}
+
+header img {
+	width: 100px;
+}
+header h1 {
+	font-family: Quicksand;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+}
+.input{
+	display: flex;
+	flex-direction: column;
+	font-size: 15px;
+	font-family: Quicksand;
+}
+input{
+	width: 300px;
+	padding: 10px 0 10px 0;
+	border: none;
+	background-color: beige;
+	border-radius: 5px;
+}
+button{
+	width: 300px;
+	padding: 10px 0 10px 0;
+	border: none;
+	background-color: rgb(235, 111, 94);
+	border-radius: 5px;
+	color: white;
+}
+.container{
+	gap: 20px;
+}
+footer{
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
