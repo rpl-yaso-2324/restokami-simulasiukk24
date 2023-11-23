@@ -1,86 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >   
     <title>Simulasi UKK</title>
 </head>
-
+<style>
+    @media (max-width:480px) {
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        header img{
+            width: 40px;
+        }
+        header h1{
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .hr1{
+            background-color:dodgerblue ;
+        }
+    }
+</style>
 <body>
-    <center>
-        <div class="">
-            <header class="mt-4">
-                <div class="navbar mb-2 flex justify-center gap-2">
-                    <img src="assets/img/store.png" class="w-10" alt="resto-kami">
-                    <h1 class="text-center font-bold mt-2">Menu</h1>
-                </div>
-                <hr class="mb-5" style="background-color:rgba(255, 145, 145, 1) ; padding: 1px;">
-            </header>
-            <main class="mx-auto ">
-                <!-- paket 1 -->
-                <div class="paket ml-[-18rem] ">
-                    <h1 class="text-lg bg-gray-400 ml-5 w-20 rounded-full text-white ">Paket</h1>
-                    <hr class="mt-2 w-full" style="background-color: rgba(255, 157, 33, 1); padding:1px;">
-                    <div class="flex ml-72 mt-5 gap-8  w-7/12 align-start justify-center">
-                        <img src="/assets/img/store.png" width="100" alt="">
-                        <div class="">
-                            <h1 class="text-start w-52 font-bold text-sm">Paket Hemat 1</h1>
-                            <p class="w-52 text-start text-xs">Nasi Timbel + Ayam (bakar/goreng) + Tahu & Tempe + Sambal
-                                + Teh
-                            </p>
-                            <h1 class="w-52 text-start font-bold text-sm">Rp.36.000</h1>
-                            <div class="flex gap-5 w-52 text-start mt-2">
-                                <button class="bg-sky-500 text-white px-4 rounded-full">+</button>
-                                <h2 class="font-bold text-xs">Jumlah : 2</h2>
-                                <button class="bg-red-400 text-white px-4 rounded-full">-</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- paket 2 -->
-                <div class="paket ml-[-18rem] mt-5">
-                    <h1 class="text-lg bg-gray-400 w-24 ml-8 rounded-full text-white ">Makanan</h1>
-                    <hr class="mt-2 w-full" style="background-color: rgba(255, 157, 33, 1); padding:1px;">
-                    <div class="flex ml-72 mt-5 gap-8  w-7/12 align-start justify-center">
-                        <img src="/assets/img/store.png" width="100" alt="">
-                        <div class="">
-                            <h1 class="text-start w-52 font-bold text-sm">Nasi Goreng</h1>
-                            <p class="w-52 text-start text-xs">Nasi yang digoreng bareng bumbu dan toping pada umumnya
-                            </p>
-                            <h1 class="w-52 text-start font-bold text-sm">Rp.15.000</h1>
-                            <div class="flex gap-5 w-52 text-start mt-2">
-                                <button class="bg-sky-500 text-white px-4 rounded-full">+</button>
-                                <h2 class="font-bold text-xs">Jumlah : 1</h2>
-                                <button class="bg-red-400 text-white px-4 rounded-full">-</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- paket 3 -->
-                <div class="paket ml-[-18rem] mt-5">
-                    <h1 class="text-lg bg-gray-400 w-24 ml-8 rounded-full text-white ">Minuman</h1>
-                    <hr class="mt-2 w-full" style="background-color: rgba(255, 157, 33, 1); padding:1px;">
-                    <div class="flex ml-72 mt-5 gap-8  w-7/12 align-start justify-center">
-                        <img src="/assets/img/store.png" width="100" alt="">
-                        <div class="">
-                            <h1 class="text-start w-52 font-bold text-sm">Lemon Tea</h1>
-                            <p class="w-52 text-start text-xs">Teh manis + perasan lemon
-                            </p>
-                            <h1 class="w-52 text-start font-bold text-sm">Rp.7.000</h1>
-                            <div class="flex gap-5 w-52 text-start mt-2">
-                                <button class="bg-sky-500 text-white px-4 rounded-full">+</button>
-                                <h2 class="font-bold text-xs">Jumlah : 2</h2>
-                                <button class="bg-red-400 text-white px-4 rounded-full">-</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-              
-            </main>
-<button class="my-10 bg-red-400 px-24 py-3 rounded-lg text-white" >Pesan</button>
+   <div class="">
+    <header>
+        <img src="/assets/img/store.png" alt="img">
+        <h1>Menu</h1>
+    </header>
+    <hr class="hr1">
+    <main>
+        <section class="main-section"></section>
+    </main>
             <footer>
                 <p>
 					&copy; 2023 Restoran Kami. <br />
@@ -88,7 +42,40 @@
 				</p>
             </footer>
         </div>
-    </center>
-</body>
+        <script>
+            const dataMain = [
+                {
+                    id:0,
+                    img:"/assets/img/store.png",
+                    nama:"Paket 1",
+                    desc:"Nasi Ayam",
+                    harga:10000,
+                }
+            ]
+            const mainSection = document.querySelector(".main-section")
+    const Main = ``;
 
+
+    dataMain.map((data) => {
+        Main += dataS(data.id ,data.img , data.nama, data,desc , data.harga);
+        mainSection.innerHTML = Main;
+    })
+
+    function dataS(id,img,nama,desc,harga) {
+        return`
+        <main>
+            <section class="main-section">
+        <div id="${id}">
+            <img src="${img}" alt="img">
+            <h1>${nama}</h1>
+            <p>${desc}</p>
+            <h1>${harga}</h1>
+            <button>pesan</button>
+            </div>
+            </section>
+            </main>
+            `;
+    }
+</script>
+</body>
 </html>

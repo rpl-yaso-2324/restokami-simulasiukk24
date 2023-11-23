@@ -22,9 +22,6 @@
 			text-transform: uppercase;
 			font-size: 30px;
 		}
-		main {
-
-		}
 		main label {
 			font-size: 17px;
 			margin: 0 0 0 1.5rem;
@@ -76,11 +73,11 @@
 			<button type="submit" onclick="login()">LOGIN</button>
 		</form>
 
-		<form action="">
+		<!-- <form action="">
 			<input type="text" id="name">
 			<input type="password" id="pass">
 			<button type="submit" onclick="regis()">regis</button>
-		</form>
+		</form> -->
 	</main>
 	<footer>
 		<p>
@@ -90,13 +87,13 @@
 	</footer>
 </div>
 <script>
-const username = document.getElementById("name")
-const password = document.getElementById("pass")
+// const username = document.getElementById("name")
+// const password = document.getElementById("pass")
 
-function regis() {
-	const regisUsername = localStorage.setItem("name" , username.value)
-	const regisPassword = localStorage.setItem("pass" , password.value)
-}
+// function regis() {
+// 	const regisUsername = localStorage.setItem("name" , username.value)
+// 	const regisPassword = localStorage.setItem("pass" , password.value)
+// }
 
 function login() {
 	const dataUsername = localStorage.getItem("name" , username)
@@ -106,7 +103,7 @@ function login() {
 	const loginPassword = document.getElementById("password")
 
 	if (loginUsername.value === dataUsername || loginPassword.value === dataPassword) {
-		alert("berhasil")
+		window.location.href = "/menu.html" ;
 	} else {
 		alert("gagal")
 	}
