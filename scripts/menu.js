@@ -16,7 +16,7 @@ var menu = [
         count: 0
     },
     {
-        id: 0,
+        id: 1,
         title: "Paket-01",
         name: "Nasi Timbel",
         desc: "Nasi Timbel + Ayam (bakar/goyeng)+ Tahu & Tempe + Sambal + Teh",
@@ -24,7 +24,7 @@ var menu = [
         count: 0
     },
     {
-        id: 0,
+        id: 2,
         title: "Paket-01",
         name: "Nasi Timbel",
         desc: "Nasi Timbel + Ayam (bakar/goyeng)+ Tahu & Tempe + Sambal + Teh",
@@ -32,7 +32,15 @@ var menu = [
         count: 0
     },
     {
-        id: 0,
+        id: 3,
+        title: "Paket-01",
+        name: "Nasi Timbel",
+        desc: "Nasi Timbel + Ayam (bakar/goyeng)+ Tahu & Tempe + Sambal + Teh",
+        price: formatUang(36000),
+        count: 0
+    },
+    {
+        id: 4,
         title: "Paket-01",
         name: "Nasi Timbel",
         desc: "Nasi Timbel + Ayam (bakar/goyeng)+ Tahu & Tempe + Sambal + Teh",
@@ -59,12 +67,12 @@ function innerCardMenu(title,name,desc,price,count,id) {
         <img src="/assets/img/baso.jpeg" alt=""></div>
         <div class="text-menu">
         <h5>${title}</h5>
-        <h4>${name}</h4>
+        <h3>${name}</h3>
         <p>${desc}</p>
         
     <span class="btn-menu">
-        <p>${price}</p>
-        <button class="plus" id="addCount${id}">pesan</button>
+        <h4>${price}</h4>
+        <button id="pesan${id}">Pesan</button>
     </span>
 </div>
 </div>
@@ -74,51 +82,18 @@ function innerCardMenu(title,name,desc,price,count,id) {
 
 // add Count
 
-let order = [];
-
+// add count
 menu.map((data) => {
-    data.count = 0;
-
-    const addButton = document.getElementById(`addCount${data.id}`);
-    const countElement = document.getElementById(`count${data.id}`);
-
-    addButton.addEventListener("click", function (event)  {
-        event.preventDefault();
-        data.count++;
-        countElement.innerHTML = data.count;
-
-        const subtotal = data.price * data.count;
-
-        console.log(`Subtotal for ${data.name}: ${subtotal}`);
-
-        if (order[data.id] == null) {
-            order[data.id] = {
-                id: data.id,
-                name: data.name,
-                desc: data.desc,
-                price: data.price,
-                count: data.count,
-            };
-        } else {
-            order[data.id].count = data.count;
-        }
-        
-        let totalPrice = 0;
-        order.map((item) => {
-            totalPrice += item.price * item.count;
-        });
-        console.log(`Total Price: ${totalPrice}`);
-        localStorage.setItem("total", totalPrice);
+    const pesan = document.getElementById(`pesan${data.id}`);
+    pesan.addEventListener("click", function (event) {
+      event.preventDefault();
+      const jumlah = prompt("masukan jumlah pesanan");
+      const total = data.price * jumlah; // Hitung subtotal hanya untuk item saat ini
+      let totalPrice = 0;
+      localStorage.setItem("total", total);
+      window.location.href = "pesanPage.html";
+      localStorage.setItem("nama", data.name);
+      localStorage.setItem("pesanan", data.desc);
     });
-});
-const pesan = () => {
-    order.map((item) => {
-        if (item.count != null) {
-            console.log(item.count);
-            window.location.href = "pesanPage.html"
-        } else {
-            alert();
-            console.log("data tidak boleh kosong");
-        }
-    })
-}
+  });
+  const pesan = () => {};
