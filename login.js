@@ -1,17 +1,32 @@
-document.getElementById("loginForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-  
-    // Mendapatkan nilai dari input username dan password
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-  
-    // Pemrosesan login sederhana (contoh saja, ini bukan cara yang aman untuk autentikasi)
-    if (username === "kiydom23" && password === "123") {
-      alert("Login berhasil!");
-      
-      // Di sini bisa dilakukan redirect ke halaman lain atau tindakan setelah login berhasil
-    } else {
-      alert("Login gagal. Silakan coba lagi!");
-      
-    }
-  });
+const user = {
+  username: "ezar",
+  password: "123",
+};
+
+// const nama = document.getElementById("username")
+// const password = document.getElementById("password")
+
+// const login = () =>{
+//   if (user.username != nama.value){
+//     alert("username salah")
+//   } else {
+//     if(user.password != password.value){
+//       alert("password salah")
+//     } else {
+//       window.location.href = "menupage.html"
+//     }
+//   }
+// }
+
+const nama = document.getElementById("username")
+const password = document.getElementById("password")
+
+const login= () => {
+  if(nama.value == "" || password.value == ""){
+    alert("username & password tidak boleh kosong!")
+  } else if (nama.value != user.username || password.value != user.password){
+    alert("username atau password salah");
+  } else{
+    window.location.href = "menupage.html"
+  }
+}
